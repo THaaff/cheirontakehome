@@ -495,6 +495,14 @@
           },
           "title": "Edges",
           "type": "array"
+        },
+        "warnings": {
+          "description": "Transform-stage warnings (e.g. empty input). The orchestrator folds these into Meta.warnings; the viz layer ignores them.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
         }
       },
       "title": "GraphData",
