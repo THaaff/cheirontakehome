@@ -1,0 +1,54 @@
+{
+  "points": [
+    {
+      "dims": {"phase": "EARLY_PHASE1"},
+      "measure": "trial_count",
+      "value": 12,
+      "citations": [
+        {"nct_id": "NCT04305041", "excerpt": "EARLY_PHASE1", "field": "protocolSection.designModule.phases"}
+      ]
+    },
+    {
+      "dims": {"phase": "PHASE1"},
+      "measure": "trial_count",
+      "value": 143,
+      "citations": [
+        {"nct_id": "NCT03991403", "excerpt": "PHASE1", "field": "protocolSection.designModule.phases"}
+      ]
+    },
+    {
+      "dims": {"phase": "PHASE2"},
+      "measure": "trial_count",
+      "value": 210,
+      "citations": [
+        {"nct_id": "NCT02452424", "excerpt": "PHASE2", "field": "protocolSection.designModule.phases"}
+      ]
+    },
+    {
+      "dims": {"phase": "PHASE3"},
+      "measure": "trial_count",
+      "value": 78,
+      "citations": [
+        {"nct_id": "NCT02506153", "excerpt": "PHASE3", "field": "protocolSection.designModule.phases"}
+      ]
+    },
+    {
+      "dims": {"phase": "PHASE4"},
+      "measure": "trial_count",
+      "value": 24,
+      "citations": [
+        {"nct_id": "NCT03066648", "excerpt": "PHASE4", "field": "protocolSection.designModule.phases"}
+      ]
+    },
+    {
+      "dims": {"phase": "NA"},
+      "measure": "trial_count",
+      "value": 31,
+      "citations": [
+        {"nct_id": "NCT04007588", "excerpt": "NA", "field": "protocolSection.designModule.phases"}
+      ]
+    }
+  ],
+  "dimension_names": ["phase"],
+  "measure_name": "trial_count"
+}

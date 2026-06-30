@@ -1,0 +1,10 @@
+{
+  "operation": "numeric_distribution",
+  "entities": {
+    "condition": "melanoma"
+  },
+  "numeric_x": "enrollment_count",
+  "measure": "trial_count",
+  "proposed_viz": "histogram",
+  "interpretation": "Distribution of enrollment sizes across melanoma trials"
+}

@@ -1,0 +1,6 @@
+{
+  "_spike_note": "endpoint returned an error for query.cond; captured as evidence",
+  "request_url": "https://clinicaltrials.gov/api/v2/stats/field/values?fields=Phase&query.cond=melanoma",
+  "status_code": 400,
+  "body": "Invalid prefix in parameter name: query.cond"
+}

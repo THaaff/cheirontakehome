@@ -1,0 +1,46 @@
+{
+  "points": [
+    {
+      "dims": {"year": 2018},
+      "measure": "trial_count",
+      "value": 41,
+      "citations": [
+        {"nct_id": "NCT03470922", "excerpt": "2018-03-15", "field": "protocolSection.statusModule.startDateStruct.date"}
+      ]
+    },
+    {
+      "dims": {"year": 2019},
+      "measure": "trial_count",
+      "value": 58,
+      "citations": [
+        {"nct_id": "NCT03867175", "excerpt": "2019-06-01", "field": "protocolSection.statusModule.startDateStruct.date"}
+      ]
+    },
+    {
+      "dims": {"year": 2020},
+      "measure": "trial_count",
+      "value": 67,
+      "citations": [
+        {"nct_id": "NCT04303169", "excerpt": "2020-02-20", "field": "protocolSection.statusModule.startDateStruct.date"}
+      ]
+    },
+    {
+      "dims": {"year": 2021},
+      "measure": "trial_count",
+      "value": 84,
+      "citations": [
+        {"nct_id": "NCT04895709", "excerpt": "2021-05-10", "field": "protocolSection.statusModule.startDateStruct.date"}
+      ]
+    },
+    {
+      "dims": {"year": 2022},
+      "measure": "trial_count",
+      "value": 73,
+      "citations": [
+        {"nct_id": "NCT05256225", "excerpt": "2022-01-18", "field": "protocolSection.statusModule.startDateStruct.date"}
+      ]
+    }
+  ],
+  "dimension_names": ["year"],
+  "measure_name": "trial_count"
+}

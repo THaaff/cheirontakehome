@@ -1,0 +1,74 @@
+{
+  "$defs": {
+    "ErrorDetail": {
+      "additionalProperties": false,
+      "description": "Structured error detail carrying the failing pipeline stage.",
+      "properties": {
+        "type": {
+          "description": "Short machine code, e.g. upstream_unavailable.",
+          "title": "Type",
+          "type": "string"
+        },
+        "stage": {
+          "$ref": "#/$defs/PipelineStage",
+          "description": "Where it failed."
+        },
+        "message": {
+          "description": "Human-readable.",
+          "title": "Message",
+          "type": "string"
+        },
+        "details": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional context.",
+          "title": "Details"
+        }
+      },
+      "required": [
+        "type",
+        "stage",
+        "message"
+      ],
+      "title": "ErrorDetail",
+      "type": "object"
+    },
+    "PipelineStage": {
+      "description": "The pipeline stage at which an error occurred (carried on errors).",
+      "enum": [
+        "validation",
+        "planning",
+        "retrieval",
+        "transform",
+        "visualization"
+      ],
+      "title": "PipelineStage",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "The error response envelope.",
+  "properties": {
+    "request_id": {
+      "title": "Request Id",
+      "type": "string"
+    },
+    "error": {
+      "$ref": "#/$defs/ErrorDetail"
+    }
+  },
+  "required": [
+    "request_id",
+    "error"
+  ],
+  "title": "ErrorResponse",
+  "type": "object"
+}

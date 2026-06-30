@@ -1,0 +1,14 @@
+{
+  "operation": "comparison",
+  "filters": {
+    "study_type": "INTERVENTIONAL"
+  },
+  "group_by": "lead_sponsor_class",
+  "series": {
+    "dimension": "condition",
+    "values": ["melanoma", "lung cancer"]
+  },
+  "measure": "trial_count",
+  "proposed_viz": "grouped_bar_chart",
+  "interpretation": "Sponsor-class mix compared across melanoma and lung cancer trials"
+}

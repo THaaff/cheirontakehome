@@ -1,0 +1,54 @@
+{
+  "points": [
+    {
+      "dims": {"lead_sponsor_class": "INDUSTRY", "series": "melanoma"},
+      "measure": "trial_count",
+      "value": 132,
+      "citations": [
+        {"nct_id": "NCT02506153", "excerpt": "INDUSTRY", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}
+      ]
+    },
+    {
+      "dims": {"lead_sponsor_class": "NIH", "series": "melanoma"},
+      "measure": "trial_count",
+      "value": 18,
+      "citations": [
+        {"nct_id": "NCT03635983", "excerpt": "NIH", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}
+      ]
+    },
+    {
+      "dims": {"lead_sponsor_class": "OTHER", "series": "melanoma"},
+      "measure": "trial_count",
+      "value": 64,
+      "citations": [
+        {"nct_id": "NCT02452424", "excerpt": "OTHER", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}
+      ]
+    },
+    {
+      "dims": {"lead_sponsor_class": "INDUSTRY", "series": "lung cancer"},
+      "measure": "trial_count",
+      "value": 201,
+      "citations": [
+        {"nct_id": "NCT02864251", "excerpt": "INDUSTRY", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}
+      ]
+    },
+    {
+      "dims": {"lead_sponsor_class": "NIH", "series": "lung cancer"},
+      "measure": "trial_count",
+      "value": 27,
+      "citations": [
+        {"nct_id": "NCT03088540", "excerpt": "NIH", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}
+      ]
+    },
+    {
+      "dims": {"lead_sponsor_class": "OTHER", "series": "lung cancer"},
+      "measure": "trial_count",
+      "value": 89,
+      "citations": [
+        {"nct_id": "NCT03217071", "excerpt": "OTHER", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}
+      ]
+    }
+  ],
+  "dimension_names": ["lead_sponsor_class", "series"],
+  "measure_name": "trial_count"
+}

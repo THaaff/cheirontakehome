@@ -1,0 +1,64 @@
+{
+  "request_id": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+  "visualization": {
+    "kind": "chart",
+    "renderer": "vega-lite",
+    "type": "time_series",
+    "title": "Pembrolizumab trials started per year since 2018",
+    "encoding": {
+      "x": {"field": "year", "type": "temporal", "title": "Year"},
+      "y": {"field": "trial_count", "type": "quantitative", "title": "Number of trials"}
+    },
+    "data": [
+      {"year": 2018, "trial_count": 41, "citations": [{"nct_id": "NCT03470922", "excerpt": "2018-03-15", "field": "protocolSection.statusModule.startDateStruct.date"}]},
+      {"year": 2019, "trial_count": 58, "citations": [{"nct_id": "NCT03867175", "excerpt": "2019-06-01", "field": "protocolSection.statusModule.startDateStruct.date"}]},
+      {"year": 2020, "trial_count": 67, "citations": [{"nct_id": "NCT04303169", "excerpt": "2020-02-20", "field": "protocolSection.statusModule.startDateStruct.date"}]},
+      {"year": 2021, "trial_count": 84, "citations": [{"nct_id": "NCT04895709", "excerpt": "2021-05-10", "field": "protocolSection.statusModule.startDateStruct.date"}]},
+      {"year": 2022, "trial_count": 73, "citations": [{"nct_id": "NCT05256225", "excerpt": "2022-01-18", "field": "protocolSection.statusModule.startDateStruct.date"}]}
+    ],
+    "vega_spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": "Pembrolizumab trials started per year since 2018",
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "x": {"field": "year", "type": "temporal", "title": "Year", "timeUnit": "year"},
+        "y": {"field": "trial_count", "type": "quantitative", "title": "Number of trials"}
+      },
+      "data": {
+        "values": [
+          {"year": 2018, "trial_count": 41},
+          {"year": 2019, "trial_count": 58},
+          {"year": 2020, "trial_count": 67},
+          {"year": 2021, "trial_count": 84},
+          {"year": 2022, "trial_count": 73}
+        ]
+      }
+    },
+    "hints": {"x_time_unit": "year", "units": "trials"}
+  },
+  "meta": {
+    "source": "clinicaltrials.gov",
+    "query_interpretation": "Annual count of pembrolizumab trials since 2018",
+    "assumptions": ["interpreted 'since 2018' as start_year >= 2018, bucketed by study start date"],
+    "filters_applied": {"query.intr": "pembrolizumab", "start_year": 2018},
+    "total_studies_matched": 412,
+    "studies_analyzed": 323,
+    "data_timestamp": "2026-06-30T09:00:05",
+    "warnings": ["89 studies had missing or unparseable start dates and were excluded"],
+    "plan": {
+      "operation": "time_trend",
+      "entities": {"drug": "pembrolizumab", "condition": null, "sponsor": null, "terms": []},
+      "filters": {"statuses": [], "phases": [], "study_type": null, "countries": [], "start_year": 2018, "end_year": null},
+      "group_by": null,
+      "series": null,
+      "numeric_x": null,
+      "numeric_y": null,
+      "time_granularity": "year",
+      "measure": "trial_count",
+      "network": null,
+      "proposed_viz": "time_series",
+      "interpretation": "Annual count of pembrolizumab trials since 2018",
+      "assumptions": ["interpreted 'since 2018' as start_year >= 2018, bucketed by study start date"]
+    }
+  }
+}

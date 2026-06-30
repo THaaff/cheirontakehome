@@ -1,0 +1,169 @@
+{
+  "$defs": {
+    "Phase": {
+      "description": "Trial phase. Values mirror CT.gov ``protocolSection.designModule.phases``.",
+      "enum": [
+        "EARLY_PHASE1",
+        "PHASE1",
+        "PHASE2",
+        "PHASE3",
+        "PHASE4",
+        "NA"
+      ],
+      "title": "Phase",
+      "type": "string"
+    },
+    "RequestMode": {
+      "description": "Execution mode. ``replay`` reads cached responses + recorded plans.",
+      "enum": [
+        "live",
+        "replay"
+      ],
+      "title": "RequestMode",
+      "type": "string"
+    },
+    "RequestOptions": {
+      "additionalProperties": false,
+      "description": "Per-request execution knobs.",
+      "properties": {
+        "mode": {
+          "$ref": "#/$defs/RequestMode",
+          "default": "live",
+          "description": "`replay` reads cached responses + recorded plans."
+        },
+        "max_studies": {
+          "default": 2000,
+          "description": "Page-budget cap for client-side aggregation.",
+          "maximum": 10000,
+          "minimum": 1,
+          "title": "Max Studies",
+          "type": "integer"
+        },
+        "force_refresh": {
+          "default": false,
+          "description": "Bypass cache in live mode.",
+          "title": "Force Refresh",
+          "type": "boolean"
+        },
+        "debug": {
+          "default": false,
+          "description": "When true, echo the AnalysisPlan in meta.plan.",
+          "title": "Debug",
+          "type": "boolean"
+        }
+      },
+      "title": "RequestOptions",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A natural-language query plus optional structured hints.",
+  "properties": {
+    "query": {
+      "description": "The natural-language question.",
+      "minLength": 1,
+      "title": "Query",
+      "type": "string"
+    },
+    "drug_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Optional hint to the planner.",
+      "title": "Drug Name"
+    },
+    "condition": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Optional hint to the planner.",
+      "title": "Condition"
+    },
+    "sponsor": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Optional hint to the planner.",
+      "title": "Sponsor"
+    },
+    "phase": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Phase"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Optional hint to the planner."
+    },
+    "country": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Optional hint to the planner.",
+      "title": "Country"
+    },
+    "start_year": {
+      "anyOf": [
+        {
+          "maximum": 2100,
+          "minimum": 1900,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Year"
+    },
+    "end_year": {
+      "anyOf": [
+        {
+          "maximum": 2100,
+          "minimum": 1900,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End Year"
+    },
+    "options": {
+      "$ref": "#/$defs/RequestOptions"
+    }
+  },
+  "required": [
+    "query"
+  ],
+  "title": "VisualizationRequest",
+  "type": "object"
+}

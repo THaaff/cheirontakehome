@@ -1,0 +1,10 @@
+{
+  "operation": "categorical_distribution",
+  "entities": {
+    "condition": "melanoma"
+  },
+  "group_by": "phase",
+  "measure": "trial_count",
+  "proposed_viz": "bar_chart",
+  "interpretation": "Distribution of melanoma trials across clinical trial phases"
+}

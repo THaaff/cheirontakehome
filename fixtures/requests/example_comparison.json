@@ -1,0 +1,7 @@
+{
+  "query": "Compare the sponsor-class mix of melanoma trials versus lung cancer trials.",
+  "options": {
+    "mode": "replay",
+    "max_studies": 4000
+  }
+}
