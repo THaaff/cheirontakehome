@@ -1,0 +1,32 @@
+{
+  "operation": "time_trend",
+  "entities": {
+    "drug": null,
+    "condition": null,
+    "sponsor": null,
+    "terms": [
+      "immunotherapy"
+    ]
+  },
+  "filters": {
+    "statuses": [],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": 2019,
+    "end_year": null
+  },
+  "group_by": null,
+  "series": null,
+  "numeric_x": null,
+  "numeric_y": null,
+  "time_granularity": "year",
+  "measure": "trial_count",
+  "network": null,
+  "proposed_viz": "time_series",
+  "interpretation": "Annual count of immunotherapy trials over the last several years.",
+  "assumptions": [
+    "Interpreted 'recent' and 'the last several years' as starting from 2019.",
+    "Bucketed activity by year."
+  ]
+}

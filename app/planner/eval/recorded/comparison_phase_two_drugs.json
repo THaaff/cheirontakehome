@@ -1,0 +1,33 @@
+{
+  "operation": "comparison",
+  "entities": {
+    "drug": null,
+    "condition": null,
+    "sponsor": null,
+    "terms": []
+  },
+  "filters": {
+    "statuses": [],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": null,
+    "end_year": null
+  },
+  "group_by": "phase",
+  "series": {
+    "dimension": "drug",
+    "values": [
+      "nivolumab",
+      "pembrolizumab"
+    ]
+  },
+  "numeric_x": null,
+  "numeric_y": null,
+  "time_granularity": null,
+  "measure": null,
+  "network": null,
+  "proposed_viz": "grouped_bar_chart",
+  "interpretation": "Comparison of the phase distribution of trials for nivolumab versus pembrolizumab.",
+  "assumptions": []
+}

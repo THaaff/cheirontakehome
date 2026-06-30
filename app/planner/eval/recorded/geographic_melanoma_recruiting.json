@@ -1,0 +1,29 @@
+{
+  "operation": "geographic_distribution",
+  "entities": {
+    "drug": null,
+    "condition": "melanoma",
+    "sponsor": null,
+    "terms": []
+  },
+  "filters": {
+    "statuses": [
+      "RECRUITING"
+    ],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": null,
+    "end_year": null
+  },
+  "group_by": "country",
+  "series": null,
+  "numeric_x": null,
+  "numeric_y": null,
+  "time_granularity": null,
+  "measure": null,
+  "network": null,
+  "proposed_viz": "choropleth_map",
+  "interpretation": "Countries with the most actively recruiting melanoma trials.",
+  "assumptions": []
+}

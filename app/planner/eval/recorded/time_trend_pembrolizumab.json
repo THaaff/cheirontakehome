@@ -1,0 +1,29 @@
+{
+  "operation": "time_trend",
+  "entities": {
+    "drug": "pembrolizumab",
+    "condition": null,
+    "sponsor": null,
+    "terms": []
+  },
+  "filters": {
+    "statuses": [],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": 2018,
+    "end_year": null
+  },
+  "group_by": null,
+  "series": null,
+  "numeric_x": null,
+  "numeric_y": null,
+  "time_granularity": "year",
+  "measure": "trial_count",
+  "network": null,
+  "proposed_viz": "time_series",
+  "interpretation": "Shows the annual count of pembrolizumab trials starting from 2018 onward.",
+  "assumptions": [
+    "Interpreted 'since 2018' as trials with a start year of 2018 or later."
+  ]
+}

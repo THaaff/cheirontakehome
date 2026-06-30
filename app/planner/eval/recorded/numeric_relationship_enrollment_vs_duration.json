@@ -1,0 +1,27 @@
+{
+  "operation": "numeric_relationship",
+  "entities": {
+    "drug": null,
+    "condition": "lung cancer",
+    "sponsor": null,
+    "terms": []
+  },
+  "filters": {
+    "statuses": [],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": null,
+    "end_year": null
+  },
+  "group_by": null,
+  "series": null,
+  "numeric_x": "enrollment_count",
+  "numeric_y": "duration_days",
+  "time_granularity": null,
+  "measure": null,
+  "network": null,
+  "proposed_viz": "scatter_plot",
+  "interpretation": "Relationship between enrollment size and trial duration for lung cancer trials.",
+  "assumptions": []
+}
