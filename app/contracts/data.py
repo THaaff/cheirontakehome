@@ -64,6 +64,13 @@ class TidyDataset(BaseModel):
     points: list[DataPoint]
     dimension_names: list[str] = Field(description="The dim keys present, for the viz layer.")
     measure_name: str
+    warnings: list[str] = Field(
+        default_factory=list,
+        description=(
+            "Transform-stage warnings (e.g. excluded unparseable dates, empty input). "
+            "The orchestrator folds these into Meta.warnings; the viz layer ignores them."
+        ),
+    )
 
 
 class ChartDatum(BaseModel):
@@ -111,6 +118,13 @@ class GraphData(BaseModel):
 
     nodes: list[GraphNode] = Field(default_factory=list)
     edges: list[GraphEdge] = Field(default_factory=list)
+    warnings: list[str] = Field(
+        default_factory=list,
+        description=(
+            "Transform-stage warnings (e.g. empty input). The orchestrator folds these "
+            "into Meta.warnings; the viz layer ignores them."
+        ),
+    )
 
 
 # ---------------------------------------------------------------------------
