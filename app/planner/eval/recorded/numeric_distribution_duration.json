@@ -1,0 +1,27 @@
+{
+  "operation": "numeric_distribution",
+  "entities": {
+    "drug": null,
+    "condition": "diabetes",
+    "sponsor": null,
+    "terms": []
+  },
+  "filters": {
+    "statuses": [],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": null,
+    "end_year": null
+  },
+  "group_by": null,
+  "series": null,
+  "numeric_x": "duration_days",
+  "numeric_y": null,
+  "time_granularity": null,
+  "measure": null,
+  "network": null,
+  "proposed_viz": "histogram",
+  "interpretation": "Distribution of study durations for diabetes trials.",
+  "assumptions": []
+}

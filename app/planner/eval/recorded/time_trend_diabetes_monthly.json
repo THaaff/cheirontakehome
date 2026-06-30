@@ -1,0 +1,29 @@
+{
+  "operation": "time_trend",
+  "entities": {
+    "drug": null,
+    "condition": "diabetes",
+    "sponsor": null,
+    "terms": []
+  },
+  "filters": {
+    "statuses": [],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": null,
+    "end_year": null
+  },
+  "group_by": null,
+  "series": null,
+  "numeric_x": null,
+  "numeric_y": null,
+  "time_granularity": "month",
+  "measure": "trial_count",
+  "network": null,
+  "proposed_viz": "time_series",
+  "interpretation": "Monthly trend of new diabetes trials over time.",
+  "assumptions": [
+    "Assumed 'over time' means all available years, grouped by month."
+  ]
+}

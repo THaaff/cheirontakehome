@@ -1,0 +1,35 @@
+{
+  "operation": "cooccurrence_network",
+  "entities": {
+    "drug": null,
+    "condition": "breast cancer",
+    "sponsor": null,
+    "terms": []
+  },
+  "filters": {
+    "statuses": [],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": null,
+    "end_year": null
+  },
+  "group_by": null,
+  "series": null,
+  "numeric_x": null,
+  "numeric_y": null,
+  "time_granularity": null,
+  "measure": null,
+  "network": {
+    "node_types": [
+      "drug"
+    ],
+    "edge_semantics": "co_occurrence_in_trial",
+    "min_edge_weight": 2,
+    "max_nodes": 50,
+    "precompute_layout": true
+  },
+  "proposed_viz": "network_graph",
+  "interpretation": "Network of drug combinations commonly studied together in breast cancer trials.",
+  "assumptions": []
+}
