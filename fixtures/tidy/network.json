@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    {"id": "sponsor:merck-sharp-dohme", "label": "Merck Sharp & Dohme", "type": "sponsor", "weight": 41.0, "x": -0.21, "y": 0.55},
+    {"id": "sponsor:bristol-myers-squibb", "label": "Bristol-Myers Squibb", "type": "sponsor", "weight": 33.0, "x": 0.62, "y": 0.18},
+    {"id": "drug:pembrolizumab", "label": "Pembrolizumab", "type": "drug", "weight": 38.0, "x": -0.05, "y": -0.12,
+      "citations": [{"nct_id": "NCT02506153", "excerpt": "Pembrolizumab", "field": "protocolSection.armsInterventionsModule.interventions.name"}]},
+    {"id": "drug:nivolumab", "label": "Nivolumab", "type": "drug", "weight": 29.0, "x": 0.44, "y": -0.40,
+      "citations": [{"nct_id": "NCT02864251", "excerpt": "Nivolumab", "field": "protocolSection.armsInterventionsModule.interventions.name"}]},
+    {"id": "drug:ipilimumab", "label": "Ipilimumab", "type": "drug", "weight": 17.0, "x": 0.78, "y": -0.05}
+  ],
+  "edges": [
+    {"source": "sponsor:merck-sharp-dohme", "target": "drug:pembrolizumab", "weight": 31.0,
+      "citations": [{"nct_id": "NCT02506153", "excerpt": "Merck Sharp & Dohme + Pembrolizumab", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name"}]},
+    {"source": "sponsor:bristol-myers-squibb", "target": "drug:nivolumab", "weight": 24.0},
+    {"source": "sponsor:bristol-myers-squibb", "target": "drug:ipilimumab", "weight": 15.0},
+    {"source": "drug:nivolumab", "target": "drug:ipilimumab", "weight": 12.0}
+  ]
+}

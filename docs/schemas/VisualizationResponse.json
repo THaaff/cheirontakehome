@@ -1,0 +1,1066 @@
+{
+  "$defs": {
+    "AnalysisPlan": {
+      "additionalProperties": false,
+      "description": "The typed plan the planner emits and the executor consumes.\n\nThe ``model_validator`` below enforces the operation-to-required-fields\nmatrix from PRD Section C. The matrix's \"Sets proposed_viz to\" column is the\nplanner's convention (followed by the fixtures); ``proposed_viz`` is a free\n:class:`VizType` here so the documented geographic fallback to a ranked\n``bar_chart`` remains expressible.",
+      "properties": {
+        "operation": {
+          "$ref": "#/$defs/Operation",
+          "description": "The query class."
+        },
+        "entities": {
+          "$ref": "#/$defs/Entities"
+        },
+        "filters": {
+          "$ref": "#/$defs/Filters"
+        },
+        "group_by": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CategoricalField"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The categorical axis for distribution/comparison."
+        },
+        "series": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SeriesSpec"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Required for `comparison`."
+        },
+        "numeric_x": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NumericField"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Required for `numeric_distribution` and `numeric_relationship`."
+        },
+        "numeric_y": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NumericField"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Required for `numeric_relationship`."
+        },
+        "time_granularity": {
+          "default": "year",
+          "description": "For `time_trend`.",
+          "enum": [
+            "year",
+            "month"
+          ],
+          "title": "Time Granularity",
+          "type": "string"
+        },
+        "measure": {
+          "$ref": "#/$defs/Measure",
+          "default": "trial_count"
+        },
+        "network": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NetworkSpec"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Required for `cooccurrence_network`."
+        },
+        "proposed_viz": {
+          "$ref": "#/$defs/VizType",
+          "description": "The planner's suggested viz type."
+        },
+        "interpretation": {
+          "description": "One-sentence restatement, surfaced in meta.query_interpretation.",
+          "title": "Interpretation",
+          "type": "string"
+        },
+        "assumptions": {
+          "description": "e.g. \"interpreted 'recent' as since 2021\".",
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "operation",
+        "proposed_viz",
+        "interpretation"
+      ],
+      "title": "AnalysisPlan",
+      "type": "object"
+    },
+    "CategoricalField": {
+      "description": "Categorical dimensions we can group/distribute on.",
+      "enum": [
+        "phase",
+        "overall_status",
+        "study_type",
+        "lead_sponsor_class",
+        "intervention_type",
+        "country",
+        "condition"
+      ],
+      "title": "CategoricalField",
+      "type": "string"
+    },
+    "Channel": {
+      "additionalProperties": false,
+      "description": "A single encoding channel (semantic layer).",
+      "properties": {
+        "field": {
+          "description": "The data field this channel reads.",
+          "title": "Field",
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/$defs/ChannelType",
+          "description": "nominal / ordinal / quantitative / temporal."
+        },
+        "title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Axis/legend title.",
+          "title": "Title"
+        },
+        "sort": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional sort directive.",
+          "title": "Sort"
+        }
+      },
+      "required": [
+        "field",
+        "type"
+      ],
+      "title": "Channel",
+      "type": "object"
+    },
+    "ChannelType": {
+      "description": "Vega-Lite encoding channel types.",
+      "enum": [
+        "nominal",
+        "ordinal",
+        "quantitative",
+        "temporal"
+      ],
+      "title": "ChannelType",
+      "type": "string"
+    },
+    "ChartDatum": {
+      "additionalProperties": true,
+      "description": "Wire form for a single chart record.\n\nDimension and measure keys live in the allowed extras, so a record\nserializes as e.g. ``{\"phase\": \"PHASE3\", \"trial_count\": 78, \"citations\": [...]}``.\nVega-Lite simply ignores the ``citations`` key when rendering.",
+      "properties": {
+        "citations": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "title": "Citations",
+          "type": "array"
+        }
+      },
+      "title": "ChartDatum",
+      "type": "object"
+    },
+    "ChartVizSpec": {
+      "additionalProperties": false,
+      "description": "A chart visualization (Vega-Lite / Vega).",
+      "properties": {
+        "kind": {
+          "const": "chart",
+          "default": "chart",
+          "title": "Kind",
+          "type": "string"
+        },
+        "renderer": {
+          "$ref": "#/$defs/Renderer",
+          "description": "vega-lite or vega."
+        },
+        "type": {
+          "$ref": "#/$defs/VizType"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "encoding": {
+          "$ref": "#/$defs/Encoding"
+        },
+        "data": {
+          "items": {
+            "$ref": "#/$defs/ChartDatum"
+          },
+          "title": "Data",
+          "type": "array"
+        },
+        "vega_spec": {
+          "additionalProperties": true,
+          "description": "Concrete embedded spec with data inlined under data.values.",
+          "title": "Vega Spec",
+          "type": "object"
+        },
+        "hints": {
+          "$ref": "#/$defs/VizHints"
+        }
+      },
+      "required": [
+        "renderer",
+        "type",
+        "title",
+        "encoding",
+        "data",
+        "vega_spec"
+      ],
+      "title": "ChartVizSpec",
+      "type": "object"
+    },
+    "Citation": {
+      "additionalProperties": false,
+      "description": "A pointer from a computed datum back to a source trial record.",
+      "properties": {
+        "nct_id": {
+          "description": "e.g. NCT01234567.",
+          "title": "Nct Id",
+          "type": "string"
+        },
+        "excerpt": {
+          "description": "Exact text or field value from the API response supporting the datum.",
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "field": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Source field path, e.g. protocolSection.designModule.phases.",
+          "title": "Field"
+        }
+      },
+      "required": [
+        "nct_id",
+        "excerpt"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "EdgeSemantics": {
+      "description": "The meaning of an edge in a co-occurrence network.",
+      "enum": [
+        "co_occurrence_in_trial"
+      ],
+      "title": "EdgeSemantics",
+      "type": "string"
+    },
+    "Encoding": {
+      "additionalProperties": false,
+      "description": "Chart semantic encoding (matches the assignment's `encoding`).",
+      "properties": {
+        "x": {
+          "$ref": "#/$defs/Channel"
+        },
+        "y": {
+          "$ref": "#/$defs/Channel"
+        },
+        "color": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Channel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The series channel for grouped/comparison."
+        },
+        "column": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Channel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional facet."
+        },
+        "size": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Channel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional size channel."
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "Encoding",
+      "type": "object"
+    },
+    "Entities": {
+      "additionalProperties": false,
+      "description": "Extracted entities. Each maps to a CT.gov ``query.*`` parameter.",
+      "properties": {
+        "drug": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Maps to query.intr.",
+          "title": "Drug"
+        },
+        "condition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Maps to query.cond.",
+          "title": "Condition"
+        },
+        "sponsor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Maps to query.spons.",
+          "title": "Sponsor"
+        },
+        "terms": {
+          "description": "General terms -> query.term.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Terms",
+          "type": "array"
+        }
+      },
+      "title": "Entities",
+      "type": "object"
+    },
+    "Filters": {
+      "additionalProperties": false,
+      "description": "Server-side and transform-side filters extracted by the planner.",
+      "properties": {
+        "statuses": {
+          "description": "-> filter.overallStatus.",
+          "items": {
+            "$ref": "#/$defs/OverallStatus"
+          },
+          "title": "Statuses",
+          "type": "array"
+        },
+        "phases": {
+          "description": "-> filter.phase.",
+          "items": {
+            "$ref": "#/$defs/Phase"
+          },
+          "title": "Phases",
+          "type": "array"
+        },
+        "study_type": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/StudyType"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "countries": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Countries",
+          "type": "array"
+        },
+        "start_year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Applied during transform (date bucketing), not always server-side.",
+          "title": "Start Year"
+        },
+        "end_year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End Year"
+        }
+      },
+      "title": "Filters",
+      "type": "object"
+    },
+    "GraphData": {
+      "additionalProperties": false,
+      "description": "The node/edge payload for a network graph.",
+      "properties": {
+        "nodes": {
+          "items": {
+            "$ref": "#/$defs/GraphNode"
+          },
+          "title": "Nodes",
+          "type": "array"
+        },
+        "edges": {
+          "items": {
+            "$ref": "#/$defs/GraphEdge"
+          },
+          "title": "Edges",
+          "type": "array"
+        }
+      },
+      "title": "GraphData",
+      "type": "object"
+    },
+    "GraphEdge": {
+      "additionalProperties": false,
+      "description": "An edge in a co-occurrence network.",
+      "properties": {
+        "source": {
+          "description": "Node id.",
+          "title": "Source",
+          "type": "string"
+        },
+        "target": {
+          "description": "Node id.",
+          "title": "Target",
+          "type": "string"
+        },
+        "weight": {
+          "description": "Co-occurrence trial count.",
+          "title": "Weight",
+          "type": "number"
+        },
+        "citations": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "title": "Citations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source",
+        "target",
+        "weight"
+      ],
+      "title": "GraphEdge",
+      "type": "object"
+    },
+    "GraphEncoding": {
+      "additionalProperties": false,
+      "description": "Documents the node/edge channel mapping (fixed fields with defaults).",
+      "properties": {
+        "node_id": {
+          "default": "id",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "node_label": {
+          "default": "label",
+          "title": "Node Label",
+          "type": "string"
+        },
+        "node_group": {
+          "default": "type",
+          "title": "Node Group",
+          "type": "string"
+        },
+        "node_size": {
+          "default": "weight",
+          "title": "Node Size",
+          "type": "string"
+        },
+        "edge_source": {
+          "default": "source",
+          "title": "Edge Source",
+          "type": "string"
+        },
+        "edge_target": {
+          "default": "target",
+          "title": "Edge Target",
+          "type": "string"
+        },
+        "edge_weight": {
+          "default": "weight",
+          "title": "Edge Weight",
+          "type": "string"
+        }
+      },
+      "title": "GraphEncoding",
+      "type": "object"
+    },
+    "GraphNode": {
+      "additionalProperties": false,
+      "description": "A node in a co-occurrence network.",
+      "properties": {
+        "id": {
+          "description": "Stable id, e.g. drug:pembrolizumab.",
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "description": "Display label.",
+          "title": "Label",
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/$defs/NodeType"
+        },
+        "weight": {
+          "description": "e.g. trial count the node participates in.",
+          "title": "Weight",
+          "type": "number"
+        },
+        "x": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Precomputed layout coord (optional).",
+          "title": "X"
+        },
+        "y": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Y"
+        },
+        "citations": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "title": "Citations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "type",
+        "weight"
+      ],
+      "title": "GraphNode",
+      "type": "object"
+    },
+    "GraphVizSpec": {
+      "additionalProperties": false,
+      "description": "A network-graph visualization (own node/edge spec).",
+      "properties": {
+        "kind": {
+          "const": "graph",
+          "default": "graph",
+          "title": "Kind",
+          "type": "string"
+        },
+        "renderer": {
+          "const": "graph",
+          "default": "graph",
+          "title": "Renderer",
+          "type": "string"
+        },
+        "type": {
+          "const": "network_graph",
+          "default": "network_graph",
+          "title": "Type",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "encoding": {
+          "$ref": "#/$defs/GraphEncoding"
+        },
+        "data": {
+          "$ref": "#/$defs/GraphData"
+        },
+        "layout": {
+          "description": "precomputed if x/y set on nodes, else force.",
+          "enum": [
+            "precomputed",
+            "force"
+          ],
+          "title": "Layout",
+          "type": "string"
+        },
+        "hints": {
+          "$ref": "#/$defs/VizHints"
+        }
+      },
+      "required": [
+        "title",
+        "data",
+        "layout"
+      ],
+      "title": "GraphVizSpec",
+      "type": "object"
+    },
+    "Measure": {
+      "description": "The aggregated measure computed per group.\n\n``trial_count`` is the only measure the executor implements in v1.\n``enrollment_sum`` and ``enrollment_mean`` are defined now (so the contract\nis stable) but reserved for a later phase.",
+      "enum": [
+        "trial_count",
+        "enrollment_sum",
+        "enrollment_mean"
+      ],
+      "title": "Measure",
+      "type": "string"
+    },
+    "Meta": {
+      "additionalProperties": false,
+      "description": "Response metadata: interpretation, provenance counts, and warnings.",
+      "properties": {
+        "source": {
+          "default": "clinicaltrials.gov",
+          "title": "Source",
+          "type": "string"
+        },
+        "query_interpretation": {
+          "description": "From AnalysisPlan.interpretation.",
+          "title": "Query Interpretation",
+          "type": "string"
+        },
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "filters_applied": {
+          "additionalProperties": true,
+          "description": "The concrete filters used.",
+          "title": "Filters Applied",
+          "type": "object"
+        },
+        "total_studies_matched": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "From countTotal when available.",
+          "title": "Total Studies Matched"
+        },
+        "studies_analyzed": {
+          "description": "How many records the aggregation actually consumed.",
+          "title": "Studies Analyzed",
+          "type": "integer"
+        },
+        "data_timestamp": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "CT.gov dataTimestamp.",
+          "title": "Data Timestamp"
+        },
+        "warnings": {
+          "description": "e.g. \"312 studies had unparseable start dates and were excluded\".",
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "plan": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AnalysisPlan"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Populated only when options.debug is true."
+        }
+      },
+      "required": [
+        "query_interpretation",
+        "studies_analyzed"
+      ],
+      "title": "Meta",
+      "type": "object"
+    },
+    "NetworkSpec": {
+      "additionalProperties": false,
+      "description": "The configuration for a ``cooccurrence_network`` operation.",
+      "properties": {
+        "node_types": {
+          "description": "[sponsor, drug] for bipartite, [drug] for drug-drug.",
+          "items": {
+            "$ref": "#/$defs/NodeType"
+          },
+          "title": "Node Types",
+          "type": "array"
+        },
+        "edge_semantics": {
+          "$ref": "#/$defs/EdgeSemantics",
+          "default": "co_occurrence_in_trial"
+        },
+        "min_edge_weight": {
+          "default": 1,
+          "description": "Drop edges below this trial count.",
+          "title": "Min Edge Weight",
+          "type": "integer"
+        },
+        "max_nodes": {
+          "default": 50,
+          "description": "Readability / perf cap.",
+          "maximum": 200,
+          "minimum": 2,
+          "title": "Max Nodes",
+          "type": "integer"
+        },
+        "precompute_layout": {
+          "default": true,
+          "description": "Server-side spring_layout.",
+          "title": "Precompute Layout",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "node_types"
+      ],
+      "title": "NetworkSpec",
+      "type": "object"
+    },
+    "NodeType": {
+      "description": "Node categories in a co-occurrence network.",
+      "enum": [
+        "sponsor",
+        "drug",
+        "condition"
+      ],
+      "title": "NodeType",
+      "type": "string"
+    },
+    "NumericField": {
+      "description": "Numeric fields for histogram / scatter operations.",
+      "enum": [
+        "enrollment_count",
+        "duration_days"
+      ],
+      "title": "NumericField",
+      "type": "string"
+    },
+    "Operation": {
+      "description": "The closed set of query classes the planner may choose from.\n\nAdding a new analytical capability is \"add an enum value plus a handler\",\nnot \"rewrite the agent\". This closed world is what makes the planner a\nclassifier and makes hallucination of intent impossible.",
+      "enum": [
+        "time_trend",
+        "categorical_distribution",
+        "comparison",
+        "geographic_distribution",
+        "cooccurrence_network",
+        "numeric_distribution",
+        "numeric_relationship"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "OverallStatus": {
+      "description": "Trial recruitment status. Values mirror CT.gov ``overallStatus``.\n\nThis is the common subset. The authoritative full set comes from the CT.gov\nenums endpoint (``/stats/field/values`` and the data-model endpoints); the\nretrieval worktree may extend this enum after confirming values in the spike.",
+      "enum": [
+        "RECRUITING",
+        "NOT_YET_RECRUITING",
+        "ACTIVE_NOT_RECRUITING",
+        "ENROLLING_BY_INVITATION",
+        "COMPLETED",
+        "SUSPENDED",
+        "TERMINATED",
+        "WITHDRAWN",
+        "UNKNOWN"
+      ],
+      "title": "OverallStatus",
+      "type": "string"
+    },
+    "Phase": {
+      "description": "Trial phase. Values mirror CT.gov ``protocolSection.designModule.phases``.",
+      "enum": [
+        "EARLY_PHASE1",
+        "PHASE1",
+        "PHASE2",
+        "PHASE3",
+        "PHASE4",
+        "NA"
+      ],
+      "title": "Phase",
+      "type": "string"
+    },
+    "Renderer": {
+      "description": "How the frontend should render the spec.\n\n``vega-lite`` and ``vega`` are both *chart* renderers (hence ``renderer``\ncannot be the discriminator of :data:`~app.contracts.viz.VizSpec`);\n``graph`` is the node/edge renderer.",
+      "enum": [
+        "vega-lite",
+        "vega",
+        "graph"
+      ],
+      "title": "Renderer",
+      "type": "string"
+    },
+    "SeriesDimension": {
+      "description": "The dimension along which a ``comparison`` operation contrasts series.",
+      "enum": [
+        "drug",
+        "condition",
+        "sponsor"
+      ],
+      "title": "SeriesDimension",
+      "type": "string"
+    },
+    "SeriesSpec": {
+      "additionalProperties": false,
+      "description": "The series axis for a ``comparison`` operation.",
+      "properties": {
+        "dimension": {
+          "$ref": "#/$defs/SeriesDimension",
+          "description": "The thing being compared (e.g. condition)."
+        },
+        "values": {
+          "description": "The compared values, e.g. [\"melanoma\", \"lung cancer\"].",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Values",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dimension",
+        "values"
+      ],
+      "title": "SeriesSpec",
+      "type": "object"
+    },
+    "StudyType": {
+      "description": "Study type. Values mirror CT.gov ``protocolSection.designModule.studyType``.",
+      "enum": [
+        "INTERVENTIONAL",
+        "OBSERVATIONAL",
+        "EXPANDED_ACCESS"
+      ],
+      "title": "StudyType",
+      "type": "string"
+    },
+    "VizHints": {
+      "additionalProperties": false,
+      "description": "Free-form rendering hints for the frontend.",
+      "properties": {
+        "sort": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. -y for descending bars.",
+          "title": "Sort"
+        },
+        "x_time_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. year.",
+          "title": "X Time Unit"
+        },
+        "units": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. trials.",
+          "title": "Units"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Free-text rendering hint.",
+          "title": "Note"
+        }
+      },
+      "title": "VizHints",
+      "type": "object"
+    },
+    "VizType": {
+      "description": "The closed set of visualization types, one per operation.",
+      "enum": [
+        "bar_chart",
+        "grouped_bar_chart",
+        "time_series",
+        "scatter_plot",
+        "histogram",
+        "choropleth_map",
+        "network_graph"
+      ],
+      "title": "VizType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "The successful response envelope.",
+  "properties": {
+    "request_id": {
+      "description": "uuid4 string.",
+      "title": "Request Id",
+      "type": "string"
+    },
+    "visualization": {
+      "discriminator": {
+        "mapping": {
+          "chart": "#/$defs/ChartVizSpec",
+          "graph": "#/$defs/GraphVizSpec"
+        },
+        "propertyName": "kind"
+      },
+      "oneOf": [
+        {
+          "$ref": "#/$defs/ChartVizSpec"
+        },
+        {
+          "$ref": "#/$defs/GraphVizSpec"
+        }
+      ],
+      "title": "Visualization"
+    },
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    }
+  },
+  "required": [
+    "request_id",
+    "visualization",
+    "meta"
+  ],
+  "title": "VisualizationResponse",
+  "type": "object"
+}

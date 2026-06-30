@@ -1,0 +1,13 @@
+{
+  "operation": "geographic_distribution",
+  "entities": {
+    "condition": "melanoma"
+  },
+  "filters": {
+    "statuses": ["RECRUITING"]
+  },
+  "group_by": "country",
+  "measure": "trial_count",
+  "proposed_viz": "choropleth_map",
+  "interpretation": "Countries with the most actively recruiting melanoma trials"
+}

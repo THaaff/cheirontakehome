@@ -1,0 +1,46 @@
+{
+  "request_id": "e2a1f6b8-9c0d-4e7a-8b3c-1d2e3f4a5b6c",
+  "visualization": {
+    "kind": "graph",
+    "renderer": "graph",
+    "type": "network_graph",
+    "title": "Sponsor–drug co-occurrence network for melanoma trials",
+    "encoding": {
+      "node_id": "id",
+      "node_label": "label",
+      "node_group": "type",
+      "node_size": "weight",
+      "edge_source": "source",
+      "edge_target": "target",
+      "edge_weight": "weight"
+    },
+    "data": {
+      "nodes": [
+        {"id": "sponsor:merck-sharp-dohme", "label": "Merck Sharp & Dohme", "type": "sponsor", "weight": 41.0, "x": -0.21, "y": 0.55, "citations": [{"nct_id": "NCT02506153", "excerpt": "Merck Sharp & Dohme LLC", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name"}]},
+        {"id": "sponsor:bristol-myers-squibb", "label": "Bristol-Myers Squibb", "type": "sponsor", "weight": 33.0, "x": 0.62, "y": 0.18, "citations": [{"nct_id": "NCT02864251", "excerpt": "Bristol-Myers Squibb", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name"}]},
+        {"id": "drug:pembrolizumab", "label": "Pembrolizumab", "type": "drug", "weight": 38.0, "x": -0.05, "y": -0.12, "citations": [{"nct_id": "NCT02506153", "excerpt": "Pembrolizumab", "field": "protocolSection.armsInterventionsModule.interventions.name"}]},
+        {"id": "drug:nivolumab", "label": "Nivolumab", "type": "drug", "weight": 29.0, "x": 0.44, "y": -0.40, "citations": [{"nct_id": "NCT02864251", "excerpt": "Nivolumab", "field": "protocolSection.armsInterventionsModule.interventions.name"}]},
+        {"id": "drug:ipilimumab", "label": "Ipilimumab", "type": "drug", "weight": 17.0, "x": 0.78, "y": -0.05, "citations": [{"nct_id": "NCT03068455", "excerpt": "Ipilimumab", "field": "protocolSection.armsInterventionsModule.interventions.name"}]}
+      ],
+      "edges": [
+        {"source": "sponsor:merck-sharp-dohme", "target": "drug:pembrolizumab", "weight": 31.0, "citations": [{"nct_id": "NCT02506153", "excerpt": "Merck sponsors a pembrolizumab melanoma trial", "field": "protocolSection.armsInterventionsModule.interventions.name"}]},
+        {"source": "sponsor:bristol-myers-squibb", "target": "drug:nivolumab", "weight": 24.0, "citations": [{"nct_id": "NCT02864251", "excerpt": "BMS sponsors a nivolumab melanoma trial", "field": "protocolSection.armsInterventionsModule.interventions.name"}]},
+        {"source": "sponsor:bristol-myers-squibb", "target": "drug:ipilimumab", "weight": 15.0, "citations": [{"nct_id": "NCT03068455", "excerpt": "BMS sponsors an ipilimumab melanoma trial", "field": "protocolSection.armsInterventionsModule.interventions.name"}]},
+        {"source": "drug:nivolumab", "target": "drug:ipilimumab", "weight": 12.0, "citations": [{"nct_id": "NCT01844505", "excerpt": "Nivolumab + Ipilimumab combination", "field": "protocolSection.armsInterventionsModule.interventions.name"}]}
+      ]
+    },
+    "layout": "precomputed",
+    "hints": {"units": "trials", "note": "Node size encodes trial participation; edge weight encodes co-occurrence count."}
+  },
+  "meta": {
+    "source": "clinicaltrials.gov",
+    "query_interpretation": "Network of sponsors and drugs co-occurring in melanoma trials",
+    "assumptions": ["kept only edges with co-occurrence weight >= 2", "capped the graph at the 50 highest-weight nodes"],
+    "filters_applied": {"query.cond": "melanoma", "min_edge_weight": 2, "max_nodes": 50},
+    "total_studies_matched": 498,
+    "studies_analyzed": 498,
+    "data_timestamp": "2026-06-30T09:00:05",
+    "warnings": [],
+    "plan": null
+  }
+}

@@ -1,0 +1,3598 @@
+{
+  "totalCount": 2892,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03240016",
+          "briefTitle": "Abraxane With Anti-PD1/PDL1 in Patients With Advanced Urothelial Cancer"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2018-02-08"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University of Michigan Rogel Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06831955",
+          "briefTitle": "LifEStyle Intervention to Enhance Efficacy of Neoadjuvant Therapy in Patients With Triple Negative Breast Cancer"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2026-02-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Universitaire Ziekenhuizen KU Leuven",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02964078",
+          "briefTitle": "Interleukin-2 and Pembrolizumab for Metastatic Kidney Cancer"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-04-25"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "H. Lee Moffitt Cancer Center and Research Institute",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03666325",
+          "briefTitle": "Immunotherapy +/- EGFR Inhibitor In Advanced/Metastatic cSCC: Tackling Primary And Secondary Resistance"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2018-10-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Fondazione IRCCS Istituto Nazionale dei Tumori, Milano",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03695952",
+          "briefTitle": "A Prospective Cohort Study of Patients with Hepatobiliary Cancer Treated with Immune Checkpoint Inhibitors"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2018-07-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Asan Medical Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "South Korea"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06493552",
+          "briefTitle": "Modular Trial of sEphB4-HSA in EphrinB2-High Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2025-03-15"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Vasgene Therapeutics, Inc",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2",
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02009449",
+          "briefTitle": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2013-11-15"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Eli Lilly and Company",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05563558",
+          "briefTitle": "Pembrolizumab, Carboplatin and Cabazitaxel in Aggressive Metastatic Castration Resistant Prostate Cancer (PEAPOD_FOS)"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2023-05-05"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Fundacion Oncosur",
+            "class": "NETWORK"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Spain"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03978689",
+          "briefTitle": "A Phase 1 Study in Patients With HPV16+ Recurrent/ Metastatic Head and Neck Squamous Cell Carcinoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2019-07-30"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Cue Biopharma",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03684785",
+          "briefTitle": "Intratumoral Cavrotolimod Combined With Pembrolizumab or Cemiplimab in Patients With Merkel Cell Carcinoma, Cutaneous Squamous Cell Carcinoma, or Other Advanced Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2018-12-13"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Exicure, Inc.",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02362048",
+          "briefTitle": "ACP-196 Alone and in Combination With Pembrolizumab in Subjects With Advanced or Metastatic Pancreatic Cancer"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2015-05"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Acerta Pharma BV",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04938817",
+          "briefTitle": "Safety and Efficacy Study of Investigational Agents as Monotherapy or in Combination With Pembrolizumab (MK-3475) for the Treatment of Extensive-Stage Small Cell Lung Cancer (ES-SCLC) in Need of Second-Line Therapy (MK-3475-B98/KEYNOTE-B98)"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2021-08-19"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Merck Sharp & Dohme LLC",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Austria"
+            },
+            {
+              "country": "Austria"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Switzerland"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03841747",
+          "briefTitle": "Paclitaxel Plus Pembrolizumab vs. Paclitaxel Weekly in ER+ Luminal B Metastatic Breast Cancer"
+        },
+        "statusModule": {
+          "overallStatus": "WITHDRAWN",
+          "startDateStruct": {
+            "date": "2020-12"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Queen Mary University of London",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03069378",
+          "briefTitle": "A Study of Talimogene Laherparepvec (T-VEC) in Combination With Pembrolizumab in Patients With Metastatic and/or Locally Advanced Sarcoma"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2017-03-03"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Memorial Sloan Kettering Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04777708",
+          "briefTitle": "BO-112 and Pembrolizumab for the Treatment of PD-1/PD-L1 Refractory Liver Cancer"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2021-10-13"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Jonsson Comprehensive Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "EARLY_PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05393635",
+          "briefTitle": "ITIL-168 in Advanced Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "WITHDRAWN",
+          "startDateStruct": {
+            "date": "2022-08"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Instil Bio",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04318717",
+          "briefTitle": "Pembrolizumab and Hypofractionated Radiation Therapy for the Treatment of Mucosal Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2020-05-29"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Washington University School of Medicine",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05187182",
+          "briefTitle": "CA-4948 in Combination With FOLFOX/PD-1 Inhibitor +/- Trastuzumab for Untreated Unresectable Gastric and Esophageal Cancer"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2023-06-02"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Washington University School of Medicine",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05120596",
+          "briefTitle": "First in Human Study of T3P-Y058-739 (T3P)"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2022-04-26"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "T3 Pharmaceuticals AG",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Switzerland"
+            },
+            {
+              "country": "Switzerland"
+            },
+            {
+              "country": "Switzerland"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04165096",
+          "briefTitle": "KEYMAKER-U01 Substudy 3: Efficacy and Safety Study of Pembrolizumab (MK-3475) When Used With Investigational Agents in Participants With Advanced Non-small Cell Lung Cancer (NSCLC), Previously Treated With Anti-programmed Cell Death Receptor Ligand 1 (PD-L1) Therapy (MK-3475-01C/KEYMAKER-U01C)"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2020-01-21"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Merck Sharp & Dohme LLC",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03210662",
+          "briefTitle": "Pembrolizumab and External Beam Radiation Therapy in Treating Patients With Relapsed or Refractory Non-Hodgkin Lymphoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2018-02-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "M.D. Anderson Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06377566",
+          "briefTitle": "A Study of BV-AVD in People With Bulky Hodgkin Lymphoma"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2024-04-17"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Memorial Sloan Kettering Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06445972",
+          "briefTitle": "Substudy 06D: Combination Therapies in Second Line (2L) Gastroesophageal Adenocarcinoma (MK-3475-06D/Keymaker-U06)"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2024-08-07"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Merck Sharp & Dohme LLC",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Norway"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "Switzerland"
+            },
+            {
+              "country": "Switzerland"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03140137",
+          "briefTitle": "Immune Checkpoint Inhibitors and Pre-existing Autoimmune Diseases"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-01-21"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University Hospital, Brest",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05091346",
+          "briefTitle": "A Study of E7386 in Combination With Pembrolizumab in Previously Treated Participants With Selected Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2021-10-27"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Eisai Inc.",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04660929",
+          "briefTitle": "CAR-macrophages for the Treatment of HER2 Overexpressing Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2021-02-02"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Carisma Therapeutics Inc",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06146777",
+          "briefTitle": "Multi-classifier System for Stratifying Stage III Papillary Renal Cell Carcinoma of Receiving Adjuvant Therapy"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "startDateStruct": {
+            "date": "2023-12-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "First Affiliated Hospital, Sun Yat-Sen University",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02658097",
+          "briefTitle": "Pembrolizumab Alone or Sequentially Following Single Fraction Non-ablative Radiation to One of the Target Lesions, in Previously Treated Patients With Stage IV NSCLC"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-06-07"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Case Comprehensive Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02684461",
+          "briefTitle": "Phase II Trial of Sequential Consolidation With Pembrolizumab Followed by Nab-paclitaxel"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2016-09-13"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "UNC Lineberger Comprehensive Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02521870",
+          "briefTitle": "A Trial of Intratumoral Injections of SD-101 in Combination With Pembrolizumab in Patients With Metastatic Melanoma or Recurrent or Metastatic Head and Neck Squamous Cell Carcinoma"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2015-09"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Dynavax Technologies Corporation",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "New Zealand"
+            },
+            {
+              "country": "New Zealand"
+            },
+            {
+              "country": "New Zealand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05446129",
+          "briefTitle": "A Study in People With Colorectal Cancer to Test Whether Ezabenlimab or Pembrolizumab in Combination With BI 765063 Lead to Side Effects or Delays in Surgery"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2022-09-27"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Boehringer Ingelheim",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04443088",
+          "briefTitle": "An Open-Label Study of INV-1120 as a Single Agent and in Combination With Pembrolizumab in Adult Patients With Advanced Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2020-06-26"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Shenzhen Ionova Life Sciences Co., Ltd.",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05647954",
+          "briefTitle": "A Study of HX008 Plus Transcatheter Arterial Chemoembolization (TACE) in the First-Line Treatment of Subjects With Stage IV (M1c) Melanoma That is Metastatic to the Liver"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2022-12-31"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Taizhou Hanzhong biomedical co. LTD",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05172258",
+          "briefTitle": "Testing the Addition of an Anti-cancer Drug, Ipatasertib, to the Usual Immunotherapy Treatment (Pembrolizumab) in Patients With Recurrent or Metastatic Squamous Cell Cancer of the Head and Neck"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2022-07-26"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "National Cancer Institute (NCI)",
+            "class": "NIH"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05806385",
+          "briefTitle": "Grouping Immune-modulation With Cryoablation (LOGIC) for Breast Cancers"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "startDateStruct": {
+            "date": "2026-03"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Texas Tech University Health Sciences Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06797635",
+          "briefTitle": "Study of Patritumab Deruxtecan Plus Pembrolizumab With Other Anticancer Agents in Participants With High-Risk Early-Stage Triple-Negative or Hormone Receptor-Low Positive/HER-2 Negative Breast Cancer (MK-1022-010, HERTHENA-Breast-03)"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2025-03-20"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Merck Sharp & Dohme LLC",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03084640",
+          "briefTitle": "Phase 1B Study Evaluating Alternative Routes of Administration of CMP-001 in Combination With Pembrolizumab in Participants With Advanced Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-05-04"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Regeneron Pharmaceuticals",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06341478",
+          "briefTitle": "Investigator Grant (IG) 2022 27746"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2024-03-15"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "IRCCS San Raffaele",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "NA"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Italy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06006650",
+          "briefTitle": "Neoadjuvant Therapy for Stage II-IVA Resectable Esophageal Squamous Cell"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2022-08-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Tang-Du Hospital",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03530397",
+          "briefTitle": "A Study to Evaluate MEDI5752 in Subjects With Advanced Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2018-04-24"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "MedImmune LLC",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Netherlands"
+            },
+            {
+              "country": "Portugal"
+            },
+            {
+              "country": "Portugal"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05687266",
+          "briefTitle": "Phase III, Open-label, First-line Study of Dato-DXd in Combination With Durvalumab and Carboplatin for Advanced NSCLC Without Actionable Genomic Alterations"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2022-12-29"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "AstraZeneca",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Austria"
+            },
+            {
+              "country": "Austria"
+            },
+            {
+              "country": "Austria"
+            },
+            {
+              "country": "Austria"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Bulgaria"
+            },
+            {
+              "country": "Bulgaria"
+            },
+            {
+              "country": "Bulgaria"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Greece"
+            },
+            {
+              "country": "Greece"
+            },
+            {
+              "country": "Greece"
+            },
+            {
+              "country": "Greece"
+            },
+            {
+              "country": "Greece"
+            },
+            {
+              "country": "Greece"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "Hungary"
+            },
+            {
+              "country": "India"
+            },
+            {
+              "country": "India"
+            },
+            {
+              "country": "India"
+            },
+            {
+              "country": "India"
+            },
+            {
+              "country": "India"
+            },
+            {
+              "country": "India"
+            },
+            {
+              "country": "India"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Mexico"
+            },
+            {
+              "country": "Mexico"
+            },
+            {
+              "country": "Mexico"
+            },
+            {
+              "country": "Mexico"
+            },
+            {
+              "country": "Peru"
+            },
+            {
+              "country": "Peru"
+            },
+            {
+              "country": "Peru"
+            },
+            {
+              "country": "Peru"
+            },
+            {
+              "country": "Peru"
+            },
+            {
+              "country": "Peru"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Sweden"
+            },
+            {
+              "country": "Sweden"
+            },
+            {
+              "country": "Sweden"
+            },
+            {
+              "country": "Sweden"
+            },
+            {
+              "country": "Sweden"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Taiwan"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "Vietnam"
+            },
+            {
+              "country": "Vietnam"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05270213",
+          "briefTitle": "Evaluation of RBS2418 in Subjects With Advanced, Metastatic Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2022-07-11"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Riboscience, LLC.",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03061955",
+          "briefTitle": "Safety and Efficacy of Concurrent Administration of Influenza Vaccine in Patients Undergoing Anti-PD-1 Immunotherapy (Nivolumab, Pembrolizumab)"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2016-10-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Wake Forest University Health Sciences",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05419817",
+          "briefTitle": "Pembrolizumab With Sitravatinib in Recurrent Endometrial Cancer and Other Solid Tumors With Deficient Mismatch Repair System"
+        },
+        "statusModule": {
+          "overallStatus": "WITHDRAWN",
+          "startDateStruct": {
+            "date": "2022-09-08"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Haider Mahdi",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04394624",
+          "briefTitle": "Tusamitamab Ravtansine (SAR408701) in Combination With Ramucirumab or Ramucirumab and Pembrolizumab in Pretreated Patients With NSQ NSCLC (CARMEN-LC04)"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2020-08-31"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Sanofi",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Bulgaria"
+            },
+            {
+              "country": "Czechia"
+            },
+            {
+              "country": "Czechia"
+            },
+            {
+              "country": "Portugal"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03307785",
+          "briefTitle": "Study of Niraparib, TSR-022, Bevacizumab, and Platinum-Based Doublet Chemotherapy in Combination With TSR-042"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-10-12"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Tesaro, Inc.",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03316417",
+          "briefTitle": "Study of Adverse Renal Effects of Immune Checkpoints Inhibitors"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-10-27"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Hospices Civils de Lyon",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "France"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06142617",
+          "briefTitle": "A Prospective Study of Pembrolizumab Combining Chemotherapy in Advanced NSCLC Patients With EGFR Exon 21 Point Mutation."
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "startDateStruct": {
+            "date": "2023-12-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Peking Union Medical College Hospital",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05389527",
+          "briefTitle": "Pembrolizumab and Lenvatinib for Resectable Hepatocellular Carcinoma"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2022-09-30"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Shanghai Zhongshan Hospital",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            },
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06111196",
+          "briefTitle": "Compare the Pharmacokinetics and Safety of BAT3306 Injection Versus KEYTRUDA® Administered in Healthy Male Subjects"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2023-11-05"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Bio-Thera Solutions",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lp3DN_6varumpOQJJxpYvSt1fg"
+}

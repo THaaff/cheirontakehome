@@ -1,0 +1,16 @@
+{
+  "operation": "cooccurrence_network",
+  "entities": {
+    "condition": "melanoma"
+  },
+  "network": {
+    "node_types": ["sponsor", "drug"],
+    "edge_semantics": "co_occurrence_in_trial",
+    "min_edge_weight": 2,
+    "max_nodes": 50,
+    "precompute_layout": true
+  },
+  "measure": "trial_count",
+  "proposed_viz": "network_graph",
+  "interpretation": "Network of sponsors and drugs co-occurring in melanoma trials"
+}

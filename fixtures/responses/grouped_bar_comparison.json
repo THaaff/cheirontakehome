@@ -1,0 +1,55 @@
+{
+  "request_id": "b1d7a2c4-3e58-4f1a-9c2d-6a8b0e1f2c3d",
+  "visualization": {
+    "kind": "chart",
+    "renderer": "vega-lite",
+    "type": "grouped_bar_chart",
+    "title": "Sponsor-class mix: melanoma vs lung cancer trials",
+    "encoding": {
+      "x": {"field": "lead_sponsor_class", "type": "nominal", "title": "Lead sponsor class"},
+      "y": {"field": "trial_count", "type": "quantitative", "title": "Number of trials"},
+      "color": {"field": "series", "type": "nominal", "title": "Condition"}
+    },
+    "data": [
+      {"lead_sponsor_class": "INDUSTRY", "series": "melanoma", "trial_count": 132, "citations": [{"nct_id": "NCT02506153", "excerpt": "INDUSTRY", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}]},
+      {"lead_sponsor_class": "NIH", "series": "melanoma", "trial_count": 18, "citations": [{"nct_id": "NCT03635983", "excerpt": "NIH", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}]},
+      {"lead_sponsor_class": "OTHER", "series": "melanoma", "trial_count": 64, "citations": [{"nct_id": "NCT02452424", "excerpt": "OTHER", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}]},
+      {"lead_sponsor_class": "INDUSTRY", "series": "lung cancer", "trial_count": 201, "citations": [{"nct_id": "NCT02864251", "excerpt": "INDUSTRY", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}]},
+      {"lead_sponsor_class": "NIH", "series": "lung cancer", "trial_count": 27, "citations": [{"nct_id": "NCT03088540", "excerpt": "NIH", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}]},
+      {"lead_sponsor_class": "OTHER", "series": "lung cancer", "trial_count": 89, "citations": [{"nct_id": "NCT03217071", "excerpt": "OTHER", "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"}]}
+    ],
+    "vega_spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": "Sponsor-class mix: melanoma vs lung cancer trials",
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "lead_sponsor_class", "type": "nominal", "title": "Lead sponsor class"},
+        "y": {"field": "trial_count", "type": "quantitative", "title": "Number of trials"},
+        "xOffset": {"field": "series"},
+        "color": {"field": "series", "type": "nominal", "title": "Condition"}
+      },
+      "data": {
+        "values": [
+          {"lead_sponsor_class": "INDUSTRY", "series": "melanoma", "trial_count": 132},
+          {"lead_sponsor_class": "NIH", "series": "melanoma", "trial_count": 18},
+          {"lead_sponsor_class": "OTHER", "series": "melanoma", "trial_count": 64},
+          {"lead_sponsor_class": "INDUSTRY", "series": "lung cancer", "trial_count": 201},
+          {"lead_sponsor_class": "NIH", "series": "lung cancer", "trial_count": 27},
+          {"lead_sponsor_class": "OTHER", "series": "lung cancer", "trial_count": 89}
+        ]
+      }
+    },
+    "hints": {"units": "trials", "note": "Grouped bars: one cluster per sponsor class, one bar per condition."}
+  },
+  "meta": {
+    "source": "clinicaltrials.gov",
+    "query_interpretation": "Sponsor-class mix compared across melanoma and lung cancer trials",
+    "assumptions": ["counted each trial once under its lead sponsor's class"],
+    "filters_applied": {"series": {"dimension": "condition", "values": ["melanoma", "lung cancer"]}, "study_type": "INTERVENTIONAL"},
+    "total_studies_matched": 531,
+    "studies_analyzed": 531,
+    "data_timestamp": "2026-06-30T09:00:05",
+    "warnings": [],
+    "plan": null
+  }
+}

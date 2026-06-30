@@ -1,0 +1,11 @@
+{
+  "operation": "numeric_relationship",
+  "entities": {
+    "condition": "melanoma"
+  },
+  "numeric_x": "enrollment_count",
+  "numeric_y": "duration_days",
+  "measure": "trial_count",
+  "proposed_viz": "scatter_plot",
+  "interpretation": "Relationship between enrollment size and study duration for melanoma trials"
+}

@@ -1,0 +1,52 @@
+{
+  "request_id": "3f2504e0-4f89-41d3-9a0c-0305e82c3301",
+  "visualization": {
+    "kind": "chart",
+    "renderer": "vega-lite",
+    "type": "bar_chart",
+    "title": "Melanoma trials by clinical trial phase",
+    "encoding": {
+      "x": {"field": "phase", "type": "nominal", "title": "Phase", "sort": ["EARLY_PHASE1", "PHASE1", "PHASE2", "PHASE3", "PHASE4", "NA"]},
+      "y": {"field": "trial_count", "type": "quantitative", "title": "Number of trials"}
+    },
+    "data": [
+      {"phase": "EARLY_PHASE1", "trial_count": 12, "citations": [{"nct_id": "NCT04305041", "excerpt": "EARLY_PHASE1", "field": "protocolSection.designModule.phases"}]},
+      {"phase": "PHASE1", "trial_count": 143, "citations": [{"nct_id": "NCT03991403", "excerpt": "PHASE1", "field": "protocolSection.designModule.phases"}]},
+      {"phase": "PHASE2", "trial_count": 210, "citations": [{"nct_id": "NCT02452424", "excerpt": "PHASE2", "field": "protocolSection.designModule.phases"}]},
+      {"phase": "PHASE3", "trial_count": 78, "citations": [{"nct_id": "NCT02506153", "excerpt": "PHASE3", "field": "protocolSection.designModule.phases"}]},
+      {"phase": "PHASE4", "trial_count": 24, "citations": [{"nct_id": "NCT03066648", "excerpt": "PHASE4", "field": "protocolSection.designModule.phases"}]},
+      {"phase": "NA", "trial_count": 31, "citations": [{"nct_id": "NCT04007588", "excerpt": "NA", "field": "protocolSection.designModule.phases"}]}
+    ],
+    "vega_spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": "Melanoma trials by clinical trial phase",
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "phase", "type": "nominal", "title": "Phase", "sort": ["EARLY_PHASE1", "PHASE1", "PHASE2", "PHASE3", "PHASE4", "NA"]},
+        "y": {"field": "trial_count", "type": "quantitative", "title": "Number of trials"}
+      },
+      "data": {
+        "values": [
+          {"phase": "EARLY_PHASE1", "trial_count": 12},
+          {"phase": "PHASE1", "trial_count": 143},
+          {"phase": "PHASE2", "trial_count": 210},
+          {"phase": "PHASE3", "trial_count": 78},
+          {"phase": "PHASE4", "trial_count": 24},
+          {"phase": "NA", "trial_count": 31}
+        ]
+      }
+    },
+    "hints": {"units": "trials", "note": "Phases shown in canonical order, not by height."}
+  },
+  "meta": {
+    "source": "clinicaltrials.gov",
+    "query_interpretation": "Distribution of melanoma interventional trials across clinical trial phases",
+    "assumptions": [],
+    "filters_applied": {"query.cond": "melanoma"},
+    "total_studies_matched": 498,
+    "studies_analyzed": 498,
+    "data_timestamp": "2026-06-30T09:00:05",
+    "warnings": [],
+    "plan": null
+  }
+}

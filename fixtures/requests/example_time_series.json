@@ -1,0 +1,9 @@
+{
+  "query": "How has the number of trials for pembrolizumab changed per year since 2018?",
+  "drug_name": "pembrolizumab",
+  "start_year": 2018,
+  "options": {
+    "mode": "live",
+    "debug": true
+  }
+}

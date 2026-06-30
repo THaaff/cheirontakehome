@@ -224,7 +224,7 @@ Merge discipline: `app/api/` is touched twice but never concurrently. Contracts 
 - **HTTP:** httpx (async client) for the CT.gov calls.
 - **Graphs:** networkx (co-occurrence construction and `spring_layout`).
 - **Dates:** `python-dateutil` for tolerant parsing.
-- **LLM:** hosted Claude for the planner via native structured outputs. Default `claude-sonnet-4-6`; drop to Haiku 4.5 if the eval set passes and you want cheaper/faster. Read the key from `ANTHROPIC_API_KEY`.
+- **LLM:** hosted OpenAI for the planner via Structured Outputs (`strict: true` JSON-schema conformance, enforced by constrained decoding). Use the SDK's `responses.parse(..., text_format=PlannerOutput)` (or `chat.completions.parse(..., response_format=...)`), which returns a validated Pydantic instance. Default `PLANNER_MODEL=gpt-4.1` (supports Structured Outputs); `gpt-4.1-mini` is a cheaper, faster option in the same family if the eval set passes on it. Read the key from `OPENAI_API_KEY`. Note: strict mode has a known subset (forces `additionalProperties:false`, treats optionals as nullable, ignores some value constraints), so the planner targets a constraint-light schema and re-validates into the full IR (see the planner PRD).
 - **Tests/quality:** pytest, ruff, mypy (on `app/contracts` at minimum).
 - **Env/deps:** uv (fast, lockfile). pip + venv is an acceptable fallback.
 - **Demo (optional):** one static HTML page using `vega-embed` from a CDN, plus a small d3-force or cytoscape block for the network type. No build chain.
@@ -233,7 +233,7 @@ Merge discipline: `app/api/` is touched twice but never concurrently. Contracts 
 
 ## 11. Cross-cutting conventions
 
-- **Config:** a single `Settings` object (pydantic-settings) reading env vars: `ANTHROPIC_API_KEY`, `CTGOV_BASE_URL` (default the v2 base), `CACHE_DIR`, `PLANNER_MODEL`, `REQUEST_MODE` default.
+- **Config:** a single `Settings` object (pydantic-settings) reading env vars: `OPENAI_API_KEY`, `CTGOV_BASE_URL` (default the v2 base), `CACHE_DIR`, `PLANNER_MODEL` (default `gpt-4.1`), `REQUEST_MODE` default.
 - **Request modes:** `live` hits the API and the model; `replay` reads cached raw responses and recorded plans. Replay makes example runs deterministic and key-free for graders.
 - **Errors:** every stage raises a typed error mapped to an `ErrorResponse` with a `stage` field. HTTP mapping: 422 validation/planning input errors, 502 upstream CT.gov failures, 500 internal. Never return a 200 with fabricated or empty-but-unflagged data; an empty result set is a valid 200 with a `warnings` entry, not a silent blank chart.
 - **Provenance:** citations are attached in the transform layer and threaded through unchanged. Viz builders never invent citations.

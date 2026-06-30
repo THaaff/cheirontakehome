@@ -1,0 +1,9 @@
+{
+  "query": "What is the distribution of melanoma trials across clinical trial phases?",
+  "condition": "melanoma",
+  "options": {
+    "mode": "live",
+    "max_studies": 2000,
+    "debug": false
+  }
+}

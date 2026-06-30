@@ -1,0 +1,5913 @@
+{
+  "totalCount": 3723,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06506643",
+          "briefTitle": "Safety and Efficacy of KLS-1 Monotherapy in Malignant Neoplasms"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2024-05-15"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Vector Vitale LLC",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Ukraine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02009449",
+          "briefTitle": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2013-11-15"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Eli Lilly and Company",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01274338",
+          "briefTitle": "Ipilimumab or High-Dose Interferon Alfa-2b in Treating Patients With High-Risk Stage III-IV Melanoma That Has Been Removed by Surgery"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2011-06-17"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "National Cancer Institute (NCI)",
+            "class": "NIH"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00083252",
+          "briefTitle": "Study of Talabostat and Cisplatin in Advanced Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Point Therapeutics",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04272658",
+          "briefTitle": "PET/CT Whole-body Dynamic Acquisition at FDG to Metastatic Melanoma Under Immunotherapy"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2020-06-26"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University Hospital, Brest",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "France"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03176485",
+          "briefTitle": "Evaluation of Pathway Modulation by Raf, MEK, & Kinase Inhibitors"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2014-10-17"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University of Arizona",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "NA"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00828126",
+          "briefTitle": "PET-CT in the Management of Patients With Stage III or IV Metastatic Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2009-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "M.D. Anderson Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03684785",
+          "briefTitle": "Intratumoral Cavrotolimod Combined With Pembrolizumab or Cemiplimab in Patients With Merkel Cell Carcinoma, Cutaneous Squamous Cell Carcinoma, or Other Advanced Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2018-12-13"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Exicure, Inc.",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00019448",
+          "briefTitle": "Vaccine Therapy With or Without Interleukin-2 in Treating Patients With Metastatic Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "1998-09"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "National Cancer Institute (NCI)",
+            "class": "NIH"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00412425",
+          "briefTitle": "Palonosetron for Prevention of Biochemotherapy Induced Nausea and Vomiting"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2006-11"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "M.D. Anderson Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01359735",
+          "briefTitle": "Healing Effects of HP802-247 Versus Antibiotic Ointment in Mohs Micrographic Surgery Patients"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2011-05"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Healthpoint",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03986515",
+          "briefTitle": "Apatinib Plus SHR1210 in Advanced Mucosal Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2019-06-04"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Henan Cancer Hospital",
+            "class": "OTHER_GOV"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03033485",
+          "briefTitle": "18F-Labeled Picolinamide PET Imaging of Melanoma Diagnosis"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2017-12"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Xijing Hospital",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "NA"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05817149",
+          "briefTitle": "Perioperative Examination of Inflammatory Markers in Relation to Sentinel Lymph Node Biopsy in Patients With Melanoma; a Pilot Study"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2021-06-22"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Aalborg University Hospital",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Denmark"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03950635",
+          "briefTitle": "Dietary Intervention in Patients with a History of Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2019-04-16"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "M.D. Anderson Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04318717",
+          "briefTitle": "Pembrolizumab and Hypofractionated Radiation Therapy for the Treatment of Mucosal Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2020-05-29"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Washington University School of Medicine",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04894994",
+          "briefTitle": "FLX475 in Combination With Ipilimumab in Advanced Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2021-09-03"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "RAPT Therapeutics, Inc.",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01721772",
+          "briefTitle": "Study of Nivolumab (BMS-936558) Compared With Dacarbazine in Untreated, Unresectable, or Metastatic Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2013-01-18"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Bristol-Myers Squibb",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Argentina"
+            },
+            {
+              "country": "Argentina"
+            },
+            {
+              "country": "Argentina"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Chile"
+            },
+            {
+              "country": "Denmark"
+            },
+            {
+              "country": "Denmark"
+            },
+            {
+              "country": "Denmark"
+            },
+            {
+              "country": "Finland"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Greece"
+            },
+            {
+              "country": "Greece"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Mexico"
+            },
+            {
+              "country": "Mexico"
+            },
+            {
+              "country": "Mexico"
+            },
+            {
+              "country": "Mexico"
+            },
+            {
+              "country": "Norway"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Sweden"
+            },
+            {
+              "country": "Sweden"
+            },
+            {
+              "country": "Sweden"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00949702",
+          "briefTitle": "A Study of Vemurafenib in Previously Treated Patients With Metastatic Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2009-09-30"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Hoffmann-La Roche",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05418972",
+          "briefTitle": "A Phase 2 Clinical Trial of Neoadjuvant Relatlimab and Nivolumab in High Risk, Clinical Stage II Cutaneous Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2023-08-14"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Melanoma Institute Australia",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Australia"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05607095",
+          "briefTitle": "A Study of LN-144 or LN-145 in People With Advanced Uveal Melanoma, Undifferentiated Pleomorphic Sarcoma, or Dedifferentiated Liposarcoma"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2022-11-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Memorial Sloan Kettering Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02036086",
+          "briefTitle": "Study of Neo-adjuvant Use of Vemurafenib Plus Cobimetinib for BRAF Mutant Melanoma With Palpable Lymph Node Metastases"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2015-08"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Sunnybrook Health Sciences Centre",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00084656",
+          "briefTitle": "Monoclonal Antibody Therapy and Vaccine Therapy in Treating Patients With Resected Stage III or Stage IV Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2004-05-31"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Bristol-Myers Squibb",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05388851",
+          "briefTitle": "Education for Prevention of Melanoma in Hispanic Populations"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2022-01-12"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Mayo Clinic",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00395070",
+          "briefTitle": "A Phase 3 Pivotal Trial Comparing Allovectin-7® Alone vs Chemotherapy Alone in Patients With Stage 3 or Stage 4 Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2006-10"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Vical",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Brazil"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Israel"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Netherlands"
+            },
+            {
+              "country": "Netherlands"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Poland"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Russia"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Switzerland"
+            },
+            {
+              "country": "Switzerland"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            },
+            {
+              "country": "Turkey (Türkiye)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06291753",
+          "briefTitle": "Characteristics and Tumor Staging Proposal for Primary Malignant Melanoma of the Esophagus"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2023-09-22"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Sun Yat-sen University",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03140137",
+          "briefTitle": "Immune Checkpoint Inhibitors and Pre-existing Autoimmune Diseases"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-01-21"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University Hospital, Brest",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05091346",
+          "briefTitle": "A Study of E7386 in Combination With Pembrolizumab in Previously Treated Participants With Selected Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2021-10-27"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Eisai Inc.",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Japan"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            },
+            {
+              "country": "United Kingdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02917473",
+          "briefTitle": "Comparison of Two Strategies for Counseling Skin Examination and Sun Protection in First-degree Relatives of Patients With Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-12-13"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University Hospital, Tours",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "NA"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "France"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00346502",
+          "briefTitle": "Evaluation of 20% Betulinic Acid Ointment for Treatment of Dysplastic Nevi (Moderate to Severe Dysplasia)"
+        },
+        "statusModule": {
+          "overallStatus": "WITHDRAWN",
+          "startDateStruct": {
+            "date": "2006-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University of Illinois at Chicago",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06075524",
+          "briefTitle": "Evaluation of Anti-PD-1 Therapy by Monitoring T Cell Responses in Melanoma, Lung and Other Cancer Types"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2015-06-15"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Mayo Clinic",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04493723",
+          "briefTitle": "Serial Tumour Biopsies and Blood Biomarkers in Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2018-11-14"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "The Christie NHS Foundation Trust",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United Kingdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03313323",
+          "briefTitle": "Uptake and Biodistribution of 89Zirconium-labeled Ipilimumab in Ipilimumab Treated Patients With Metastatic Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2017-02-16"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Amsterdam UMC, location VUmc",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Netherlands"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00462280",
+          "briefTitle": "Lovastatin in Treating Patients At High Risk of Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2007-05"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "National Cancer Institute (NCI)",
+            "class": "NIH"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02521870",
+          "briefTitle": "A Trial of Intratumoral Injections of SD-101 in Combination With Pembrolizumab in Patients With Metastatic Melanoma or Recurrent or Metastatic Head and Neck Squamous Cell Carcinoma"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2015-09"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Dynavax Technologies Corporation",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "New Zealand"
+            },
+            {
+              "country": "New Zealand"
+            },
+            {
+              "country": "New Zealand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01590069",
+          "briefTitle": "Aerosolized Aldesleukin in Treating Patients With Lung Metastases"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2012-06-28"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "M.D. Anderson Cancer Center",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03993379",
+          "briefTitle": "PROCLAIM: CX-072-002: Study of PD-L1 Probody Therapeutic CX-072 in Combination With Other Anticancer Therapy in Adults With Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2019-11-20"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "CytomX Therapeutics",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Australia"
+            },
+            {
+              "country": "Netherlands"
+            },
+            {
+              "country": "Netherlands"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "South Korea"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01840527",
+          "briefTitle": "Utility of Novel BRAF Test for Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2013-05"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Massachusetts General Hospital",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01351103",
+          "briefTitle": "A Study of LGK974 in Patients With Malignancies Dependent on Wnt Ligands"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2011-12-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Novartis Pharmaceuticals",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Canada"
+            },
+            {
+              "country": "France"
+            },
+            {
+              "country": "Germany"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Italy"
+            },
+            {
+              "country": "Netherlands"
+            },
+            {
+              "country": "Netherlands"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            },
+            {
+              "country": "Spain"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04577742",
+          "briefTitle": "Uveal Melanoma and Brachytheraphy: Long-term Outcomes."
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2011-02-01"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Federico II University",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Italy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05647954",
+          "briefTitle": "A Study of HX008 Plus Transcatheter Arterial Chemoembolization (TACE) in the First-Line Treatment of Subjects With Stage IV (M1c) Melanoma That is Metastatic to the Liver"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2022-12-31"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Taizhou Hanzhong biomedical co. LTD",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06861647",
+          "briefTitle": "iSITE: Investigation of Somatic Alterations in Tumours of the Eye"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2019-03-25"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "The Wellcome Sanger Institute",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United Kingdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03084640",
+          "briefTitle": "Phase 1B Study Evaluating Alternative Routes of Administration of CMP-001 in Combination With Pembrolizumab in Participants With Advanced Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2017-05-04"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Regeneron Pharmaceuticals",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07260591",
+          "briefTitle": "VSV-02 Compassionate Use in Advanced Solid Tumors"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2025-09-22"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "The First Affiliated Hospital of Xinxiang Medical College",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03707574",
+          "briefTitle": "Genetic Analysis of Blood and Tissue Samples From Patients With Advanced Cancer, Moonshot Study"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2019-07-16"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "National Cancer Institute (NCI)",
+            "class": "NIH"
+          }
+        },
+        "designModule": {},
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "United States"
+            },
+            {
+              "country": "Puerto Rico"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05015816",
+          "briefTitle": "MoleGazer Development Feasibility Study"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "2021-09-13"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Oxford University Hospitals NHS Trust",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "NA"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United Kingdom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00036816",
+          "briefTitle": "Vaccine Therapy in Treating Patients With Melanoma of the Eye"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED",
+          "startDateStruct": {
+            "date": "2002-02"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "European Organisation for Research and Treatment of Cancer - EORTC",
+            "class": "NETWORK"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "Belgium"
+            },
+            {
+              "country": "Denmark"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04072900",
+          "briefTitle": "A Personalized NeoAntigen Cancer Vaccine Combined With Anti-PD-1 in Melanoma"
+        },
+        "statusModule": {
+          "overallStatus": "UNKNOWN",
+          "startDateStruct": {
+            "date": "2020-04-21"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Xiangya Hospital of Central South University",
+            "class": "OTHER"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "China"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02416336",
+          "briefTitle": "Evaluation of Intraoperative Usage of Sentinella in Detecting Sentinel Lymph Nodes"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2015-07"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Oncovision Inc",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "NA"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04060407",
+          "briefTitle": "CD24Fc With Ipilimumab and Nivolumab to Decrease irAE (CINDI)"
+        },
+        "statusModule": {
+          "overallStatus": "WITHDRAWN",
+          "startDateStruct": {
+            "date": "2021-06-15"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Oncoimmune, Inc., a subsidiary of Merck & Co., Inc. (Rahway, New Jersey USA)",
+            "class": "INDUSTRY"
+          }
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "country": "United States"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lp3DN_6varumpOQJJxqZfmi1Pg"
+}
