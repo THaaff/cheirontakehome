@@ -160,21 +160,33 @@ class Phase(enum.StrEnum):
 
 
 class OverallStatus(enum.StrEnum):
-    """Trial recruitment status. Values mirror CT.gov ``overallStatus``.
+    """Trial status. Values mirror CT.gov ``overallStatus`` (complete set).
 
-    This is the common subset. The authoritative full set comes from the CT.gov
-    enums endpoint (``/stats/field/values`` and the data-model endpoints); the
-    retrieval worktree may extend this enum after confirming values in the spike.
+    Covers both the recruitment statuses and the expanded-access / special
+    statuses (the last five). This is the authoritative set confirmed against
+    live data; completing it (rather than carrying a subset) keeps the principle
+    that our enums mirror the controlled vocabulary exactly, so a
+    ``categorical_distribution`` grouped by status reports distinct
+    expanded-access statuses instead of collapsing them into one misleadingly
+    fat ``UNKNOWN`` bucket. The retrieval parser still coerces any value outside
+    this set to :attr:`UNKNOWN` with a deduplicated warning, so a future API
+    addition never hard-fails — completion just narrows what falls through that
+    safety net.
     """
 
-    RECRUITING = "RECRUITING"
     NOT_YET_RECRUITING = "NOT_YET_RECRUITING"
-    ACTIVE_NOT_RECRUITING = "ACTIVE_NOT_RECRUITING"
+    RECRUITING = "RECRUITING"
     ENROLLING_BY_INVITATION = "ENROLLING_BY_INVITATION"
-    COMPLETED = "COMPLETED"
+    ACTIVE_NOT_RECRUITING = "ACTIVE_NOT_RECRUITING"
     SUSPENDED = "SUSPENDED"
     TERMINATED = "TERMINATED"
+    COMPLETED = "COMPLETED"
     WITHDRAWN = "WITHDRAWN"
+    AVAILABLE = "AVAILABLE"
+    NO_LONGER_AVAILABLE = "NO_LONGER_AVAILABLE"
+    TEMPORARILY_NOT_AVAILABLE = "TEMPORARILY_NOT_AVAILABLE"
+    APPROVED_FOR_MARKETING = "APPROVED_FOR_MARKETING"
+    WITHHELD = "WITHHELD"
     UNKNOWN = "UNKNOWN"
 
 

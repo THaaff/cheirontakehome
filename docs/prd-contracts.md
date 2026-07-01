@@ -78,8 +78,8 @@ Use `enum.StrEnum`. Values that map to the CT.gov API **mirror the API's control
 
 **`Phase`** (API values): `EARLY_PHASE1`, `PHASE1`, `PHASE2`, `PHASE3`, `PHASE4`, `NA`
 
-**`OverallStatus`** (API values, common subset): `RECRUITING`, `NOT_YET_RECRUITING`, `ACTIVE_NOT_RECRUITING`, `ENROLLING_BY_INVITATION`, `COMPLETED`, `SUSPENDED`, `TERMINATED`, `WITHDRAWN`, `UNKNOWN`
-> Note in a docstring: the authoritative full set comes from the API enums endpoint; the retrieval worktree may extend this.
+**`OverallStatus`** (API values, complete set, including expanded-access statuses): `NOT_YET_RECRUITING`, `RECRUITING`, `ENROLLING_BY_INVITATION`, `ACTIVE_NOT_RECRUITING`, `SUSPENDED`, `TERMINATED`, `COMPLETED`, `WITHDRAWN`, `AVAILABLE`, `NO_LONGER_AVAILABLE`, `TEMPORARILY_NOT_AVAILABLE`, `APPROVED_FOR_MARKETING`, `WITHHELD`, `UNKNOWN`
+> The last five are expanded-access / special statuses confirmed present in live data. The parser still coerces any value not in this set to `UNKNOWN` with a deduplicated warning, so a future API addition never hard-fails. Verify the set against the API enums endpoint during the spike and record it in `fixtures/raw/notes.md`.
 
 **`StudyType`** (API values): `INTERVENTIONAL`, `OBSERVATIONAL`, `EXPANDED_ACCESS`
 
@@ -223,6 +223,7 @@ The validator raises a `ValueError` (surfaced as a pydantic `ValidationError`) w
 | `points` | `list[DataPoint]` | |
 | `dimension_names` | `list[str]` | the dim keys present, for the viz layer |
 | `measure_name` | `str` | |
+| `warnings` | `list[str]` | default `[]`; aggregation-level notes (e.g. studies excluded for unparseable dates, empty input) |
 
 **`ChartDatum`** (wire form for chart `data`): a model with `model_config = ConfigDict(extra="allow")` and one explicit field `citations: list[Citation] = []`. Dimension and measure keys live in the allowed extras, so a record serializes as e.g. `{"phase":"PHASE3","trial_count":78,"citations":[...]}`. Vega-Lite ignores the `citations` key.
 
@@ -245,7 +246,7 @@ The validator raises a `ValueError` (surfaced as a pydantic `ValidationError`) w
 | `weight` | `float` | co-occurrence trial count |
 | `citations` | `list[Citation]` | default `[]` |
 
-**`GraphData`**: `{ nodes: list[GraphNode], edges: list[GraphEdge] }`
+**`GraphData`**: `{ nodes: list[GraphNode], edges: list[GraphEdge], warnings: list[str] = [] }` (`warnings` carries the same aggregation-level notes as `TidyDataset.warnings`, so the network path has a channel too).
 
 ### Section D2: retrieval-to-transform interface
 
