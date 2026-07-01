@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CT.gov Query → Visualization — demo</title>
+
+<!-- Everything from CDNs; no build step. vega-embed renders chart specs; d3 draws
+     the network spec (Vega-Lite can't do force-directed graphs). -->
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+<style>
+  :root { --ink:#1c2230; --muted:#667085; --line:#e4e7ec; --accent:#3457d5; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink); background:#f7f8fa; }
+  header { padding:18px 24px; background:#fff; border-bottom:1px solid var(--line); }
+  header h1 { margin:0 0 2px; font-size:18px; }
+  header p { margin:0; color:var(--muted); font-size:13px; }
+  .bonus { display:inline-block; margin-left:8px; padding:1px 7px; border-radius:10px;
+           background:#eef2ff; color:var(--accent); font-size:11px; font-weight:600; vertical-align:middle; }
+  .wrap { display:grid; grid-template-columns: 1fr 340px; gap:16px; padding:16px 24px; align-items:start; }
+  .controls { grid-column:1 / -1; display:flex; flex-wrap:wrap; gap:20px; align-items:end;
+              background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .field { display:flex; flex-direction:column; gap:4px; }
+  .field label { font-size:12px; color:var(--muted); font-weight:600; }
+  select, input, button { font:inherit; padding:7px 10px; border:1px solid var(--line); border-radius:8px; background:#fff; }
+  input#query { min-width:340px; }
+  button { background:var(--accent); color:#fff; border-color:var(--accent); cursor:pointer; font-weight:600; }
+  button:disabled { opacity:.5; cursor:progress; }
+  .hint { font-size:12px; color:var(--muted); }
+  #stage { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; min-height:420px; }
+  #interpretation { font-size:14px; margin:0 0 10px; }
+  #interpretation .op { color:var(--accent); font-weight:600; }
+  #warnings { color:#b54708; font-size:12.5px; margin:6px 0 0; }
+  /* vega-embed makes its container inline-block, which collapses width:"container"
+     to zero. Force the host + wrapper to fill the stage so charts size to it. */
+  #viz { width:100%; }
+  #viz.vega-embed, #viz .vega-embed { display:block; width:100%; }
+  #viz svg { max-width:100%; height:auto; }
+  aside { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; position:sticky; top:16px; }
+  aside h3 { margin:0 0 4px; font-size:14px; }
+  aside .muted, .muted { color:var(--muted); font-size:12.5px; }
+  aside ul { list-style:none; padding:0; margin:8px 0 0; max-height:60vh; overflow:auto; }
+  aside li { padding:5px 0; border-top:1px solid var(--line); font-size:12.5px; }
+  aside a { color:var(--accent); text-decoration:none; font-variant-numeric:tabular-nums; }
+  aside a:hover { text-decoration:underline; }
+  .pager { display:flex; align-items:center; gap:10px; margin-top:10px; font-size:12px; }
+  .pager button { padding:3px 9px; border:1px solid var(--line); border-radius:6px; background:#fff;
+                  color:var(--ink); cursor:pointer; font-weight:600; }
+  .pager button:disabled { opacity:.4; cursor:default; }
+  .pager .range { color:var(--muted); font-variant-numeric:tabular-nums; }
+  .legend span { display:inline-flex; align-items:center; gap:5px; margin-right:12px; font-size:12px; color:var(--muted); }
+  .dot { width:11px; height:11px; border-radius:50%; display:inline-block; }
+  #tooltip { position:fixed; display:none; pointer-events:none; z-index:10; max-width:320px;
+             background:#111827; color:#fff; padding:7px 9px; border-radius:7px; font-size:12px; box-shadow:0 4px 14px rgba(0,0,0,.25); }
+  #tooltip a { color:#93c5fd; }
+  .err { color:#b42318; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ClinicalTrials.gov · Query → Visualization <span class="bonus">optional bonus demo</span></h1>
+  <p>The model plans; code computes every number. Each chart/graph carries per-datum citations back to the source trials — <strong>hover a network node or edge, or click a chart mark</strong>.</p>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="field">
+      <label for="example">Browse a captured example — offline, no key</label>
+      <select id="example"></select>
+    </div>
+    <div class="field">
+      <label for="query">…or ask a live question (needs the API on :8000 + an OpenAI key)</label>
+      <div style="display:flex; gap:8px;">
+        <input id="query" placeholder="e.g. Which countries run the most recruiting melanoma trials?" />
+        <button id="run">Ask</button>
+      </div>
+    </div>
+    <div class="hint" id="mode-note"></div>
+  </div>
+
+  <div id="stage">
+    <p id="interpretation" class="muted">Loading examples…</p>
+    <div class="legend" id="legend"></div>
+    <div id="warnings"></div>
+    <div id="viz"></div>
+  </div>
+
+  <aside>
+    <h3 id="cite-title">Citations</h3>
+    <div class="muted" id="cite-sub">Hover a node/edge or click a bar to trace the underlying trials.</div>
+    <ul id="cite-list"></ul>
+    <div class="pager" id="cite-pager"></div>
+  </aside>
+</div>
+
+<div id="tooltip"></div>
+
+<script>
+const API = "http://localhost:8000/visualize";
+const CTGOV = "https://clinicaltrials.gov/study/";
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+// ---- citations panel + tooltip --------------------------------------------
+// The citations array in a datum is a capped sample (Settings.max_citations_per_datum);
+// `total` is the datum's true contributor count (bar value / node weight), so the
+// panel can say "showing N of TOTAL" and page through the sample it does have.
+const CITE_PAGE = 25;
+let CITE = { title: "Citations", list: [], total: 0, page: 0 };
+
+function showCitations(title, citations, total) {
+  const list = citations || [];
+  CITE = { title, list, total: total != null ? total : list.length, page: 0 };
+  renderCitePage();
+}
+
+function renderCitePage() {
+  const { title, list, total, page } = CITE;
+  const shown = list.length;
+  const sampled = shown < total;  // the datum carried more contributors than we kept
+  $("#cite-title").textContent = title;
+  $("#cite-sub").innerHTML =
+    `<strong>${total}</strong> source trial(s) → ClinicalTrials.gov` +
+    (sampled ? ` · first <strong>${shown}</strong> traced here` : "");
+
+  const start = page * CITE_PAGE, end = Math.min(start + CITE_PAGE, shown);
+  const ul = $("#cite-list"); ul.innerHTML = "";
+  list.slice(start, end).forEach(c => {
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="${CTGOV}${esc(c.nct_id)}" target="_blank" rel="noopener">${esc(c.nct_id)}</a>` +
+                   (c.excerpt ? ` — ${esc(c.excerpt)}` : "");
+    ul.appendChild(li);
+  });
+
+  const pager = $("#cite-pager");
+  if (shown > CITE_PAGE) {
+    pager.innerHTML =
+      `<button id="cite-prev"${page === 0 ? " disabled" : ""}>‹ Prev</button>` +
+      `<span class="range">${start + 1}–${end} of ${shown}</span>` +
+      `<button id="cite-next"${end >= shown ? " disabled" : ""}>Next ›</button>`;
+    $("#cite-prev").onclick = () => { if (CITE.page > 0) { CITE.page--; renderCitePage(); } };
+    $("#cite-next").onclick = () => { if ((CITE.page + 1) * CITE_PAGE < shown) { CITE.page++; renderCitePage(); } };
+  } else {
+    pager.innerHTML = "";
+  }
+}
+function moveTip(ev, title, citations) {
+  const t = $("#tooltip");
+  const ids = (citations || []).slice(0, 6).map(c => c.nct_id).join(", ");
+  const extra = (citations || []).length > 6 ? " …" : "";
+  t.style.display = "block";
+  t.style.left = (ev.clientX + 14) + "px";
+  t.style.top = (ev.clientY + 14) + "px";
+  t.innerHTML = `<strong>${esc(title)}</strong><br>${(citations || []).length} citations` + (ids ? `: ${esc(ids)}${extra}` : "");
+}
+const hideTip = () => { $("#tooltip").style.display = "none"; };
+
+// ---- render dispatch ------------------------------------------------------
+function renderResponse(resp) {
+  hideTip();
+  const viz = resp.visualization, meta = resp.meta || {};
+  const opLine = viz.kind === "graph" ? "network_graph" : viz.type;
+  $("#interpretation").innerHTML =
+    `<span class="op">${esc(opLine)}</span> — ${esc(meta.query_interpretation || viz.title || "")}` +
+    (meta.studies_analyzed != null ? ` <span class="muted">· ${meta.studies_analyzed} studies analyzed`
+      + (meta.total_studies_matched != null ? ` of ${meta.total_studies_matched} matched` : "") + `</span>` : "");
+  $("#warnings").innerHTML = (meta.warnings || []).map(w => "⚠ " + esc(w)).join("<br>");
+  $("#legend").innerHTML = "";
+  $("#viz").innerHTML = "";
+  $("#cite-title").textContent = "Citations";
+  $("#cite-sub").innerHTML = "Hover a node/edge or click a bar to trace the underlying trials.";
+  $("#cite-list").innerHTML = "";
+  $("#cite-pager").innerHTML = "";
+  if (viz.kind === "graph") renderGraph(viz); else renderChart(viz);
+}
+
+// The committed specs carry no width/height, so Vega-Lite falls back to a tiny
+// default (~20px per bar). Make cartesian charts fill the stage width, give maps
+// real estate, and bump the fonts so an enlarged chart stays legible. We size at
+// render time (rather than baking it into the server spec) so this stays a
+// demo-only concern and other clients get the raw, layout-agnostic spec.
+function sizeSpec(spec) {
+  const s = { ...spec };
+  const isGeo = s.mark === "geoshape" || !!s.projection;
+  if (s.width == null) s.width = "container";
+  if (s.height == null) s.height = isGeo ? 460 : 380;
+  s.autosize = s.autosize || { type: "fit-x", contains: "padding", resize: true };
+  s.config = Object.assign(
+    { axis: { labelFontSize: 12, titleFontSize: 13 },
+      legend: { labelFontSize: 12, titleFontSize: 13 },
+      title: { fontSize: 15 } },
+    s.config || {},
+  );
+  return s;
+}
+
+// Charts: hand the embedded Vega-Lite spec straight to vega-embed. On click,
+// map the clicked datum back to the semantic `data` record and surface its
+// citations. Matching is exact on every dimension except a temporal axis, whose
+// inlined string ("2024") Vega parses into an epoch timestamp — so we compare the
+// period instead (this is what had broken click-to-cite on the time series).
+async function renderChart(viz) {
+  const res = await vegaEmbed("#viz", sizeSpec(viz.vega_spec), { actions: false, tooltip: true, renderer: "svg" });
+  const records = viz.data || [];
+  const enc = viz.encoding || {};
+  const timeField = [enc.x, enc.y, enc.color, enc.column, enc.size]
+    .find(c => c && c.type === "temporal") ?.field;
+  const keysOf = (r) => Object.keys(r).filter(k => k !== "citations");
+  const matches = (r, datum) => keysOf(r).every(k =>
+    k === timeField ? samePeriod(r[k], datum[k]) : String(r[k]) === String(datum[k]));
+
+  res.view.addEventListener("click", (_e, item) => {
+    if (!item || !item.datum) return;
+    const rec = records.find(r => matches(r, item.datum));
+    if (!rec) return;
+    const dims = keysOf(rec).filter(k => k !== "trial_count");
+    const label = `${viz.type}: ${dims.map(k => rec[k]).join(" · ")}`;
+    // For a count measure the value IS the true contributor total; citations are a sample.
+    const total = rec.trial_count != null ? Number(rec.trial_count) : rec.citations.length;
+    showCitations(label, rec.citations, total);
+  });
+}
+
+// A record's temporal value is a string ("2024" or "2024-03"); the clicked
+// datum's is an epoch timestamp. Compare by year (and month, if monthly).
+function samePeriod(recVal, datumVal) {
+  const s = String(recVal);
+  const d = new Date(datumVal);
+  if (isNaN(+d)) return s === String(datumVal);
+  if (/^\d{4}-\d{2}$/.test(s)) {
+    return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}` === s;
+  }
+  return String(d.getUTCFullYear()) === s;
+}
+
+// Network: a small d3-force block, seeded from the server-precomputed x/y so the
+// layout matches the spec, with citations surfaced on hover and click.
+function renderGraph(viz) {
+  const nodes = viz.data.nodes.map(n => ({ ...n }));
+  const links = viz.data.edges.map(e => ({
+    source: e.source, target: e.target, weight: e.weight,
+    citations: e.citations, label: `${e.source} + ${e.target}`,
+  }));
+  const color = (t) => t === "sponsor" ? "#3457d5" : t === "drug" ? "#e4572e" : "#2a9d8f";
+  $("#legend").innerHTML =
+    `<span><i class="dot" style="background:#3457d5"></i>sponsor</span>` +
+    `<span><i class="dot" style="background:#e4572e"></i>drug</span>` +
+    `<span class="muted">node size = trials · edge width = co-occurrence count</span>` +
+    `<span class="muted">scroll to zoom · drag background to pan · double-click to fit</span>`;
+
+  // Draw into a generous virtual canvas and let zoom/pan do the framing, rather
+  // than cramming the layout into a fixed box (which is what made it feel "zoomed
+  // in" with no way out). Everything lives inside `g`, which the zoom transforms.
+  const width = 1000, height = 680;
+  const svg = d3.select("#viz").append("svg")
+    .attr("viewBox", [0, 0, width, height]).attr("width", "100%")
+    .style("max-height", "72vh").style("touch-action", "none").style("cursor", "grab")
+    .style("background", "#fcfcfd").style("border", "1px solid var(--line)").style("border-radius", "8px");
+  const g = svg.append("g");
+  const rScale = d3.scaleSqrt().domain([1, d3.max(nodes, d => d.weight) || 1]).range([5, 26]);
+
+  // Seed positions from the precomputed layout (scaled into the virtual canvas).
+  const xs = nodes.map(n => n.x ?? 0), ys = nodes.map(n => n.y ?? 0);
+  const sx = d3.scaleLinear().domain([Math.min(...xs), Math.max(...xs)]).range([60, width - 60]);
+  const sy = d3.scaleLinear().domain([Math.min(...ys), Math.max(...ys)]).range([60, height - 60]);
+  nodes.forEach(n => { n.x = sx(n.x ?? 0); n.y = sy(n.y ?? 0); });
+
+  const link = g.append("g").attr("stroke", "#c3c9d2").attr("stroke-opacity", 0.8)
+    .selectAll("line").data(links).join("line").attr("stroke-width", d => Math.max(1, Math.sqrt(d.weight)));
+  const node = g.append("g").attr("stroke", "#fff").attr("stroke-width", 1.5)
+    .selectAll("circle").data(nodes).join("circle")
+    .attr("r", d => rScale(d.weight)).attr("fill", d => color(d.type)).style("cursor", "pointer");
+  const label = g.append("g").selectAll("text").data(nodes).join("text")
+    .text(d => d.label).attr("font-size", 10).attr("fill", "#344054").attr("dx", 9).attr("dy", 3)
+    .attr("stroke", "#fcfcfd").attr("stroke-width", 3).attr("paint-order", "stroke")  // halo for legibility
+    .style("pointer-events", "none");
+
+  // Pan + zoom. d3-drag stops propagation on node grabs, so dragging a node never
+  // also pans the canvas. Fit the whole graph into view once the layout settles
+  // (and on double-click), so nothing spills off-screen unreachably.
+  const zoom = d3.zoom().scaleExtent([0.1, 6]).on("zoom", (ev) => g.attr("transform", ev.transform));
+  svg.call(zoom).on("dblclick.zoom", null);
+  function fitToView(duration) {
+    let a = Infinity, b = Infinity, c = -Infinity, e = -Infinity;
+    nodes.forEach(n => { const r = rScale(n.weight) + 20;
+      a = Math.min(a, n.x - r); c = Math.max(c, n.x + r); b = Math.min(b, n.y - r); e = Math.max(e, n.y + r); });
+    const w = Math.max(1, c - a), h = Math.max(1, e - b), pad = 40;
+    const k = Math.min((width - 2 * pad) / w, (height - 2 * pad) / h, 2.5);
+    const tx = (width - k * (a + c)) / 2, ty = (height - k * (b + e)) / 2;
+    svg.transition().duration(duration).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
+  }
+  svg.on("dblclick", () => fitToView(400));
+
+  const sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(85).strength(0.15))
+    .force("charge", d3.forceManyBody().strength(-140))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .alpha(0.55)
+    .on("tick", () => {
+      link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+      node.attr("cx", d => d.x).attr("cy", d => d.y);
+      label.attr("x", d => d.x).attr("y", d => d.y);
+    })
+    .on("end", () => fitToView(500));
+
+  // weight is the true trial count; d.citations is a capped sample of it.
+  node.on("mousemove", (ev, d) => moveTip(ev, `${d.label} (${d.type}, ${d.weight} trials)`, d.citations))
+      .on("mouseout", hideTip)
+      .on("click", (_e, d) => showCitations(`Node · ${d.label}`, d.citations, d.weight))
+      .call(d3.drag()
+        .on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+        .on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
+        .on("end", (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+  link.on("mousemove", (ev, d) => moveTip(ev, d.label, d.citations))
+      .on("mouseout", hideTip)
+      .on("click", (_e, d) => showCitations(`Edge · ${d.label}`, d.citations, d.weight));
+}
+
+// ---- offline examples + live query ----------------------------------------
+let EXAMPLES = [];
+async function loadExamples() {
+  try {
+    const bundle = await (await fetch("examples.json")).json();
+    EXAMPLES = bundle.examples || [];
+    const sel = $("#example");
+    sel.innerHTML = "";
+    EXAMPLES.forEach((ex, i) => {
+      const o = document.createElement("option");
+      o.value = i; o.textContent = ex.title || ex.name;
+      sel.appendChild(o);
+    });
+    if (EXAMPLES.length) { sel.value = "3"; renderResponse(EXAMPLES[3].response); } // default: the network (best citations)
+    else $("#interpretation").textContent = "No examples.json found — run scripts/capture_examples.py first.";
+  } catch (e) {
+    $("#interpretation").innerHTML = `<span class="err">Could not load examples.json (${esc(e.message)}). Serve this folder: <code>python -m http.server -d demo 8080</code>.</span>`;
+  }
+}
+$("#example").addEventListener("change", (e) => renderResponse(EXAMPLES[+e.target.value].response));
+
+async function runLive() {
+  const query = $("#query").value.trim();
+  if (!query) return;
+  const btn = $("#run"); btn.disabled = true; btn.textContent = "…";
+  $("#mode-note").textContent = "";
+  try {
+    const r = await fetch(API, {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ query, options: { mode: "live" } }),
+    });
+    const body = await r.json();
+    if (!r.ok) throw new Error((body.error && body.error.message) || `HTTP ${r.status}`);
+    renderResponse(body);
+  } catch (e) {
+    $("#mode-note").innerHTML = `<span class="err">Live query failed: ${esc(e.message)}. Start the API (<code>uv run uvicorn app.api.main:app --port 8000</code>) with an OPENAI_API_KEY.</span>`;
+  } finally {
+    btn.disabled = false; btn.textContent = "Ask";
+  }
+}
+$("#run").addEventListener("click", runLive);
+$("#query").addEventListener("keydown", (e) => { if (e.key === "Enter") runLive(); });
+$("#mode-note").textContent = "Live queries plan with the LLM (need a key); the example browser is fully offline.";
+
+loadExamples();
+</script>
+</body>
+</html>

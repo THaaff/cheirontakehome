@@ -1,0 +1,16 @@
+{
+  "query": "Compare the types of sponsors running melanoma trials versus lung cancer trials.",
+  "drug_name": null,
+  "condition": null,
+  "sponsor": null,
+  "phase": null,
+  "country": null,
+  "start_year": null,
+  "end_year": null,
+  "options": {
+    "mode": "replay",
+    "max_studies": 25000,
+    "force_refresh": false,
+    "debug": false
+  }
+}

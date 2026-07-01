@@ -39,7 +39,7 @@ from app.planner import PlanningError, plan_query
 from app.retrieval import retrieve
 from app.retrieval.errors import RetrievalError
 from app.retrieval.query_builder import build_server_params
-from app.transform import dispatch
+from app.transform import cap_citations, dispatch
 from app.validation import validate_output
 from app.viz import build_viz
 
@@ -90,6 +90,11 @@ async def run_pipeline(
         retr = _meta_from(result)
         data = _transform(plan, result.studies, request_id)
 
+    # Trim the per-datum citation sample so a full-corpus analysis stays small on
+    # the wire; the computed counts are already fixed and are left untouched.
+    cap = settings.max_citations_per_datum
+    data = cap_citations(data, cap)
+
     viz_spec = _build_viz(data, plan, request_id)
     val_warnings = _validate(viz_spec, data, request_id)
 
@@ -100,6 +105,7 @@ async def run_pipeline(
         total_studies_matched=retr.total_matched,
         studies_analyzed=retr.studies_analyzed,
         data_timestamp=retr.data_timestamp,
+        citation_cap=cap if cap and cap > 0 else None,
         warnings=[*retr.warnings, *data.warnings, *val_warnings],
         plan=plan if options.debug else None,
     )

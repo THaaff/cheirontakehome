@@ -1,0 +1,1279 @@
+{
+  "request_id": "<request-id>",
+  "visualization": {
+    "kind": "chart",
+    "renderer": "vega-lite",
+    "type": "histogram",
+    "title": "Distribution of enrollment count for melanoma",
+    "encoding": {
+      "x": {
+        "field": "bin_start",
+        "type": "ordinal",
+        "title": "Bin start",
+        "sort": [
+          "0.0",
+          "59074.96",
+          "118149.92",
+          "177224.88",
+          "236299.84",
+          "295374.8",
+          "354449.76",
+          "413524.72",
+          "472599.68",
+          "531674.64",
+          "590749.6",
+          "649824.5599999999",
+          "708899.52",
+          "767974.48",
+          "827049.44",
+          "886124.4",
+          "945199.36",
+          "1004274.32",
+          "1063349.28",
+          "1122424.24",
+          "1181499.2",
+          "1240574.16",
+          "1299649.1199999999",
+          "1358724.08",
+          "1417799.04",
+          "1476874.0",
+          "1535948.96",
+          "1595023.92",
+          "1654098.88",
+          "1713173.84",
+          "1772248.8",
+          "1831323.76",
+          "1890398.72",
+          "1949473.68",
+          "2008548.64",
+          "2067623.5999999999",
+          "2126698.56",
+          "2185773.52",
+          "2244848.48",
+          "2303923.44",
+          "2362998.4",
+          "2422073.36",
+          "2481148.32",
+          "2540223.28",
+          "2599298.2399999998",
+          "2658373.2",
+          "2717448.16",
+          "2776523.12",
+          "2835598.08",
+          "2894673.04"
+        ]
+      },
+      "y": {
+        "field": "trial_count",
+        "type": "quantitative",
+        "title": "Number of trials",
+        "sort": null
+      },
+      "color": null,
+      "column": null,
+      "size": null
+    },
+    "data": [
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06506643",
+            "excerpt": "36",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02009449",
+            "excerpt": "353",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01274338",
+            "excerpt": "1673",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04272658",
+            "excerpt": "56",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03176485",
+            "excerpt": "45",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00828126",
+            "excerpt": "38",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03684785",
+            "excerpt": "57",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00412425",
+            "excerpt": "30",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01359735",
+            "excerpt": "8",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03986515",
+            "excerpt": "40",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03033485",
+            "excerpt": "50",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05817149",
+            "excerpt": "20",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03950635",
+            "excerpt": "13",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04318717",
+            "excerpt": "20",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04894994",
+            "excerpt": "6",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01721772",
+            "excerpt": "418",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00949702",
+            "excerpt": "132",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05418972",
+            "excerpt": "20",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05607095",
+            "excerpt": "30",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02036086",
+            "excerpt": "24",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00084656",
+            "excerpt": "77",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05388851",
+            "excerpt": "145",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00395070",
+            "excerpt": "390",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06291753",
+            "excerpt": "25",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03140137",
+            "excerpt": "112",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05091346",
+            "excerpt": "89",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02917473",
+            "excerpt": "420",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00346502",
+            "excerpt": "0",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06075524",
+            "excerpt": "500",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04493723",
+            "excerpt": "300",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03313323",
+            "excerpt": "29",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00462280",
+            "excerpt": "80",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02521870",
+            "excerpt": "241",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01590069",
+            "excerpt": "70",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03993379",
+            "excerpt": "3",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01840527",
+            "excerpt": "220",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01351103",
+            "excerpt": "185",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04577742",
+            "excerpt": "350",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05647954",
+            "excerpt": "350",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06861647",
+            "excerpt": "58",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03084640",
+            "excerpt": "30",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT07260591",
+            "excerpt": "6",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03707574",
+            "excerpt": "64",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05015816",
+            "excerpt": "374",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00036816",
+            "excerpt": "13",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04072900",
+            "excerpt": "30",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02416336",
+            "excerpt": "100",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04060407",
+            "excerpt": "0",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05858736",
+            "excerpt": "18",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02668536",
+            "excerpt": "13",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00002947",
+            "excerpt": "35",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01861938",
+            "excerpt": "0",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00324155",
+            "excerpt": "681",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01409174",
+            "excerpt": "19",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05223218",
+            "excerpt": "500",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06398418",
+            "excerpt": "33",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05620290",
+            "excerpt": "20",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00975520",
+            "excerpt": "50",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05498805",
+            "excerpt": "92",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03297424",
+            "excerpt": "49",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03917069",
+            "excerpt": "145",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00495950",
+            "excerpt": "350",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00199342",
+            "excerpt": "5",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02644369",
+            "excerpt": "100",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05470283",
+            "excerpt": "21",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06270082",
+            "excerpt": "75",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05457842",
+            "excerpt": "1",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01519427",
+            "excerpt": "2",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01066390",
+            "excerpt": "18",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03567889",
+            "excerpt": "186",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04463368",
+            "excerpt": "18",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03552718",
+            "excerpt": "5",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02038218",
+            "excerpt": "29",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03621462",
+            "excerpt": "4000",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04201223",
+            "excerpt": "752",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02437227",
+            "excerpt": "31",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02509598",
+            "excerpt": "24",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT07280715",
+            "excerpt": "40",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01251978",
+            "excerpt": "10",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03229278",
+            "excerpt": "14",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05496192",
+            "excerpt": "0",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06377111",
+            "excerpt": "12",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06418204",
+            "excerpt": "2000",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06608511",
+            "excerpt": "20",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00765193",
+            "excerpt": "14381",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01978236",
+            "excerpt": "6",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04291079",
+            "excerpt": "112",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04622566",
+            "excerpt": "26",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05652673",
+            "excerpt": "80",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06214156",
+            "excerpt": "42",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06384053",
+            "excerpt": "100",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05903937",
+            "excerpt": "6",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT02257424",
+            "excerpt": "50",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01006980",
+            "excerpt": "675",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03457766",
+            "excerpt": "40",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04099251",
+            "excerpt": "790",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00243594",
+            "excerpt": "40",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00651157",
+            "excerpt": "23",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT00482105",
+            "excerpt": "7",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT01625351",
+            "excerpt": "23",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          }
+        ],
+        "bin_start": 0.0,
+        "bin_end": 59074.96,
+        "trial_count": 3595
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT02402244",
+            "excerpt": "75000",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT05900102",
+            "excerpt": "86000",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT07328516",
+            "excerpt": "64277",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT06043947",
+            "excerpt": "100000",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04969419",
+            "excerpt": "75771",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT04611568",
+            "excerpt": "75000",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          },
+          {
+            "nct_id": "NCT03285230",
+            "excerpt": "100000",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          }
+        ],
+        "bin_start": 59074.96,
+        "bin_end": 118149.92,
+        "trial_count": 7
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT03253666",
+            "excerpt": "173229",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          }
+        ],
+        "bin_start": 118149.92,
+        "bin_end": 177224.88,
+        "trial_count": 1
+      },
+      {
+        "citations": [],
+        "bin_start": 177224.88,
+        "bin_end": 236299.84,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 236299.84,
+        "bin_end": 295374.8,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 295374.8,
+        "bin_end": 354449.76,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 354449.76,
+        "bin_end": 413524.72,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 413524.72,
+        "bin_end": 472599.68,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 472599.68,
+        "bin_end": 531674.64,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 531674.64,
+        "bin_end": 590749.6,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 590749.6,
+        "bin_end": 649824.5599999999,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 649824.5599999999,
+        "bin_end": 708899.52,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 708899.52,
+        "bin_end": 767974.48,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 767974.48,
+        "bin_end": 827049.44,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 827049.44,
+        "bin_end": 886124.4,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 886124.4,
+        "bin_end": 945199.36,
+        "trial_count": 0
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT02012699",
+            "excerpt": "999999",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          }
+        ],
+        "bin_start": 945199.36,
+        "bin_end": 1004274.32,
+        "trial_count": 1
+      },
+      {
+        "citations": [],
+        "bin_start": 1004274.32,
+        "bin_end": 1063349.28,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1063349.28,
+        "bin_end": 1122424.24,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1122424.24,
+        "bin_end": 1181499.2,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1181499.2,
+        "bin_end": 1240574.16,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1240574.16,
+        "bin_end": 1299649.1199999999,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1299649.1199999999,
+        "bin_end": 1358724.08,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1358724.08,
+        "bin_end": 1417799.04,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1417799.04,
+        "bin_end": 1476874.0,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1476874.0,
+        "bin_end": 1535948.96,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1535948.96,
+        "bin_end": 1595023.92,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1595023.92,
+        "bin_end": 1654098.88,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1654098.88,
+        "bin_end": 1713173.84,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1713173.84,
+        "bin_end": 1772248.8,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1772248.8,
+        "bin_end": 1831323.76,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1831323.76,
+        "bin_end": 1890398.72,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1890398.72,
+        "bin_end": 1949473.68,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 1949473.68,
+        "bin_end": 2008548.64,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2008548.64,
+        "bin_end": 2067623.5999999999,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2067623.5999999999,
+        "bin_end": 2126698.56,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2126698.56,
+        "bin_end": 2185773.52,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2185773.52,
+        "bin_end": 2244848.48,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2244848.48,
+        "bin_end": 2303923.44,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2303923.44,
+        "bin_end": 2362998.4,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2362998.4,
+        "bin_end": 2422073.36,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2422073.36,
+        "bin_end": 2481148.32,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2481148.32,
+        "bin_end": 2540223.28,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2540223.28,
+        "bin_end": 2599298.2399999998,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2599298.2399999998,
+        "bin_end": 2658373.2,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2658373.2,
+        "bin_end": 2717448.16,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2717448.16,
+        "bin_end": 2776523.12,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2776523.12,
+        "bin_end": 2835598.08,
+        "trial_count": 0
+      },
+      {
+        "citations": [],
+        "bin_start": 2835598.08,
+        "bin_end": 2894673.04,
+        "trial_count": 0
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT04334824",
+            "excerpt": "2953748",
+            "field": "protocolSection.designModule.enrollmentInfo.count"
+          }
+        ],
+        "bin_start": 2894673.04,
+        "bin_end": 2953748.0,
+        "trial_count": 1
+      }
+    ],
+    "vega_spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": "Distribution of enrollment count for melanoma",
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "bin_start",
+          "type": "ordinal",
+          "title": "Bin start",
+          "sort": [
+            "0.0",
+            "59074.96",
+            "118149.92",
+            "177224.88",
+            "236299.84",
+            "295374.8",
+            "354449.76",
+            "413524.72",
+            "472599.68",
+            "531674.64",
+            "590749.6",
+            "649824.5599999999",
+            "708899.52",
+            "767974.48",
+            "827049.44",
+            "886124.4",
+            "945199.36",
+            "1004274.32",
+            "1063349.28",
+            "1122424.24",
+            "1181499.2",
+            "1240574.16",
+            "1299649.1199999999",
+            "1358724.08",
+            "1417799.04",
+            "1476874.0",
+            "1535948.96",
+            "1595023.92",
+            "1654098.88",
+            "1713173.84",
+            "1772248.8",
+            "1831323.76",
+            "1890398.72",
+            "1949473.68",
+            "2008548.64",
+            "2067623.5999999999",
+            "2126698.56",
+            "2185773.52",
+            "2244848.48",
+            "2303923.44",
+            "2362998.4",
+            "2422073.36",
+            "2481148.32",
+            "2540223.28",
+            "2599298.2399999998",
+            "2658373.2",
+            "2717448.16",
+            "2776523.12",
+            "2835598.08",
+            "2894673.04"
+          ]
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 59074.96,
+            "trial_count": 3595
+          },
+          {
+            "bin_start": 59074.96,
+            "bin_end": 118149.92,
+            "trial_count": 7
+          },
+          {
+            "bin_start": 118149.92,
+            "bin_end": 177224.88,
+            "trial_count": 1
+          },
+          {
+            "bin_start": 177224.88,
+            "bin_end": 236299.84,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 236299.84,
+            "bin_end": 295374.8,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 295374.8,
+            "bin_end": 354449.76,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 354449.76,
+            "bin_end": 413524.72,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 413524.72,
+            "bin_end": 472599.68,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 472599.68,
+            "bin_end": 531674.64,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 531674.64,
+            "bin_end": 590749.6,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 590749.6,
+            "bin_end": 649824.5599999999,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 649824.5599999999,
+            "bin_end": 708899.52,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 708899.52,
+            "bin_end": 767974.48,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 767974.48,
+            "bin_end": 827049.44,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 827049.44,
+            "bin_end": 886124.4,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 886124.4,
+            "bin_end": 945199.36,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 945199.36,
+            "bin_end": 1004274.32,
+            "trial_count": 1
+          },
+          {
+            "bin_start": 1004274.32,
+            "bin_end": 1063349.28,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1063349.28,
+            "bin_end": 1122424.24,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1122424.24,
+            "bin_end": 1181499.2,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1181499.2,
+            "bin_end": 1240574.16,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1240574.16,
+            "bin_end": 1299649.1199999999,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1299649.1199999999,
+            "bin_end": 1358724.08,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1358724.08,
+            "bin_end": 1417799.04,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1417799.04,
+            "bin_end": 1476874.0,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1476874.0,
+            "bin_end": 1535948.96,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1535948.96,
+            "bin_end": 1595023.92,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1595023.92,
+            "bin_end": 1654098.88,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1654098.88,
+            "bin_end": 1713173.84,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1713173.84,
+            "bin_end": 1772248.8,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1772248.8,
+            "bin_end": 1831323.76,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1831323.76,
+            "bin_end": 1890398.72,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1890398.72,
+            "bin_end": 1949473.68,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 1949473.68,
+            "bin_end": 2008548.64,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2008548.64,
+            "bin_end": 2067623.5999999999,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2067623.5999999999,
+            "bin_end": 2126698.56,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2126698.56,
+            "bin_end": 2185773.52,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2185773.52,
+            "bin_end": 2244848.48,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2244848.48,
+            "bin_end": 2303923.44,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2303923.44,
+            "bin_end": 2362998.4,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2362998.4,
+            "bin_end": 2422073.36,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2422073.36,
+            "bin_end": 2481148.32,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2481148.32,
+            "bin_end": 2540223.28,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2540223.28,
+            "bin_end": 2599298.2399999998,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2599298.2399999998,
+            "bin_end": 2658373.2,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2658373.2,
+            "bin_end": 2717448.16,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2717448.16,
+            "bin_end": 2776523.12,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2776523.12,
+            "bin_end": 2835598.08,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2835598.08,
+            "bin_end": 2894673.04,
+            "trial_count": 0
+          },
+          {
+            "bin_start": 2894673.04,
+            "bin_end": 2953748.0,
+            "trial_count": 1
+          }
+        ]
+      }
+    },
+    "hints": {
+      "sort": null,
+      "x_time_unit": null,
+      "units": "trials",
+      "note": "Bins pre-computed in the transform layer."
+    }
+  },
+  "meta": {
+    "source": "clinicaltrials.gov",
+    "query_interpretation": "Distribution of enrollment sizes for melanoma trials.",
+    "assumptions": [],
+    "filters_applied": {
+      "query.cond": "melanoma"
+    },
+    "total_studies_matched": 3723,
+    "studies_analyzed": 3723,
+    "data_timestamp": "2026-06-30T09:00:05",
+    "citation_cap": 100,
+    "warnings": [
+      "118 study(ies) skipped: missing enrollment_count"
+    ],
+    "plan": null
+  }
+}

@@ -1,0 +1,4000 @@
+{
+  "request_id": "<request-id>",
+  "visualization": {
+    "kind": "chart",
+    "renderer": "vega-lite",
+    "type": "choropleth_map",
+    "title": "Melanoma trials by country",
+    "encoding": {
+      "x": {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country",
+        "sort": null
+      },
+      "y": {
+        "field": "trial_count",
+        "type": "quantitative",
+        "title": "Number of trials",
+        "sort": null
+      },
+      "color": null,
+      "column": null,
+      "size": null
+    },
+    "data": [
+      {
+        "citations": [
+          {
+            "nct_id": "NCT04318717",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05607095",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06075524",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06398418",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03567889",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06418204",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05373823",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05970497",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05830058",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06781983",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04787042",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07136181",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06362369",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07124000",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06265285",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05077137",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05969860",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05837767",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06466434",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02402244",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05108298",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04851119",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05428007",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05086692",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06946225",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06594991",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02000089",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06814496",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05968690",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06624644",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06150664",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05704647",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06264180",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07318051",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06605404",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06529822",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07049276",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05297734",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06831071",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05655312",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07285044",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07628634",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07155317",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03452774",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961357",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT00040352",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06216938",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05053230",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06666790",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07223424",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07023731",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05859074",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06060613",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05824975",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06249048",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06425926",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05039801",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04474301",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05026983",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03686124",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04751396",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06932757",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05538130",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05384496",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02870244",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04741997",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03819296",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT01205815",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07042243",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04567706",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07070232",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06545682",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05877430",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04658303",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05629546",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06439979",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06121180",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05588453",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04996823",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05334069",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07504796",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04771520",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT00001823",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05913388",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06472661",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06400550",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06887348",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06414590",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06428721",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03054584",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05053555",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT01776905",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02333604",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07327489",
+            "excerpt": "United States",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "United States",
+        "trial_count": 242
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07260591",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06214156",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07400302",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03755739",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07280832",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07627698",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04616443",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07445022",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07552467",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06965231",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05538130",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07106827",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06797297",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06839105",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07562841",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07244835",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06889610",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07410494",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07614828",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07177937",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06203249",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06596915",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06739226",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05366478",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05961111",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07336979",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04386967",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06209580",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06953089",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06708663",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06008106",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05868707",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07586904",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05914116",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07644897",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07170293",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04331093",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06703398",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05512481",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07070518",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07584291",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06727630",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05955105",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05098184",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07160335",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07193966",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07586891",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05789043",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06359860",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07371663",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06081920",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05983237",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07410676",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07099430",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07310784",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06942143",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07376707",
+            "excerpt": "China",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "China",
+        "trial_count": 59
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07086105",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02402244",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05086692",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02821013",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07049276",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07421739",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06060613",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06249048",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05538130",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06999980",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07070232",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05180942",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06536257",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06887348",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07063875",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06326411",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06953089",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03947385",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07138222",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04370587",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05914116",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06767306",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06305962",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05280314",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07072728",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06242470",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06585410",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06022029",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07115043",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05267626",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06163820",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06910657",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06956690",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07339176",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07076550",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07203391",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06581406",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04895709",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06940739",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340129",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05570227",
+            "excerpt": "Australia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Australia",
+        "trial_count": 52
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06781983",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06586593",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07302607",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06550674",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04068155",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06264180",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05856565",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06967961",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05527795",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04424719",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06828822",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07031830",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07230613",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03787056",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06154668",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05029791",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06861023",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06627595",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05794035",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06971848",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05429138",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06743126",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04498767",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02884362",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05078047",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06605417",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04605146",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05280314",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05592626",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05867004",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05649683",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05307289",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03315468",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04576429",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06774989",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03888950",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02828202",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03915678",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05059444",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07354152",
+            "excerpt": "France",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "France",
+        "trial_count": 52
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05878964",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05940311",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07277920",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07049276",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07251335",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05621837",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05229614",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06680323",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06028724",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04095195",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07070232",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05492682",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07469709",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06621810",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06602648",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04498767",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07072143",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07403630",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06753136",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07092670",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06994208",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05797415",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05478876",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06899789",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07050940",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05522660",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05059444",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06880198",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04895709",
+            "excerpt": "Italy",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Italy",
+        "trial_count": 40
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05620290",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05196087",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03740503",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02402244",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05086692",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05955924",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02821013",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07524114",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07049276",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05538130",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05403177",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05355701",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02906943",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03947385",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06743126",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06500455",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07112170",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05663775",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246916",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06767306",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05592626",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06623461",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05645510",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06319196",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03702309",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04895709",
+            "excerpt": "Canada",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Canada",
+        "trial_count": 36
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT03567889",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05086692",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04855435",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06264180",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05673681",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06680323",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07070232",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06621810",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06608420",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06887088",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03605771",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06605443",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06970236",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06605417",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04752826",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05280314",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05592626",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06630611",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06685562",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07057596",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05522660",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06906822",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05059444",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04895709",
+            "excerpt": "Spain",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Spain",
+        "trial_count": 36
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07161310",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07600476",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06264180",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05229614",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06680323",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03686124",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07070232",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05492682",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06985056",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06621810",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06784778",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06980740",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06743126",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06508775",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04498767",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07564570",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05280314",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07057596",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06765850",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04045691",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05059444",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04895709",
+            "excerpt": "Germany",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Germany",
+        "trial_count": 34
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05652673",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06666634",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06240143",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05251389",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07310758",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06767332",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07511933",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06743126",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06754904",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05483400",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03685890",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06685562",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07530887",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04729543",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06643286",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05522660",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04126876",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07224425",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07206017",
+            "excerpt": "Netherlands",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Netherlands",
+        "trial_count": 29
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT04493723",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06264180",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07049276",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07070232",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05770544",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05768178",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07144306",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06743126",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04498767",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03829254",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05231655",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04752826",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05770102",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06560905",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06242470",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05522660",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06581406",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05107674",
+            "excerpt": "United Kingdom",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "United Kingdom",
+        "trial_count": 28
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05446155",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06519266",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06680323",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04793737",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06363591",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04752826",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03685890",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06794775",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05033678",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05502900",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03116412",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07349303",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06488482",
+            "excerpt": "Sweden",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Sweden",
+        "trial_count": 20
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07070232",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07266142",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04498767",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07448831",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07224425",
+            "excerpt": "Belgium",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Belgium",
+        "trial_count": 15
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT03563729",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06783270",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07215182",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04855435",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05253872",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06206707",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04752826",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05280314",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06685562",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06204991",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05899465",
+            "excerpt": "Denmark",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Denmark",
+        "trial_count": 15
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07049276",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05538130",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT01898039",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05355701",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05296564",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT00722228",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05909618",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT01438658",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04895709",
+            "excerpt": "Israel",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Israel",
+        "trial_count": 15
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT03567889",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06384053",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06889766",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04498767",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04045691",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02280889",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05522660",
+            "excerpt": "Switzerland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Switzerland",
+        "trial_count": 12
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05086692",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05824975",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05877430",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06265025",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07115043",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07449754",
+            "excerpt": "South Korea",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "South Korea",
+        "trial_count": 11
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06264180",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06680323",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04498767",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Poland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Poland",
+        "trial_count": 10
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05733728",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07635732",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05549297",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04045691",
+            "excerpt": "Austria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Austria",
+        "trial_count": 9
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Japan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05538130",
+            "excerpt": "Japan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Japan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05423262",
+            "excerpt": "Japan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Japan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07115043",
+            "excerpt": "Japan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06636435",
+            "excerpt": "Japan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04895709",
+            "excerpt": "Japan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Japan",
+        "trial_count": 8
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05086692",
+            "excerpt": "Portugal",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "Portugal",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Portugal",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Portugal",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Portugal",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Portugal",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07221734",
+            "excerpt": "Portugal",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Portugal",
+        "trial_count": 7
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT02332668",
+            "excerpt": "Brazil",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05538130",
+            "excerpt": "Brazil",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Brazil",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Brazil",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07381972",
+            "excerpt": "Brazil",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04291105",
+            "excerpt": "Brazil",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Brazil",
+        "trial_count": 6
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT02402244",
+            "excerpt": "New Zealand",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "New Zealand",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "New Zealand",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "New Zealand",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "New Zealand",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "New Zealand",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "New Zealand",
+        "trial_count": 6
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Norway",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06651151",
+            "excerpt": "Norway",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Norway",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Norway",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340129",
+            "excerpt": "Norway",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06488482",
+            "excerpt": "Norway",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Norway",
+        "trial_count": 6
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07407166",
+            "excerpt": "Slovenia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Slovenia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07404605",
+            "excerpt": "Slovenia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07422779",
+            "excerpt": "Slovenia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "Slovenia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05878977",
+            "excerpt": "Slovenia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Slovenia",
+        "trial_count": 6
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Taiwan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Taiwan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "Taiwan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06953089",
+            "excerpt": "Taiwan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05914116",
+            "excerpt": "Taiwan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06952400",
+            "excerpt": "Taiwan",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Taiwan",
+        "trial_count": 6
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Czechia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06007690",
+            "excerpt": "Czechia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Czechia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Czechia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07349940",
+            "excerpt": "Czechia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Czechia",
+        "trial_count": 5
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06172478",
+            "excerpt": "Hungary",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Hungary",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Hungary",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04752826",
+            "excerpt": "Hungary",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Hungary",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Hungary",
+        "trial_count": 5
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Finland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Finland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Finland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06488482",
+            "excerpt": "Finland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Finland",
+        "trial_count": 4
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06264180",
+            "excerpt": "Greece",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05581004",
+            "excerpt": "Greece",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06961006",
+            "excerpt": "Greece",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Greece",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Greece",
+        "trial_count": 4
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05086692",
+            "excerpt": "Ireland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Ireland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06500455",
+            "excerpt": "Ireland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03860883",
+            "excerpt": "Ireland",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Ireland",
+        "trial_count": 4
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06418204",
+            "excerpt": "Puerto Rico",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT02402244",
+            "excerpt": "Puerto Rico",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03452774",
+            "excerpt": "Puerto Rico",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07519655",
+            "excerpt": "Puerto Rico",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Puerto Rico",
+        "trial_count": 4
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05539677",
+            "excerpt": "Russia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07130032",
+            "excerpt": "Russia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT04752826",
+            "excerpt": "Russia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06229340",
+            "excerpt": "Russia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Russia",
+        "trial_count": 4
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07070232",
+            "excerpt": "Turkey (Türkiye)",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Turkey (Türkiye)",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Turkey (Türkiye)",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07160335",
+            "excerpt": "Turkey (Türkiye)",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Turkey (Türkiye)",
+        "trial_count": 4
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Argentina",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Argentina",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Argentina",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Argentina",
+        "trial_count": 3
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Mexico",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Mexico",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Mexico",
+        "trial_count": 2
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT04986748",
+            "excerpt": "Singapore",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT05727904",
+            "excerpt": "Singapore",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Singapore",
+        "trial_count": 2
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06506643",
+            "excerpt": "Ukraine",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          },
+          {
+            "nct_id": "NCT07221734",
+            "excerpt": "Ukraine",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Ukraine",
+        "trial_count": 2
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Bulgaria",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Bulgaria",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06330064",
+            "excerpt": "Chile",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Chile",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Estonia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Estonia",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07160335",
+            "excerpt": "Georgia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Georgia",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06500455",
+            "excerpt": "Hong Kong",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Hong Kong",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Lithuania",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Lithuania",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06112314",
+            "excerpt": "Romania",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Romania",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT02402244",
+            "excerpt": "Saudi Arabia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Saudi Arabia",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "Serbia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Serbia",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT07015190",
+            "excerpt": "Slovakia",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Slovakia",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "South Africa",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "South Africa",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "Thailand",
+            "field": "protocolSection.contactsLocationsModule.locations.country"
+          }
+        ],
+        "country": "Thailand",
+        "trial_count": 1
+      }
+    ],
+    "vega_spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": "Melanoma trials by country",
+      "data": {
+        "values": [
+          {
+            "country": "United States",
+            "trial_count": 242,
+            "geo_id": 840
+          },
+          {
+            "country": "China",
+            "trial_count": 59,
+            "geo_id": 156
+          },
+          {
+            "country": "Australia",
+            "trial_count": 52,
+            "geo_id": 36
+          },
+          {
+            "country": "France",
+            "trial_count": 52,
+            "geo_id": 250
+          },
+          {
+            "country": "Italy",
+            "trial_count": 40,
+            "geo_id": 380
+          },
+          {
+            "country": "Canada",
+            "trial_count": 36,
+            "geo_id": 124
+          },
+          {
+            "country": "Spain",
+            "trial_count": 36,
+            "geo_id": 724
+          },
+          {
+            "country": "Germany",
+            "trial_count": 34,
+            "geo_id": 276
+          },
+          {
+            "country": "Netherlands",
+            "trial_count": 29,
+            "geo_id": 528
+          },
+          {
+            "country": "United Kingdom",
+            "trial_count": 28,
+            "geo_id": 826
+          },
+          {
+            "country": "Sweden",
+            "trial_count": 20,
+            "geo_id": 752
+          },
+          {
+            "country": "Belgium",
+            "trial_count": 15,
+            "geo_id": 56
+          },
+          {
+            "country": "Denmark",
+            "trial_count": 15,
+            "geo_id": 208
+          },
+          {
+            "country": "Israel",
+            "trial_count": 15,
+            "geo_id": 376
+          },
+          {
+            "country": "Switzerland",
+            "trial_count": 12,
+            "geo_id": 756
+          },
+          {
+            "country": "South Korea",
+            "trial_count": 11,
+            "geo_id": 410
+          },
+          {
+            "country": "Poland",
+            "trial_count": 10,
+            "geo_id": 616
+          },
+          {
+            "country": "Austria",
+            "trial_count": 9,
+            "geo_id": 40
+          },
+          {
+            "country": "Japan",
+            "trial_count": 8,
+            "geo_id": 392
+          },
+          {
+            "country": "Portugal",
+            "trial_count": 7,
+            "geo_id": 620
+          },
+          {
+            "country": "Brazil",
+            "trial_count": 6,
+            "geo_id": 76
+          },
+          {
+            "country": "New Zealand",
+            "trial_count": 6,
+            "geo_id": 554
+          },
+          {
+            "country": "Norway",
+            "trial_count": 6,
+            "geo_id": 578
+          },
+          {
+            "country": "Slovenia",
+            "trial_count": 6,
+            "geo_id": 705
+          },
+          {
+            "country": "Taiwan",
+            "trial_count": 6,
+            "geo_id": 158
+          },
+          {
+            "country": "Czechia",
+            "trial_count": 5,
+            "geo_id": 203
+          },
+          {
+            "country": "Hungary",
+            "trial_count": 5,
+            "geo_id": 348
+          },
+          {
+            "country": "Finland",
+            "trial_count": 4,
+            "geo_id": 246
+          },
+          {
+            "country": "Greece",
+            "trial_count": 4,
+            "geo_id": 300
+          },
+          {
+            "country": "Ireland",
+            "trial_count": 4,
+            "geo_id": 372
+          },
+          {
+            "country": "Puerto Rico",
+            "trial_count": 4,
+            "geo_id": 630
+          },
+          {
+            "country": "Russia",
+            "trial_count": 4,
+            "geo_id": 643
+          },
+          {
+            "country": "Turkey (Türkiye)",
+            "trial_count": 4,
+            "geo_id": 792
+          },
+          {
+            "country": "Argentina",
+            "trial_count": 3,
+            "geo_id": 32
+          },
+          {
+            "country": "Mexico",
+            "trial_count": 2,
+            "geo_id": 484
+          },
+          {
+            "country": "Singapore",
+            "trial_count": 2
+          },
+          {
+            "country": "Ukraine",
+            "trial_count": 2,
+            "geo_id": 804
+          },
+          {
+            "country": "Bulgaria",
+            "trial_count": 1,
+            "geo_id": 100
+          },
+          {
+            "country": "Chile",
+            "trial_count": 1,
+            "geo_id": 152
+          },
+          {
+            "country": "Estonia",
+            "trial_count": 1,
+            "geo_id": 233
+          },
+          {
+            "country": "Georgia",
+            "trial_count": 1,
+            "geo_id": 268
+          },
+          {
+            "country": "Hong Kong",
+            "trial_count": 1
+          },
+          {
+            "country": "Lithuania",
+            "trial_count": 1,
+            "geo_id": 440
+          },
+          {
+            "country": "Romania",
+            "trial_count": 1,
+            "geo_id": 642
+          },
+          {
+            "country": "Saudi Arabia",
+            "trial_count": 1,
+            "geo_id": 682
+          },
+          {
+            "country": "Serbia",
+            "trial_count": 1,
+            "geo_id": 688
+          },
+          {
+            "country": "Slovakia",
+            "trial_count": 1,
+            "geo_id": 703
+          },
+          {
+            "country": "South Africa",
+            "trial_count": 1,
+            "geo_id": 710
+          },
+          {
+            "country": "Thailand",
+            "trial_count": 1,
+            "geo_id": 764
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "geo_id",
+          "from": {
+            "data": {
+              "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
+              "format": {
+                "type": "topojson",
+                "feature": "countries"
+              }
+            },
+            "key": "id"
+          },
+          "as": "geo"
+        }
+      ],
+      "projection": {
+        "type": "equalEarth"
+      },
+      "mark": "geoshape",
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "color": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal"
+          },
+          {
+            "field": "trial_count",
+            "type": "quantitative"
+          }
+        ]
+      }
+    },
+    "hints": {
+      "sort": null,
+      "x_time_unit": null,
+      "units": "trials",
+      "note": "Singapore, Hong Kong are not shown on the map (no country boundary in the world-110m basemap); the counts remain in the underlying data."
+    }
+  },
+  "meta": {
+    "source": "clinicaltrials.gov",
+    "query_interpretation": "Countries with the most actively recruiting melanoma trials.",
+    "assumptions": [],
+    "filters_applied": {
+      "query.cond": "melanoma",
+      "filter.overallStatus": "RECRUITING"
+    },
+    "total_studies_matched": 473,
+    "studies_analyzed": 473,
+    "data_timestamp": "2026-06-30T09:00:05",
+    "citation_cap": 100,
+    "warnings": [],
+    "plan": null
+  }
+}

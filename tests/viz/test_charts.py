@@ -100,10 +100,59 @@ def test_time_series_specifics() -> None:
     assert spec.encoding.x.field == "year"
     assert spec.vega_spec["encoding"]["x"]["timeUnit"] == "utcyear"
     assert spec.hints.x_time_unit == "year"
+    # A plain trend has no color channel — one line only.
+    assert spec.encoding.color is None
+    assert "color" not in spec.vega_spec["encoding"]
     # Years inline as ISO-date strings, not ints: Vega-Lite reads numeric temporal
     # values as epoch ms, which would collapse every point onto 1970.
     year_values = [row["year"] for row in spec.vega_spec["data"]["values"]]
     assert year_values == ["2018", "2019", "2020", "2021", "2022"]
+
+
+def test_grouped_time_series_gets_a_phase_color_channel() -> None:
+    from app.contracts import (
+        AnalysisPlan,
+        CategoricalField,
+        Citation,
+        DataPoint,
+        Filters,
+        Operation,
+        TidyDataset,
+    )
+
+    def _pt(year: int, phase: str, n: int) -> DataPoint:
+        cites = [Citation(nct_id=f"NCT{year}{phase}{i}", excerpt=str(year)) for i in range(n)]
+        return DataPoint(
+            dims={"year": year, "phase": phase}, measure="trial_count",
+            value=float(n), citations=cites,
+        )
+
+    tidy = TidyDataset(
+        points=[_pt(2022, "PHASE1", 2), _pt(2023, "PHASE1", 0),
+                _pt(2022, "PHASE2", 1), _pt(2023, "PHASE2", 3)],
+        dimension_names=["year", "phase"],
+        measure_name="trial_count",
+    )
+    plan = AnalysisPlan(
+        operation=Operation.time_trend,
+        entities={"condition": "brain cancer"},
+        filters=Filters(start_year=2022, end_year=2023),
+        group_by=CategoricalField.phase,
+        proposed_viz="time_series",
+        interpretation="brain cancer trials by phase",
+    )
+
+    spec = build_viz(tidy, plan)
+    assert isinstance(spec, ChartVizSpec)
+    assert spec.type is VizType.time_series
+    # The second dimension becomes the color/series channel: one line per phase.
+    assert spec.encoding.color is not None
+    assert spec.encoding.color.field == "phase"
+    assert spec.vega_spec["encoding"]["color"]["field"] == "phase"
+    # Phase legend follows canonical order, not first-seen.
+    assert spec.vega_spec["encoding"]["color"]["sort"][:2] == ["EARLY_PHASE1", "PHASE1"]
+    # Title reflects the breakdown.
+    assert "by clinical trial phase" in spec.title
 
 
 def test_title_preserves_acronym_casing() -> None:

@@ -1,0 +1,2649 @@
+{
+  "request_id": "<request-id>",
+  "visualization": {
+    "kind": "chart",
+    "renderer": "vega-lite",
+    "type": "bar_chart",
+    "title": "Melanoma trials by clinical trial phase",
+    "encoding": {
+      "x": {
+        "field": "phase",
+        "type": "nominal",
+        "title": "Clinical trial phase",
+        "sort": [
+          "EARLY_PHASE1",
+          "PHASE1",
+          "PHASE2",
+          "PHASE3",
+          "PHASE4",
+          "NA"
+        ]
+      },
+      "y": {
+        "field": "trial_count",
+        "type": "quantitative",
+        "title": "Number of trials",
+        "sort": null
+      },
+      "color": null,
+      "column": null,
+      "size": null
+    },
+    "data": [
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06506643",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00083252",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03684785",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00019448",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00412425",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01359735",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03986515",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04318717",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04894994",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00949702",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05418972",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02036086",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00084656",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05388851",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05091346",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00346502",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03313323",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00462280",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02521870",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03993379",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04060407",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01861938",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05498805",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03917069",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00199342",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02644369",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05457842",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01519427",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02038218",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00027742",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02509598",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01251978",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05496192",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01978236",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04622566",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06214156",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02257424",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00243594",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00651157",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05764395",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00942162",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01941927",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01864538",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03552549",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03815058",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00085306",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00513604",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00005615",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01196416",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05524935",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06041724",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02718391",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05970497",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03007823",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00005610",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05830058",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01273181",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00722098",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04439344",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01474551",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04557956",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04362722",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02731729",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04527549",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00004104",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00518206",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00704938",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05117138",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00168870",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03911869",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05429866",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00055562",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04787042",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00665470",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03625141",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05893654",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06409195",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07136181",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00003601",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02296112",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07400302",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01266967",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03755739",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00044356",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03563729",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00831545",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05620134",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04283890",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00020397",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01307618",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00726739",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00358319",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01029873",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06362369",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04830124",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00289016",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03400332",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03070392",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05315128",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00059800",
+            "excerpt": "PHASE2",
+            "field": "protocolSection.designModule.phases"
+          }
+        ],
+        "phase": "PHASE2",
+        "trial_count": 1524
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06506643",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02009449",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03684785",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00412425",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03950635",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05607095",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05091346",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00346502",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02521870",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01590069",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01351103",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03084640",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07260591",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04072900",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04060407",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05858736",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02668536",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00002947",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01409174",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06398418",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05620290",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03297424",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00199342",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05470283",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06270082",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01066390",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04463368",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03552718",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02437227",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03229278",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06377111",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04291079",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06214156",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05903937",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02257424",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00243594",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01625351",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01005472",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01149343",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00005615",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01196416",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02613325",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02298959",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01242618",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05970497",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03007823",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04904120",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01273181",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05222932",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00658892",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02915666",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04557956",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06781983",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03158935",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01843738",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00073944",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05117138",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04787042",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02339324",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04336241",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05893654",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07136181",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07086105",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03336606",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05620134",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05810740",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04283890",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02457793",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06424626",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06540391",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04640545",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05501912",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00358319",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01744171",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00003597",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01029873",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06362369",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04042480",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00661336",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03400332",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01522664",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05640193",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06974734",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01838200",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01989559",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01765569",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06783270",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04198818",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07476326",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05537740",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04875728",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05077137",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00730639",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04074967",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03815682",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03633110",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00978913",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02122861",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03957096",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02736123",
+            "excerpt": "PHASE1",
+            "field": "protocolSection.designModule.phases"
+          }
+        ],
+        "phase": "PHASE1",
+        "trial_count": 1337
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT03176485",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03033485",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02917473",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05015816",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02416336",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00975520",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03621462",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04201223",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07280715",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00765193",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05652673",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06384053",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03457766",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00482105",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00253708",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05373823",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02043184",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01334008",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06999499",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03898687",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03725449",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01477463",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03628417",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05703269",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03073031",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03073304",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06227416",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01356771",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06254196",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04103658",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07161310",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02986867",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05837767",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07653087",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05108298",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01586767",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04941430",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04593277",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02872909",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00826995",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02831634",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00179764",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02142244",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06666634",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06080711",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02437305",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06550674",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04068155",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00049010",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05426317",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03154190",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00816374",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04758988",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03057327",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00824889",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04035447",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02385253",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01266096",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02700763",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02309632",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04039672",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00295906",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07049276",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01272817",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06967961",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01896778",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02057393",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02780934",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05253872",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03520634",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07661966",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01557881",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05297734",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00297895",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05075356",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02133222",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00378781",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05827289",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04728113",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04353050",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05053230",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04899492",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02902822",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07102212",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03699995",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06666790",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02012751",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01662713",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03858855",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04424719",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02857374",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00237965",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06828822",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03136783",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06894407",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07042243",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02439008",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02966509",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04566302",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04726319",
+            "excerpt": "NA",
+            "field": "protocolSection.designModule.phases"
+          }
+        ],
+        "phase": "NA",
+        "trial_count": 408
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT01274338",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01721772",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00395070",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05647954",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00036816",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01861938",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00324155",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03567889",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01006980",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04099251",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00005052",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03552549",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01597908",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02278887",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01785316",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05155254",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00055562",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03755739",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00003647",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00091572",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00002767",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01720407",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00002455",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00003444",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00811200",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00111007",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00039000",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06054555",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02000089",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05955924",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02821013",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06624644",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04674683",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06264180",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01667419",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01989572",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02843386",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05608291",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03233828",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00020839",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00003266",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06519266",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02905266",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04309409",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01368276",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03928275",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03470922",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02678572",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02460068",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01088737",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00019682",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03273153",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07552597",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01359956",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01826864",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01763164",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00094653",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05022901",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05770544",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02394132",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01013623",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05732805",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01721746",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02997553",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00324727",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00680225",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04949113",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06697301",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05986331",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00072124",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03329846",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07068074",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00538850",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01682083",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00671918",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07440290",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01223248",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03294330",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05768178",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00003641",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04657991",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06587451",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00257205",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00016263",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03131713",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02288897",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01689519",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00518895",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07310758",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03635983",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00221702",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01245062",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04588246",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05297565",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00472459",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00052130",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00864253",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02506153",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04410445",
+            "excerpt": "PHASE3",
+            "field": "protocolSection.designModule.phases"
+          }
+        ],
+        "phase": "PHASE3",
+        "trial_count": 219
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06756295",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03784625",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02699918",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04891718",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04067960",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04752267",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05009446",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03526185",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00743353",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07628634",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06216938",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00580060",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04581382",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00871533",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04741997",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03655756",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00470379",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00276835",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02316795",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06472661",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07389525",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01666353",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00663910",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01748747",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03276832",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01568996",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01789827",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05961111",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02013492",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03543969",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05180851",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04541108",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01730157",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03060356",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03893019",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05358938",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04285749",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05279027",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04223648",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02652455",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03338777",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03022565",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02442466",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00499733",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07586904",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02382549",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04663126",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00436410",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06305962",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05498792",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05704933",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05932511",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00962845",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03649529",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06212388",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03993821",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05098184",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02591654",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02320305",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03454243",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00972933",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01620749",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01209676",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01425749",
+            "excerpt": "EARLY_PHASE1",
+            "field": "protocolSection.designModule.phases"
+          }
+        ],
+        "phase": "EARLY_PHASE1",
+        "trial_count": 64
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT03313544",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01053819",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02451488",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07459543",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02379000",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07092410",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07445022",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07004335",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04261179",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01683188",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00324272",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01856023",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02685592",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00414765",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00129961",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06116461",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00075166",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02626065",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04320316",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07504796",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT06785974",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT04074460",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07574047",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03315975",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00540930",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01735955",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01898585",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01161888",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03673332",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03340506",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02068196",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT03715205",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT02000739",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT07405086",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT01794793",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT00226473",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          },
+          {
+            "nct_id": "NCT05467137",
+            "excerpt": "PHASE4",
+            "field": "protocolSection.designModule.phases"
+          }
+        ],
+        "phase": "PHASE4",
+        "trial_count": 37
+      }
+    ],
+    "vega_spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": "Melanoma trials by clinical trial phase",
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "phase",
+          "type": "nominal",
+          "title": "Clinical trial phase",
+          "sort": [
+            "EARLY_PHASE1",
+            "PHASE1",
+            "PHASE2",
+            "PHASE3",
+            "PHASE4",
+            "NA"
+          ]
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "phase": "PHASE2",
+            "trial_count": 1524
+          },
+          {
+            "phase": "PHASE1",
+            "trial_count": 1337
+          },
+          {
+            "phase": "NA",
+            "trial_count": 408
+          },
+          {
+            "phase": "PHASE3",
+            "trial_count": 219
+          },
+          {
+            "phase": "EARLY_PHASE1",
+            "trial_count": 64
+          },
+          {
+            "phase": "PHASE4",
+            "trial_count": 37
+          }
+        ]
+      }
+    },
+    "hints": {
+      "sort": null,
+      "x_time_unit": null,
+      "units": "trials",
+      "note": "Phases shown in canonical order, not by height."
+    }
+  },
+  "meta": {
+    "source": "clinicaltrials.gov",
+    "query_interpretation": "Distribution of melanoma trials across clinical trial phases.",
+    "assumptions": [],
+    "filters_applied": {
+      "query.cond": "melanoma"
+    },
+    "total_studies_matched": 3723,
+    "studies_analyzed": 3723,
+    "data_timestamp": "2026-06-30T09:00:05",
+    "citation_cap": 100,
+    "warnings": [],
+    "plan": null
+  }
+}

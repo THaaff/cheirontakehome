@@ -772,6 +772,19 @@
           "description": "CT.gov dataTimestamp.",
           "title": "Data Timestamp"
         },
+        "citation_cap": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Per-datum citation limit applied to this response (None if uncapped). A datum whose measure value exceeds this shows a representative sample; the full set is reachable via the datum's ClinicalTrials.gov query.",
+          "title": "Citation Cap"
+        },
         "warnings": {
           "description": "e.g. \"312 studies had unparseable start dates and were excluded\".",
           "items": {

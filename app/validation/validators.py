@@ -102,10 +102,23 @@ def _validate_chart(spec: ChartVizSpec, data: TidyDataset | GraphData) -> list[s
     # Hard: the embedded Vega spec must carry its inlined data.values array.
     _check_vega_values(spec)
 
-    # Soft: citations are the provenance bonus — note gaps, never fail.
-    if any(not datum.citations for datum in spec.data):
+    # Soft: citations are the provenance bonus — note gaps, never fail. A
+    # zero-valued datum (e.g. a zero-filled period in a time trend) has nothing
+    # to cite, so it is not a provenance gap.
+    measure_field = spec.encoding.y.field if spec.encoding.y is not None else None
+    if any(
+        not datum.citations and not _is_zero_measure(datum, measure_field)
+        for datum in spec.data
+    ):
         warnings.append("some data points have no citations; provenance is incomplete.")
     return warnings
+
+
+def _is_zero_measure(datum: Any, measure_field: str | None) -> bool:
+    """True when the datum's measure value is zero (a legitimately empty bucket)."""
+    if measure_field is None:
+        return False
+    return bool(datum.model_dump().get(measure_field) == 0)
 
 
 def _record_key_union(spec: ChartVizSpec) -> set[str]:

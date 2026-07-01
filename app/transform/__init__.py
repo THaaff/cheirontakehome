@@ -32,8 +32,33 @@ __all__ = [
     "aggregate_numeric_relationship",
     "build_cooccurrence_network",
     "make_citation",
+    "cap_citations",
     "dispatch",
 ]
+
+
+def cap_citations(
+    data: TidyDataset | GraphData, limit: int | None
+) -> TidyDataset | GraphData:
+    """Trim every datum/node/edge citation list to ``limit`` entries.
+
+    Counts are untouched — only the provenance *sample* is capped, so a
+    full-corpus analysis stays exact while the serialized payload stays small.
+    ``limit`` of ``None`` or ``<= 0`` is a no-op (uncapped). Order is preserved,
+    so the retained citations are the first (deterministic) ones per datum.
+    """
+
+    if limit is None or limit <= 0:
+        return data
+
+    if isinstance(data, TidyDataset):
+        points = [p.model_copy(update={"citations": p.citations[:limit]}) for p in data.points]
+        return data.model_copy(update={"points": points})
+    if isinstance(data, GraphData):
+        nodes = [n.model_copy(update={"citations": n.citations[:limit]}) for n in data.nodes]
+        edges = [e.model_copy(update={"citations": e.citations[:limit]}) for e in data.edges]
+        return data.model_copy(update={"nodes": nodes, "edges": edges})
+    return data  # pragma: no cover - dispatch only produces the two types above
 
 # The orchestrator passes a labeled per-series record set for comparisons; every
 # other operation receives the flat record list.

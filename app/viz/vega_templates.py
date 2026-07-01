@@ -89,16 +89,29 @@ def time_series_spec(
     y_title: str,
     time_unit: str,
     values: list[dict[str, Any]],
+    color_field: str | None = None,
+    color_title: str | None = None,
+    color_sort: Any = None,
 ) -> dict[str, Any]:
-    """A line+point time series with an explicit ``timeUnit`` on x."""
+    """A line+point time series with an explicit ``timeUnit`` on x.
+
+    When ``color_field`` is given, the series is split into one colored line per
+    value of that field (e.g. one line per phase).
+    """
+    encoding: dict[str, Any] = {
+        "x": _channel(x_field, "temporal", x_title, timeUnit=time_unit),
+        "y": _channel(y_field, "quantitative", y_title),
+    }
+    if color_field is not None:
+        color = _channel(color_field, "nominal", color_title or color_field)
+        if color_sort is not None:
+            color["sort"] = color_sort
+        encoding["color"] = color
     return {
         "$schema": VEGA_LITE_SCHEMA,
         "title": title,
         "mark": {"type": "line", "point": True},
-        "encoding": {
-            "x": _channel(x_field, "temporal", x_title, timeUnit=time_unit),
-            "y": _channel(y_field, "quantitative", y_title),
-        },
+        "encoding": encoding,
         "data": {"values": values},
     }
 

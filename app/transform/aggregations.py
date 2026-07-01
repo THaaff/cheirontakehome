@@ -200,22 +200,54 @@ def _period_dim_value(key: int, granularity: str) -> int | str:
     return key
 
 
+def _time_point(
+    dim_name: str,
+    granularity: str,
+    key: int,
+    members: list[StudyRecord],
+    *,
+    extra_dims: dict[str, str | int | float] | None = None,
+) -> DataPoint:
+    """One period bucket -> a :class:`DataPoint` with per-study date citations."""
+    citations = [
+        make_citation(
+            s,
+            excerpt=s.start_date_raw or (s.start_date.isoformat() if s.start_date else None),
+            field=FIELD_START_DATE,
+        )
+        for s in members
+    ]
+    dims: dict[str, str | int | float] = {dim_name: _period_dim_value(key, granularity)}
+    if extra_dims:
+        dims.update(extra_dims)
+    return DataPoint(
+        dims=dims, measure=_MEASURE, value=float(len(members)), citations=citations
+    )
+
+
 def aggregate_time_trend(studies: list[StudyRecord], plan: AnalysisPlan) -> TidyDataset:
     """Bucket study start dates by year (default) or month into a trial-count series.
 
+    When ``plan.group_by`` is set, the trend is split into one series per value of
+    that categorical field (e.g. one line per phase) — the dataset gains a second
+    dimension and every ``(period, group)`` cell is zero-filled so each line is
+    gap-free. Otherwise a single count-per-period series is produced.
+
     Records with ``start_date is None`` are excluded and reported in a warning.
     The ``filters.start_year`` / ``end_year`` range is applied here (filtered-out
-    records are dropped silently). Zero-count periods within the observed range
-    are emitted so the line has no gaps.
+    records are dropped silently); the planner sets ``end_year`` for bounded or
+    past-tense ranges so not-yet-started (future-dated) trials don't appear.
     """
 
     granularity = plan.time_granularity
     dim_name = "period" if granularity == "month" else "year"
+    group_field = plan.group_by
+    dim_names = [dim_name] if group_field is None else [dim_name, group_field.value]
 
     if not studies:
         return TidyDataset(
             points=[],
-            dimension_names=[dim_name],
+            dimension_names=dim_names,
             measure_name=_MEASURE,
             warnings=["no studies to aggregate; empty time trend"],
         )
@@ -223,7 +255,8 @@ def aggregate_time_trend(studies: list[StudyRecord], plan: AnalysisPlan) -> Tidy
     start_year = plan.filters.start_year
     end_year = plan.filters.end_year
 
-    contributors: dict[int, list[StudyRecord]] = {}
+    # Pass 1: keep studies with a usable, in-range start date (period key + study).
+    in_range: list[tuple[int, StudyRecord]] = []
     excluded = 0
     for study in studies:
         d = study.start_date
@@ -234,7 +267,7 @@ def aggregate_time_trend(studies: list[StudyRecord], plan: AnalysisPlan) -> Tidy
             continue
         if end_year is not None and d.year > end_year:
             continue
-        contributors.setdefault(_period_key(d, granularity), []).append(study)
+        in_range.append((_period_key(d, granularity), study))
 
     warnings: list[str] = []
     if excluded:
@@ -243,34 +276,49 @@ def aggregate_time_trend(studies: list[StudyRecord], plan: AnalysisPlan) -> Tidy
             f"and were excluded from the time trend"
         )
 
-    if not contributors:
+    if not in_range:
         warnings.append("no studies with a usable start date in range; empty time trend")
         return TidyDataset(
-            points=[], dimension_names=[dim_name], measure_name=_MEASURE, warnings=warnings
+            points=[], dimension_names=dim_names, measure_name=_MEASURE, warnings=warnings
         )
 
-    keys = sorted(contributors)
-    points: list[DataPoint] = []
-    for key in range(keys[0], keys[-1] + 1):  # inclusive, zero-filled
-        members = contributors.get(key, [])
-        citations = [
-            make_citation(
-                s,
-                excerpt=s.start_date_raw or (s.start_date.isoformat() if s.start_date else None),
-                field=FIELD_START_DATE,
-            )
-            for s in members
+    key_lo = min(k for k, _ in in_range)
+    key_hi = max(k for k, _ in in_range)
+    period_keys = range(key_lo, key_hi + 1)  # inclusive, zero-filled
+
+    if group_field is None:
+        contributors: dict[int, list[StudyRecord]] = {}
+        for key, study in in_range:
+            contributors.setdefault(key, []).append(study)
+        points = [
+            _time_point(dim_name, granularity, key, contributors.get(key, []))
+            for key in period_keys
         ]
-        points.append(
-            DataPoint(
-                dims={dim_name: _period_dim_value(key, granularity)},
-                measure=_MEASURE,
-                value=float(len(members)),
-                citations=citations,
-            )
+        return TidyDataset(
+            points=points, dimension_names=dim_names, measure_name=_MEASURE, warnings=warnings
         )
+
+    # Grouped: bucket by (period, group value); multi-count for list-valued fields.
+    group_name = group_field.value
+    grouped: dict[tuple[int, str], list[StudyRecord]] = {}
+    group_values: list[str] = []
+    seen: set[str] = set()
+    for key, study in in_range:
+        for value in _field_values(study, group_field):
+            grouped.setdefault((key, value), []).append(study)
+            if value not in seen:
+                seen.add(value)
+                group_values.append(value)
+    group_values.sort()  # stable; the viz layer applies any domain ordering (e.g. phase)
+
+    points = [
+        _time_point(dim_name, granularity, key, grouped.get((key, value), []),
+                    extra_dims={group_name: value})
+        for value in group_values
+        for key in period_keys
+    ]
     return TidyDataset(
-        points=points, dimension_names=[dim_name], measure_name=_MEASURE, warnings=warnings
+        points=points, dimension_names=dim_names, measure_name=_MEASURE, warnings=warnings
     )
 
 

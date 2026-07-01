@@ -1,0 +1,16 @@
+{
+  "query": "How has the number of trials for pembrolizumab changed per year since 2018?",
+  "drug_name": null,
+  "condition": null,
+  "sponsor": null,
+  "phase": null,
+  "country": null,
+  "start_year": null,
+  "end_year": null,
+  "options": {
+    "mode": "replay",
+    "max_studies": 25000,
+    "force_refresh": false,
+    "debug": false
+  }
+}
