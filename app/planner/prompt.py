@@ -9,6 +9,7 @@ the conversation at call time.
 
 from __future__ import annotations
 
+from datetime import date
 from typing import Literal
 
 from openai.types.responses import EasyInputMessageParam, ResponseInputItemParam
@@ -43,7 +44,10 @@ emit any numeric data value. Downstream deterministic code does all of that.
 
 Choose exactly one `operation` using these cues:
 - time_trend — counts over time; "per year", "over time", "trend", "since 20XX", \
-"by year/month". Set time_granularity (year unless the question implies months).
+"by year/month". Set time_granularity (year unless the question implies months). For a \
+per-category breakdown over time ("per year per phase", "by phase over time", "trend by \
+sponsor class"), ALSO set group_by to that categorical field — the result is one line per \
+value. Leave group_by null for a single overall trend line.
 - categorical_distribution — one categorical breakdown; "distribution of / breakdown \
 of / how many across <category>" (phases, statuses, sponsor classes, etc.). Set group_by.
 - comparison — contrasting two or more named values along a dimension; "compare A vs B", \
@@ -75,6 +79,14 @@ entities.sponsor; otherwise general search terms -> entities.terms.
 (PHASE1..PHASE4, EARLY_PHASE1, NA) -> filters.phases; INTERVENTIONAL/OBSERVATIONAL -> \
 filters.study_type; countries -> filters.countries; year bounds -> filters.start_year / \
 filters.end_year.
+- time ranges: resolve RELATIVE ranges against today's date (given below), and record \
+the resolution in `assumptions`. "the last N years" -> start_year = current_year - (N - 1) \
+and end_year = current_year (an N-year window ending this year). "since 20XX" -> \
+start_year = 20XX. A trend of how many trials there HAVE been is bounded by now: set \
+end_year = current_year (for both "since 20XX" and past-tense questions like "have there \
+been"/"were run") so trials with future, not-yet-started start dates don't appear. Only \
+leave end_year open (null) or set it in the future when the question explicitly asks about \
+upcoming/planned/projected trials.
 
 Hard rules:
 - Never invent data, counts, drugs, or conditions the question does not mention.
@@ -96,12 +108,37 @@ FEW_SHOTS: list[tuple[str, PlannerOutput]] = [
         PlannerOutput(
             operation=Operation.time_trend,
             entities=Entities(drug="pembrolizumab"),
-            filters=Filters(start_year=2018),
+            filters=Filters(start_year=2018, end_year=2026),
             time_granularity="year",
             measure=Measure.trial_count,
             proposed_viz=VizType.time_series,
             interpretation="Annual count of pembrolizumab trials since 2018.",
-            assumptions=["Interpreted 'since 2018' as start_year >= 2018, bucketed by year."],
+            assumptions=[
+                "Interpreted 'since 2018' as start_year >= 2018, bucketed by year.",
+                "Bounded end_year at the current year so not-yet-started trials are excluded.",
+            ],
+        ),
+    ),
+    (
+        "How many brain cancer trials have there been per year per trial phase "
+        "for the last five years?",
+        PlannerOutput(
+            operation=Operation.time_trend,
+            entities=Entities(condition="brain cancer"),
+            filters=Filters(start_year=2022, end_year=2026),
+            group_by=CategoricalField.phase,
+            time_granularity="year",
+            measure=Measure.trial_count,
+            proposed_viz=VizType.time_series,
+            interpretation=(
+                "Annual count of brain cancer trials by phase over the last five years."
+            ),
+            assumptions=[
+                "Resolved 'the last five years' to start_year=2022, end_year=2026 "
+                "against today's date.",
+                "Past-tense ('have there been') bounds the range at the current year, "
+                "so future-dated trials are excluded.",
+            ],
         ),
     ),
     (
@@ -238,8 +275,21 @@ def _msg(role: Literal["system", "user", "assistant"], content: str) -> Response
 
 
 def build_input(request: VisualizationRequest) -> list[ResponseInputItemParam]:
-    """Build the full Responses-API ``input``: system + few-shots + user query."""
-    messages: list[ResponseInputItemParam] = [_msg("system", SYSTEM_PROMPT)]
+    """Build the full Responses-API ``input``: system + few-shots + user query.
+
+    Today's date is injected so the model can resolve relative time expressions
+    ("the last five years", "recent") into concrete year bounds. This is the only
+    non-deterministic part of the prompt — captures record the resulting plan, so
+    replay is unaffected.
+    """
+    messages: list[ResponseInputItemParam] = [
+        _msg("system", SYSTEM_PROMPT),
+        _msg(
+            "system",
+            f"Today's date is {date.today().isoformat()}. "
+            "Resolve every relative time expression against it.",
+        ),
+    ]
     for query, output in FEW_SHOTS:
         messages.append(_msg("user", query))
         messages.append(_msg("assistant", output.model_dump_json()))

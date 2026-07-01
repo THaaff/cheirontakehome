@@ -1,0 +1,5120 @@
+{
+  "request_id": "<request-id>",
+  "visualization": {
+    "kind": "chart",
+    "renderer": "vega-lite",
+    "type": "grouped_bar_chart",
+    "title": "Lead sponsor class across melanoma vs lung cancer",
+    "encoding": {
+      "x": {
+        "field": "lead_sponsor_class",
+        "type": "nominal",
+        "title": "Lead sponsor class",
+        "sort": null
+      },
+      "y": {
+        "field": "trial_count",
+        "type": "quantitative",
+        "title": "Number of trials",
+        "sort": null
+      },
+      "color": {
+        "field": "series",
+        "type": "nominal",
+        "title": "Condition",
+        "sort": null
+      },
+      "column": null,
+      "size": null
+    },
+    "data": [
+      {
+        "citations": [
+          {
+            "nct_id": "NCT04272658",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03176485",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00828126",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00412425",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03033485",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05817149",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03950635",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04318717",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05418972",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05607095",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02036086",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05388851",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06291753",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03140137",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02917473",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00346502",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06075524",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04493723",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03313323",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01590069",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01840527",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04577742",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06861647",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07260591",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05015816",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04072900",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02668536",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002947",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01861938",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01409174",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05620290",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00975520",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05498805",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03917069",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00495950",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02644369",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05470283",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01066390",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04201223",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02437227",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00027742",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03311542",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07280715",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01251978",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03229278",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06377111",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06418204",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06608511",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00765193",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04622566",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05652673",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06384053",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02257424",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03457766",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00243594",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00482105",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01625351",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05764395",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06756295",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01941927",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01005472",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01621295",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05196087",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00085306",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00253708",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03663647",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00005615",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05524935",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04107168",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02613325",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06041724",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05373823",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02718391",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01242618",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03007823",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00005610",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02043184",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05830058",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01334008",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00477919",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00722098",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03313544",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00658892",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06999499",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01167998",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02278887",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05878964",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00588198",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02915666",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01474551",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04675346",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01336270",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02731729",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03158935",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01843738",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03898687",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00004104",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03725449",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01477463",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00518206",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "OTHER",
+        "series": "melanoma",
+        "trial_count": 2079
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT06506643",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02009449",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00083252",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03684785",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01359735",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04894994",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01721772",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00949702",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00084656",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00395070",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05091346",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02521870",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03993379",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01351103",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05647954",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03084640",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02416336",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04060407",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05858736",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00324155",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05223218",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06398418",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03297424",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00199342",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06270082",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06063746",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05457842",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03567889",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03552718",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02038218",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03621462",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02509598",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05496192",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01978236",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04291079",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06214156",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01006980",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04099251",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00942162",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02113683",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01864538",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01149343",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03552549",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03815058",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07649252",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01597908",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05970497",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04904120",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05222932",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02056522",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04362722",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06781983",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00073944",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05117138",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03911869",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05155254",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00055562",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04787042",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03625141",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04336241",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06409195",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07136181",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01266967",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00044356",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07086105",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00831545",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05620134",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05810740",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04911998",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02457793",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003647",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06540391",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00091572",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04640545",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05501912",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002767",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01029873",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06362369",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04830124",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04042480",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07124000",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01775514",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00289016",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03400332",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03070392",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01522664",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06974734",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03438279",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01765569",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04198818",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04891718",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07459543",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07476326",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05537740",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00035165",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00730639",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02304367",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05461430",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03815682",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03633110",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "INDUSTRY",
+        "series": "melanoma",
+        "trial_count": 1270
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT01274338",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00019448",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00462280",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03707574",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01519427",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00651157",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00513604",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01196416",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02298959",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01273181",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04439344",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04557956",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00704938",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00665470",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00020397",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01307618",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01989559",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00079144",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00509496",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00509288",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01271907",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00017316",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03816332",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04439292",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003665",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01587352",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00020540",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01026324",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04708418",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02054104",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01303341",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00026754",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00255762",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01216787",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00670748",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00026221",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01989572",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00341939",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00080353",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00288938",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01902173",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00339222",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00101270",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00937937",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00436605",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00112476",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00019214",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00217542",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00295958",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01993719",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00387751",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00923195",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00482911",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00669019",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02465060",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00040352",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01134614",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01166126",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001439",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00138229",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00091104",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03407040",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00019682",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00089180",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01021059",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04314401",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00019331",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00866177",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00706992",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02489266",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001832",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01814046",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01369875",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00005781",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00861913",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02978625",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00901966",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00020579",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01341496",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00314106",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03300843",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01727076",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01313429",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00075166",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00082914",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00020267",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01143402",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00342446",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00089063",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00072124",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00019669",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001823",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02153905",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07328516",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00062933",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001685",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00072189",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00060125",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01118091",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00923169",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "NIH",
+        "series": "melanoma",
+        "trial_count": 252
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT00036816",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00005052",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04527549",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003601",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003597",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003444",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02402244",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05108298",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04851119",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00006385",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04462406",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00514085",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02821013",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00020839",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003266",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02177110",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002860",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003308",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01489423",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07068074",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00005971",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00093678",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00085059",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00526149",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06246149",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003641",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00974610",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02740920",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04221438",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04511013",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00897520",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03235245",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01209299",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002763",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01152788",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07130032",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00897546",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002669",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00104884",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00014625",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00049530",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04498767",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00042783",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003828",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003989",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003027",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00937781",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01942603",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02507947",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002980",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03804255",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01388569",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00095953",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00700882",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00071981",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01502696",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00110123",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00086866",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00897442",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00104988",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00053781",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07040280",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06623461",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003911",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003750",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00026520",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00006237",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00898183",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05522660",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00006249",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07621614",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00755976",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02974803",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "NETWORK",
+        "series": "melanoma",
+        "trial_count": 73
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT03986515",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04463368",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05903937",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01785316",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03073304",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05315128",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05463510",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04924413",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06519266",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04142931",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07552597",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06788665",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05304546",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04242329",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05900102",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05928962",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02697630",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05664139",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03383237",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03643289",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04460053",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00111046",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05990634",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03353402",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04507048",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05172232",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06363591",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06670300",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01988077",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06971848",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00287131",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05909618",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07651618",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04406454",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07256184",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01194947",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05212103",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07183852",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03685890",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07361666",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03879395",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04812470",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07349940",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05466474",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03285230",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03166397",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07349303",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "OTHER_GOV",
+        "series": "melanoma",
+        "trial_count": 47
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT00029900",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "FED",
+        "series": "melanoma",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT00124124",
+            "excerpt": "INDIV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "INDIV",
+        "series": "melanoma",
+        "trial_count": 1
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT05281406",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04797806",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06031558",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06822348",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02995889",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02430948",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07244926",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06161935",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06610240",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00416689",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07614204",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02727335",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06434740",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00280748",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01885455",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02974426",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06020443",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00793208",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05684276",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00799240",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03998189",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06538038",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002858",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04610658",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01731548",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02388048",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00613626",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04647838",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05672355",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01774526",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02068378",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05727735",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02425748",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01852578",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00283478",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05419076",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01443078",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03883243",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03824535",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07432308",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00024076",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00301808",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06794125",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06897046",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04809103",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02788461",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04158973",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02229994",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02029222",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06055972",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05257382",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06249282",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00406302",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03586453",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05616624",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01294280",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05059951",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07373951",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06206551",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00627029",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01257139",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00397124",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00193427",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01253161",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07160686",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00192829",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07191405",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00264602",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03140137",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01602445",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07498972",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06250777",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06810375",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05468242",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00062270",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002470",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04238169",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03433469",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01954641",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03924466",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02764866",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01141686",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05811169",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06406166",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01126866",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06634966",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01555502",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02658097",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06075524",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03235427",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02684461",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01590069",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03836066",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00004160",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00702962",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06451003",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01273766",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03391869",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04285866",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05582031",
+            "excerpt": "OTHER",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "OTHER",
+        "series": "lung cancer",
+        "trial_count": 8866
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT01265433",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04695847",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00066885",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06751576",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01560104",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07542704",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02009449",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06592638",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03849768",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04866017",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04379635",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07279935",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04938817",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02274025",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01185847",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05393635",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02609776",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01031225",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07423117",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06714617",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02047903",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02125461",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04165096",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01330862",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02299505",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06188702",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06671379",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03663205",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07076095",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06632262",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04660929",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03150810",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00343720",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01772797",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01454102",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01351103",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07231445",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00363415",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02453282",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00530621",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00054184",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03181308",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00352950",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01903850",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04177290",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06975410",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05687266",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05245500",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05858736",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00435578",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07472517",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07183189",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02805660",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03409458",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07300150",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00680940",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04394624",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05034926",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03307785",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03347825",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07070440",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03802240",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05546268",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02884479",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03297424",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07554859",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03910127",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07164170",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00034268",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03734913",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02082210",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03774082",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07613424",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06668103",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00655161",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06270082",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05799274",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00729742",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03552718",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03703297",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02546986",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06476808",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02038218",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07354074",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07232849",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04838548",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05435248",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01830426",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02874664",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00654758",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02515032",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04740021",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01696643",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04189614",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05032352",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03149549",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03893955",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00259064",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07181499",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06549816",
+            "excerpt": "INDUSTRY",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "INDUSTRY",
+        "series": "lung cancer",
+        "trial_count": 4423
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT01294306",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02589522",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00158145",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02595931",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00086827",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00005842",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001702",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00098540",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03707574",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00454376",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02193282",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00004074",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00079794",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002540",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00138203",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00421174",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001944",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06253520",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00972205",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01679743",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00118235",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00094978",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01696968",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03366103",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05353439",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00459342",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00923949",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02233842",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02682667",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00321893",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003240",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00482118",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00025207",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03896503",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02899728",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00245063",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01441128",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07509034",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00738881",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04439292",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00030498",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00084487",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00049608",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00019825",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001515",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00720785",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01866410",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04102436",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001893",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02054104",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00026754",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06228066",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04826341",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00084461",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03213704",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00340847",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00098956",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00544596",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00017251",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00019084",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00366509",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00454363",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00341939",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00062101",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00334815",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01193868",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04320888",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00077922",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00698815",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05411107",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00041860",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00006929",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03801902",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00400829",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00037817",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00101348",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00365053",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01654965",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00368927",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00066768",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02567396",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06982222",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00001465",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04370834",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00341835",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04310020",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01441089",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00887159",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03600701",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02465060",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01086696",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04439253",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01064648",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00028028",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00033137",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01218854",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03811002",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03407040",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04802174",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00340340",
+            "excerpt": "NIH",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "NIH",
+        "series": "lung cancer",
+        "trial_count": 427
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT02785913",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00953459",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00107250",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02926638",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00074295",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00869752",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00365105",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00080938",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00045162",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00062010",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03939481",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01208064",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04790253",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04568720",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02201992",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00006036",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00516100",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01824901",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02337530",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05673187",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01262560",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01562028",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00006229",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00008385",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00874211",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03319316",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003649",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05718297",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00346320",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02046733",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05386355",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01783197",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03971474",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02273271",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003985",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02438722",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04949464",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00288054",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00469976",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00004011",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00958321",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02436733",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04245085",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02273375",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01726309",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02785939",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01486368",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00265785",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03574753",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002623",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01700400",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00006004",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00057837",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00004137",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04712877",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01838577",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02214134",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01416688",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03827070",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00554463",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05718323",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01993810",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00513877",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003313",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003803",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03845296",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00424138",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00016211",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00101283",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003235",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00898417",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01920789",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05714891",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04127110",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00014196",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002972",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03377556",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003062",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00087438",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00458913",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00057746",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01160731",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00606970",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003329",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00103051",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06931717",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00041314",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04492371",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00661193",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02728596",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02766335",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002642",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00974610",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00090961",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00113386",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03057106",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06284317",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003589",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02154490",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00737867",
+            "excerpt": "NETWORK",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "NETWORK",
+        "series": "lung cancer",
+        "trial_count": 267
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT01027676",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02305173",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07244016",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07571759",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00864331",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07108816",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02455843",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00519805",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07264569",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06156527",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02611245",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03159377",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07426718",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06334757",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00886028",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01527409",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06436885",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05236946",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03249766",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01385111",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01023828",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06643000",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01502202",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05192681",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01470716",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06557343",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01852838",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00075699",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07008560",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03808480",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00453115",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04753918",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06760676",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00821860",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07388225",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06406660",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00253591",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00003159",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00563160",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07636252",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00002822",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00268684",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06527898",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06322329",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05497076",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04366661",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07561190",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04241614",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05878028",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00452803",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02939729",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02967406",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01442909",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03486509",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00896155",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06236997",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05278052",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04074993",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06846736",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05674227",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04142931",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02938624",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04354818",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05348668",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02967497",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06618391",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07192926",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03446547",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07559786",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06136910",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00862173",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01836575",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04613804",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03126799",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03412357",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03486496",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05882630",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02069418",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05252091",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03790228",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07050043",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01037998",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07320105",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01207986",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02363101",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06812767",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03110939",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04449783",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06267170",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03376737",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00859742",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06586697",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03123679",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06479473",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00425022",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00686322",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06231680",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT07039994",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02737774",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03093688",
+            "excerpt": "OTHER_GOV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "OTHER_GOV",
+        "series": "lung cancer",
+        "trial_count": 266
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT01817686",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02476526",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06389981",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06538636",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00780234",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00448344",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00954148",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01672294",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05001009",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05467748",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00029328",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00784095",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06963970",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00108186",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06064279",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04037462",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02765412",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02899754",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03612804",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02991677",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06825715",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04515004",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06275360",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01574222",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01710293",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06671613",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01883986",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00282516",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01754909",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01417806",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04166240",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02653612",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06432985",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06745258",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01047761",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00122135",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03621813",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01044290",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03007953",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05430009",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04574518",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT06681220",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT05179408",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT02984761",
+            "excerpt": "FED",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "FED",
+        "series": "lung cancer",
+        "trial_count": 44
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT02642939",
+            "excerpt": "INDIV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT00050674",
+            "excerpt": "INDIV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT03695835",
+            "excerpt": "INDIV",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "INDIV",
+        "series": "lung cancer",
+        "trial_count": 3
+      },
+      {
+        "citations": [
+          {
+            "nct_id": "NCT02584699",
+            "excerpt": "UNKNOWN",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT01812018",
+            "excerpt": "UNKNOWN",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          },
+          {
+            "nct_id": "NCT04056923",
+            "excerpt": "UNKNOWN",
+            "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class"
+          }
+        ],
+        "lead_sponsor_class": "UNKNOWN",
+        "series": "lung cancer",
+        "trial_count": 3
+      }
+    ],
+    "vega_spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": "Lead sponsor class across melanoma vs lung cancer",
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "lead_sponsor_class",
+          "type": "nominal",
+          "title": "Lead sponsor class"
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials"
+        },
+        "xOffset": {
+          "field": "series"
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Condition"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "lead_sponsor_class": "OTHER",
+            "series": "melanoma",
+            "trial_count": 2079
+          },
+          {
+            "lead_sponsor_class": "INDUSTRY",
+            "series": "melanoma",
+            "trial_count": 1270
+          },
+          {
+            "lead_sponsor_class": "NIH",
+            "series": "melanoma",
+            "trial_count": 252
+          },
+          {
+            "lead_sponsor_class": "NETWORK",
+            "series": "melanoma",
+            "trial_count": 73
+          },
+          {
+            "lead_sponsor_class": "OTHER_GOV",
+            "series": "melanoma",
+            "trial_count": 47
+          },
+          {
+            "lead_sponsor_class": "FED",
+            "series": "melanoma",
+            "trial_count": 1
+          },
+          {
+            "lead_sponsor_class": "INDIV",
+            "series": "melanoma",
+            "trial_count": 1
+          },
+          {
+            "lead_sponsor_class": "OTHER",
+            "series": "lung cancer",
+            "trial_count": 8866
+          },
+          {
+            "lead_sponsor_class": "INDUSTRY",
+            "series": "lung cancer",
+            "trial_count": 4423
+          },
+          {
+            "lead_sponsor_class": "NIH",
+            "series": "lung cancer",
+            "trial_count": 427
+          },
+          {
+            "lead_sponsor_class": "NETWORK",
+            "series": "lung cancer",
+            "trial_count": 267
+          },
+          {
+            "lead_sponsor_class": "OTHER_GOV",
+            "series": "lung cancer",
+            "trial_count": 266
+          },
+          {
+            "lead_sponsor_class": "FED",
+            "series": "lung cancer",
+            "trial_count": 44
+          },
+          {
+            "lead_sponsor_class": "INDIV",
+            "series": "lung cancer",
+            "trial_count": 3
+          },
+          {
+            "lead_sponsor_class": "UNKNOWN",
+            "series": "lung cancer",
+            "trial_count": 3
+          }
+        ]
+      }
+    },
+    "hints": {
+      "sort": null,
+      "x_time_unit": null,
+      "units": "trials",
+      "note": "Grouped bars: one cluster per category, one bar per series value."
+    }
+  },
+  "meta": {
+    "source": "clinicaltrials.gov",
+    "query_interpretation": "Comparison of sponsor types (lead sponsor class) running melanoma versus lung cancer trials.",
+    "assumptions": [],
+    "filters_applied": {},
+    "total_studies_matched": 18022,
+    "studies_analyzed": 18022,
+    "data_timestamp": "2026-06-30T09:00:05",
+    "citation_cap": 100,
+    "warnings": [],
+    "plan": null
+  }
+}

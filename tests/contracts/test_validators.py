@@ -234,4 +234,4 @@ def test_max_studies_bounds() -> None:
     with pytest.raises(ValidationError):
         RequestOptions(max_studies=0)
     with pytest.raises(ValidationError):
-        RequestOptions(max_studies=10001)
+        RequestOptions(max_studies=50001)

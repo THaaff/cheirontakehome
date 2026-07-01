@@ -156,6 +156,8 @@ def build_title(plan: AnalysisPlan, viz_type: VizType) -> str:
     if viz_type is VizType.time_series:
         unit = plan.time_granularity
         title = _sentence_case(f"{prefix}trials per {unit}".strip())
+        if plan.group_by is not None:
+            title += f" by {_label(plan.group_by.value).lower()}"
         if plan.filters.start_year is not None:
             title += f" since {plan.filters.start_year}"
         return title
@@ -280,9 +282,12 @@ def build_grouped_bar_chart(data: object, plan: AnalysisPlan) -> ChartVizSpec:
 
 
 def build_time_series(data: object, plan: AnalysisPlan) -> ChartVizSpec:
-    """Time trend -> line+point time series."""
+    """Time trend -> line+point time series (one line, or one per group value)."""
     tidy = _require_tidy(data)
     dim = _sole_dimension(tidy, "time_series")
+    # A second dimension (set when the plan groups by a category) becomes the
+    # series/color channel — one line per value (e.g. one line per phase).
+    group = tidy.dimension_names[1] if len(tidy.dimension_names) > 1 else None
     measure = tidy.measure_name
     title = build_title(plan, VizType.time_series)
     # Vega-Lite reads *numeric* temporal values as epoch milliseconds, so a year
@@ -294,11 +299,18 @@ def build_time_series(data: object, plan: AnalysisPlan) -> ChartVizSpec:
     for row in values:
         row[dim] = str(row[dim])
 
+    color_sort = PHASE_ORDER if group == CategoricalField.phase.value else None
+    color_channel = (
+        Channel(field=group, type=ChannelType.nominal, title=_label(group), sort=color_sort)
+        if group is not None
+        else None
+    )
     encoding = Encoding(
         x=Channel(field=dim, type=ChannelType.temporal, title=_label(dim)),
         y=Channel(
             field=measure, type=ChannelType.quantitative, title=_measure_title(Measure(measure))
         ),
+        color=color_channel,
     )
     vega = vega_templates.time_series_spec(
         title=title,
@@ -308,6 +320,9 @@ def build_time_series(data: object, plan: AnalysisPlan) -> ChartVizSpec:
         y_title=_measure_title(Measure(measure)),
         time_unit=time_unit,
         values=values,
+        color_field=group,
+        color_title=_label(group) if group is not None else None,
+        color_sort=color_sort,
     )
     hints = VizHints(x_time_unit=plan.time_granularity, units=_units(Measure(measure)))
     return ChartVizSpec(

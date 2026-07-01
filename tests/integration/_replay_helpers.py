@@ -70,11 +70,16 @@ def empty_pages(total: int = 0) -> list[dict[str, Any]]:
     return [{"studies": [], "totalCount": total}]
 
 
+# Must match RequestOptions.max_studies' default so a request with no explicit
+# budget looks up the entry these helpers seed.
+_DEFAULT_MAX_STUDIES = 25000
+
+
 def seed_cache(
     cache_dir: str,
     plan: AnalysisPlan,
     raw_name: str | None = None,
-    max_studies: int = 2000,
+    max_studies: int = _DEFAULT_MAX_STUDIES,
     *,
     pages: list[dict[str, Any]] | None = None,
 ) -> str:
@@ -102,7 +107,7 @@ def sub_plan_for_series(plan: AnalysisPlan, value: str) -> AnalysisPlan:
 
 
 def seed_comparison(
-    cache_dir: str, plan: AnalysisPlan, raw_name: str, max_studies: int = 2000
+    cache_dir: str, plan: AnalysisPlan, raw_name: str, max_studies: int = _DEFAULT_MAX_STUDIES
 ) -> list[str]:
     """Seed one cache entry per comparison series value (all from one raw fixture).
 

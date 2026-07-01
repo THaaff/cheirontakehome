@@ -32,9 +32,9 @@
           "description": "`replay` reads cached responses + recorded plans."
         },
         "max_studies": {
-          "default": 2000,
-          "description": "Page-budget cap for client-side aggregation.",
-          "maximum": 10000,
+          "default": 25000,
+          "description": "Page-budget cap for client-side aggregation. Defaults high enough to analyze the full match for a realistic single-entity query; a truly huge match still truncates at this ceiling (with a warning).",
+          "maximum": 50000,
           "minimum": 1,
           "title": "Max Studies",
           "type": "integer"

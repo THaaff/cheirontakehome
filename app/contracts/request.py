@@ -23,10 +23,14 @@ class RequestOptions(BaseModel):
         description="`replay` reads cached responses + recorded plans.",
     )
     max_studies: int = Field(
-        default=2000,
+        default=25000,
         ge=1,
-        le=10000,
-        description="Page-budget cap for client-side aggregation.",
+        le=50000,
+        description=(
+            "Page-budget cap for client-side aggregation. Defaults high enough to "
+            "analyze the full match for a realistic single-entity query; a truly "
+            "huge match still truncates at this ceiling (with a warning)."
+        ),
     )
     force_refresh: bool = Field(
         default=False,

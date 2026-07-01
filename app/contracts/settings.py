@@ -30,3 +30,8 @@ class Settings(BaseSettings):
     cache_dir: str = ".cache"
     planner_model: str = "gpt-4.1"
     default_mode: RequestMode = RequestMode.live
+    # Cap the per-datum citation list in the response so a full-corpus analysis
+    # (thousands of studies) does not bloat the payload. Counts stay exact — only
+    # the citation *sample* is trimmed; each datum's measure value is the true
+    # total, so the client can show "showing N of <total>". 0 disables the cap.
+    max_citations_per_datum: int = 100

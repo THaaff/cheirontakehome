@@ -1,0 +1,27 @@
+{
+  "operation": "categorical_distribution",
+  "entities": {
+    "drug": null,
+    "condition": "melanoma",
+    "sponsor": null,
+    "terms": []
+  },
+  "filters": {
+    "statuses": [],
+    "phases": [],
+    "study_type": null,
+    "countries": [],
+    "start_year": null,
+    "end_year": null
+  },
+  "group_by": "phase",
+  "series": null,
+  "numeric_x": null,
+  "numeric_y": null,
+  "time_granularity": "year",
+  "measure": "trial_count",
+  "network": null,
+  "proposed_viz": "bar_chart",
+  "interpretation": "Distribution of melanoma trials across clinical trial phases.",
+  "assumptions": []
+}

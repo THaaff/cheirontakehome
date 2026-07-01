@@ -39,6 +39,14 @@ class Meta(BaseModel):
         description="How many records the aggregation actually consumed."
     )
     data_timestamp: str | None = Field(default=None, description="CT.gov dataTimestamp.")
+    citation_cap: int | None = Field(
+        default=None,
+        description=(
+            "Per-datum citation limit applied to this response (None if uncapped). "
+            "A datum whose measure value exceeds this shows a representative sample; "
+            "the full set is reachable via the datum's ClinicalTrials.gov query."
+        ),
+    )
     warnings: list[str] = Field(
         default_factory=list,
         description='e.g. "312 studies had unparseable start dates and were excluded".',
