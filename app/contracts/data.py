@@ -64,6 +64,11 @@ class TidyDataset(BaseModel):
     points: list[DataPoint]
     dimension_names: list[str] = Field(description="The dim keys present, for the viz layer.")
     measure_name: str
+    warnings: list[str] = Field(
+        default_factory=list,
+        description="Aggregation-level notes, e.g. studies excluded for unparseable dates "
+        "or an empty input set.",
+    )
 
 
 class ChartDatum(BaseModel):
@@ -111,6 +116,11 @@ class GraphData(BaseModel):
 
     nodes: list[GraphNode] = Field(default_factory=list)
     edges: list[GraphEdge] = Field(default_factory=list)
+    warnings: list[str] = Field(
+        default_factory=list,
+        description="Aggregation-level notes (the network path's channel for the same "
+        "notes as TidyDataset.warnings).",
+    )
 
 
 # ---------------------------------------------------------------------------

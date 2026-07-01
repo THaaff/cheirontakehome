@@ -495,6 +495,14 @@
           },
           "title": "Edges",
           "type": "array"
+        },
+        "warnings": {
+          "description": "Aggregation-level notes (the network path's channel for the same notes as TidyDataset.warnings).",
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
         }
       },
       "title": "GraphData",
@@ -868,16 +876,21 @@
       "type": "string"
     },
     "OverallStatus": {
-      "description": "Trial recruitment status. Values mirror CT.gov ``overallStatus``.\n\nThis is the common subset. The authoritative full set comes from the CT.gov\nenums endpoint (``/stats/field/values`` and the data-model endpoints); the\nretrieval worktree may extend this enum after confirming values in the spike.",
+      "description": "Trial status. Values mirror CT.gov ``overallStatus`` (complete set).\n\nCovers both the recruitment statuses and the expanded-access / special\nstatuses (the last five). This is the authoritative set confirmed against\nlive data; completing it (rather than carrying a subset) keeps the principle\nthat our enums mirror the controlled vocabulary exactly, so a\n``categorical_distribution`` grouped by status reports distinct\nexpanded-access statuses instead of collapsing them into one misleadingly\nfat ``UNKNOWN`` bucket. The retrieval parser still coerces any value outside\nthis set to :attr:`UNKNOWN` with a deduplicated warning, so a future API\naddition never hard-fails \u2014 completion just narrows what falls through that\nsafety net.",
       "enum": [
-        "RECRUITING",
         "NOT_YET_RECRUITING",
-        "ACTIVE_NOT_RECRUITING",
+        "RECRUITING",
         "ENROLLING_BY_INVITATION",
-        "COMPLETED",
+        "ACTIVE_NOT_RECRUITING",
         "SUSPENDED",
         "TERMINATED",
+        "COMPLETED",
         "WITHDRAWN",
+        "AVAILABLE",
+        "NO_LONGER_AVAILABLE",
+        "TEMPORARILY_NOT_AVAILABLE",
+        "APPROVED_FOR_MARKETING",
+        "WITHHELD",
         "UNKNOWN"
       ],
       "title": "OverallStatus",
