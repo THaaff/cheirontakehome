@@ -11,6 +11,7 @@ from pydantic import ValidationError
 from app.contracts import (
     AnalysisPlan,
     CategoricalField,
+    EdgeSemantics,
     NetworkSpec,
     NumericField,
     Operation,
@@ -170,6 +171,24 @@ def test_network_spec_max_nodes_bounds() -> None:
         NetworkSpec(node_types=["drug"], max_nodes=1)
     with pytest.raises(ValidationError):
         NetworkSpec(node_types=["drug"], max_nodes=201)
+
+
+def test_sponsor_only_network_requires_shared_drug_semantics() -> None:
+    # A trial has one lead sponsor, so co-occurrence-in-trial is impossible here.
+    with pytest.raises(ValidationError):
+        NetworkSpec(node_types=["sponsor"])  # defaults to co_occurrence_in_trial
+    with pytest.raises(ValidationError):
+        NetworkSpec(node_types=["sponsor"], edge_semantics="co_occurrence_in_trial")
+
+
+def test_shared_drug_semantics_only_valid_for_sponsor_only() -> None:
+    with pytest.raises(ValidationError):
+        NetworkSpec(node_types=["sponsor", "drug"], edge_semantics="shared_drug")
+
+
+def test_valid_sponsor_sponsor_network_constructs() -> None:
+    spec = NetworkSpec(node_types=["sponsor"], edge_semantics="shared_drug")
+    assert spec.edge_semantics is EdgeSemantics.shared_drug
 
 
 # ---------------------------------------------------------------------------

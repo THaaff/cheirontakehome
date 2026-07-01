@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from app.contracts import (
     AnalysisPlan,
+    EdgeSemantics,
     InterventionType,
     NetworkSpec,
     NodeType,
@@ -128,5 +129,65 @@ def test_drug_drug_co_occurrence_weights() -> None:
 def test_empty_input_is_safe() -> None:
     spec = NetworkSpec(node_types=[NodeType.sponsor, NodeType.drug])
     graph = build_cooccurrence_network([], _net_plan(spec))
+    assert graph.nodes == [] and graph.edges == []
+    assert graph.warnings
+
+
+# --- sponsor-sponsor shared-drug shape --------------------------------------
+
+
+def _sponsor_net_spec(**kwargs: object) -> NetworkSpec:
+    return NetworkSpec(
+        node_types=[NodeType.sponsor],
+        edge_semantics=EdgeSemantics.shared_drug,
+        **kwargs,  # type: ignore[arg-type]
+    )
+
+
+def test_sponsor_sponsor_edge_weight_is_shared_drug_count() -> None:
+    # Merck and Pfizer both run trials on DrugA and DrugB (2 shared drugs);
+    # Roche shares only DrugA with each of them (weight 1).
+    trials = [
+        _trial("NCT00000001", "Merck", ["DrugA"]),
+        _trial("NCT00000002", "Merck", ["DrugB"]),
+        _trial("NCT00000003", "Pfizer", ["DrugA", "DrugB"]),
+        _trial("NCT00000004", "Roche", ["DrugA"]),
+    ]
+    graph = build_cooccurrence_network(trials, _net_plan(_sponsor_net_spec()))
+
+    # Every node is a sponsor; drugs are the connective evidence, not nodes.
+    assert graph.nodes and all(n.type is NodeType.sponsor for n in graph.nodes)
+    assert {n.id for n in graph.nodes} == {"sponsor:merck", "sponsor:pfizer", "sponsor:roche"}
+
+    def weight(a: str, b: str) -> float:
+        lo, hi = sorted((a, b))
+        return next(e.weight for e in graph.edges if (e.source, e.target) == (lo, hi))
+
+    assert weight("sponsor:merck", "sponsor:pfizer") == 2.0  # DrugA + DrugB
+    assert weight("sponsor:merck", "sponsor:roche") == 1.0  # DrugA only
+    # Edge provenance cites the shared drug from both sponsors' trials.
+    merck_pfizer = next(
+        e for e in graph.edges if {e.source, e.target} == {"sponsor:merck", "sponsor:pfizer"}
+    )
+    assert {c.nct_id for c in merck_pfizer.citations} >= {"NCT00000001", "NCT00000003"}
+
+
+def test_sponsor_sponsor_min_edge_weight_prunes_by_shared_drugs() -> None:
+    trials = [
+        _trial("NCT00000001", "Merck", ["DrugA", "DrugB"]),
+        _trial("NCT00000002", "Pfizer", ["DrugA", "DrugB"]),  # Merck–Pfizer share 2
+        _trial("NCT00000003", "Roche", ["DrugA"]),  # Roche shares only 1 with each
+    ]
+    graph = build_cooccurrence_network(trials, _net_plan(_sponsor_net_spec(min_edge_weight=2)))
+    assert {n.id for n in graph.nodes} == {"sponsor:merck", "sponsor:pfizer"}
+    assert len(graph.edges) == 1 and graph.edges[0].weight == 2.0
+
+
+def test_sponsor_sponsor_no_shared_drug_is_empty() -> None:
+    trials = [
+        _trial("NCT00000001", "Merck", ["DrugA"]),
+        _trial("NCT00000002", "Pfizer", ["DrugB"]),  # no overlap
+    ]
+    graph = build_cooccurrence_network(trials, _net_plan(_sponsor_net_spec()))
     assert graph.nodes == [] and graph.edges == []
     assert graph.warnings

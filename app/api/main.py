@@ -1,28 +1,53 @@
-"""FastAPI skeleton (PRD Section H).
+"""FastAPI application: the real ``POST /visualize`` wired to the pipeline.
 
-Phase 0 stub. ``POST /visualize`` ignores the request body and returns a single
-hardcoded, schema-valid :class:`VisualizationResponse` loaded from
-``fixtures/responses/bar_chart_phases.json``. The integration worktree (Phase 2)
-replaces the *internals* of this endpoint with real orchestration; the endpoint
-signature and ``response_model`` are frozen so that swap is clean.
+Replaces the Phase 0 stub internals with :func:`app.api.orchestrator.run_pipeline`
+while keeping the endpoint signature and ``response_model`` stable. The app owns
+long-lived clients for its lifecycle (one CT.gov ``httpx.AsyncClient``; the OpenAI
+client is the planner's own module singleton) and closes them on shutdown.
 """
 
 from __future__ import annotations
 
-import json
-from functools import lru_cache
-from pathlib import Path
-from typing import Any
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
+from typing import Annotated
 
-from fastapi import FastAPI
+import httpx
+from fastapi import Depends, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.contracts import VisualizationRequest, VisualizationResponse
+import app.planner.client as planner_client
+from app.api.errors import register_exception_handlers
+from app.api.orchestrator import run_pipeline
+from app.contracts import Settings, VisualizationRequest, VisualizationResponse
 
-# Repo root is two levels up from app/api/main.py; fixtures live at the root.
-_FIXTURE_PATH = (
-    Path(__file__).resolve().parents[2] / "fixtures" / "responses" / "bar_chart_phases.json"
-)
+# Single process-wide config object, sourced from env / .env. Tests override the
+# `get_settings` dependency to point at a fixture cache and force replay mode.
+settings = Settings()
+
+
+def get_settings() -> Settings:
+    """Settings dependency (override in tests via ``app.dependency_overrides``)."""
+    return settings
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI) -> AsyncIterator[None]:
+    """Own the CT.gov HTTP client for the app lifecycle; close clients on shutdown.
+
+    A single ``AsyncClient`` gives the retrieval stage — and the comparison
+    fan-out's concurrent retrievals — one shared connection pool with keep-alive
+    and TLS reuse. The planner manages its own OpenAI client lazily (built only on
+    a live call, so a replay-only server stays key-free); we close it here so the
+    event loop tears down cleanly without an ``atexit`` hook.
+    """
+    app.state.http = httpx.AsyncClient(timeout=httpx.Timeout(30.0, connect=10.0))
+    try:
+        yield
+    finally:
+        await app.state.http.aclose()
+        await planner_client.aclose()
+
 
 app = FastAPI(
     title="ClinicalTrials.gov Query-to-Visualization API",
@@ -31,11 +56,10 @@ app = FastAPI(
         "Turns a natural-language question about clinical trials into a "
         "renderer-ready visualization spec (chart or network graph) backed by "
         "real ClinicalTrials.gov v2 data, with per-datum citations.\n\n"
-        "**Phase 0 skeleton:** `POST /visualize` currently returns a single "
-        "hardcoded, schema-valid response. The contract (request body and "
-        "`response_model`) is frozen; the integration worktree wires in the real "
-        "pipeline later."
+        "The model only plans; every number is computed deterministically from "
+        "the API response. `replay` mode serves cached data with no key or network."
     ),
+    lifespan=lifespan,
 )
 
 # Permissive CORS so the optional static demo page can call the API from
@@ -49,12 +73,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-@lru_cache(maxsize=1)
-def _stub_response() -> VisualizationResponse:
-    """Load and validate the hardcoded stub response once."""
-    raw: dict[str, Any] = json.loads(_FIXTURE_PATH.read_text(encoding="utf-8"))
-    return VisualizationResponse.model_validate(raw)
+register_exception_handlers(app)
 
 
 @app.get("/health")
@@ -64,15 +83,21 @@ def health() -> dict[str, str]:
 
 
 @app.post("/visualize", response_model=VisualizationResponse)
-def visualize(request: VisualizationRequest) -> VisualizationResponse:
+async def visualize(
+    request: VisualizationRequest,
+    http_request: Request,
+    settings: Annotated[Settings, Depends(get_settings)],
+) -> VisualizationResponse:
     """Produce a visualization spec for a natural-language query.
 
-    **Phase 0 stub:** the request body is validated (so the contract is
-    exercised) but otherwise ignored; this always returns the hardcoded
-    ``bar_chart_phases`` fixture. To be replaced during integration — keep the
-    signature and ``response_model`` stable.
+    Runs the full pipeline (plan -> retrieve -> transform -> viz -> validate) and
+    returns a render-ready :class:`VisualizationResponse`, or an ``ErrorResponse``
+    (via the registered handlers) tagged with the stage that failed.
     """
-    return _stub_response()
+    # Normally set by the lifespan; fall back to None so a bare TestClient (no
+    # lifespan) still works — retrieval then creates its own per-call client.
+    http_client = getattr(http_request.app.state, "http", None)
+    return await run_pipeline(request, settings, http_client=http_client)
 
 
 if __name__ == "__main__":  # pragma: no cover - manual run convenience

@@ -398,22 +398,28 @@ def build_scatter_plot(data: object, plan: AnalysisPlan) -> ChartVizSpec:
 def build_choropleth(data: object, plan: AnalysisPlan) -> ChartVizSpec:
     """Geographic distribution -> choropleth, or ranked-bar fallback.
 
-    CT.gov gives country *names*; the choropleth keys on numeric geo ids. If
-    every country resolves we emit a ``choropleth_map``; if any name does not
-    resolve we fall back to a ranked ``bar_chart`` and explain it in a hint, so
-    no datum is ever silently dropped.
+    CT.gov gives country *names*; the choropleth keys on numeric geo ids. An
+    **unknown** name (a typo or bad value) signals something is off upstream, so
+    we fall back to a ranked ``bar_chart`` and explain it in a hint rather than
+    drawing a partial map. **Unrenderable** territories (real places the
+    world-110m basemap has no polygon for, e.g. Hong Kong or Singapore) do not
+    block the map: we render the choropleth for every country that resolves and
+    name the omitted territories in a hint. Either way no datum is silently
+    dropped — every point stays in ``data`` with its citations.
     """
     tidy = _require_tidy(data)
     dim = _sole_dimension(tidy, "choropleth_map")
     measure = tidy.measure_name
     names = [str(point.dims[dim]) for point in tidy.points]
-    resolved, unmapped = geo.resolve_countries(names)
+    resolved, unrenderable, unknown = geo.resolve_countries(names)
 
-    if unmapped:
+    # Only an unrecognized name (or nothing resolving at all) forces the bar
+    # fallback; expected-but-unrenderable territories are handled below.
+    if unknown or not resolved:
         note = (
             "Choropleth unavailable: "
-            f"{', '.join(unmapped)} could not be mapped to a geographic id; "
-            "showing a ranked bar chart of trial counts by country instead."
+            f"{', '.join(unknown or unrenderable)} could not be mapped to a "
+            "geographic id; showing a ranked bar chart of trial counts by country instead."
         )
         return _ranked_bar(
             tidy,
@@ -425,8 +431,12 @@ def build_choropleth(data: object, plan: AnalysisPlan) -> ChartVizSpec:
         )
 
     title = build_title(plan, VizType.choropleth_map)
+    # Only resolved points carry a geo_id; unrenderable points stay in the data
+    # (with citations) but draw no shape on the map.
     geo_extra = {
-        i: {"geo_id": resolved[str(point.dims[dim])]} for i, point in enumerate(tidy.points)
+        i: {"geo_id": resolved[name]}
+        for i, point in enumerate(tidy.points)
+        if (name := str(point.dims[dim])) in resolved
     }
 
     encoding = Encoding(
@@ -443,9 +453,17 @@ def build_choropleth(data: object, plan: AnalysisPlan) -> ChartVizSpec:
         measure_title=_measure_title(Measure(measure)),
         values=_vega_values(tidy, extra=geo_extra),
     )
+    if unrenderable:
+        verb = "is" if len(unrenderable) == 1 else "are"
+        note = (
+            f"{', '.join(unrenderable)} {verb} not shown on the map (no country boundary in "
+            "the world-110m basemap); the counts remain in the underlying data."
+        )
+    else:
+        note = "Country counts mapped onto a world choropleth (vega world-110m)."
     hints = VizHints(
         units=_units(Measure(measure)),
-        note="Country counts mapped onto a world choropleth (vega world-110m).",
+        note=note,
     )
     return ChartVizSpec(
         renderer=Renderer.vega_lite,
