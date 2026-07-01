@@ -99,9 +99,17 @@ class NodeType(enum.StrEnum):
 
 
 class EdgeSemantics(enum.StrEnum):
-    """The meaning of an edge in a co-occurrence network."""
+    """The meaning of an edge in a co-occurrence network.
+
+    ``co_occurrence_in_trial`` connects two nodes that appear in the *same*
+    trial (sponsor↔drug for a bipartite network, drug↔drug for a drug network).
+    ``shared_drug`` connects two *sponsors* that each ran a trial on the same
+    drug — the only sensible edge for a sponsor-only network, since a trial has
+    exactly one lead sponsor and so sponsors can never co-occur within one.
+    """
 
     co_occurrence_in_trial = "co_occurrence_in_trial"
+    shared_drug = "shared_drug"
 
 
 class ChannelType(enum.StrEnum):

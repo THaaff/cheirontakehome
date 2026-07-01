@@ -295,9 +295,10 @@
       "type": "object"
     },
     "EdgeSemantics": {
-      "description": "The meaning of an edge in a co-occurrence network.",
+      "description": "The meaning of an edge in a co-occurrence network.\n\n``co_occurrence_in_trial`` connects two nodes that appear in the *same*\ntrial (sponsor\u2194drug for a bipartite network, drug\u2194drug for a drug network).\n``shared_drug`` connects two *sponsors* that each ran a trial on the same\ndrug \u2014 the only sensible edge for a sponsor-only network, since a trial has\nexactly one lead sponsor and so sponsors can never co-occur within one.",
       "enum": [
-        "co_occurrence_in_trial"
+        "co_occurrence_in_trial",
+        "shared_drug"
       ],
       "title": "EdgeSemantics",
       "type": "string"
@@ -801,10 +802,10 @@
     },
     "NetworkSpec": {
       "additionalProperties": false,
-      "description": "The configuration for a ``cooccurrence_network`` operation.",
+      "description": "The configuration for a ``cooccurrence_network`` operation.\n\nThree shapes are valid, selected by ``node_types`` + ``edge_semantics``:\n\n* ``[sponsor, drug]`` \u2014 bipartite sponsor\u2194drug (``co_occurrence_in_trial``).\n* ``[drug]`` \u2014 drug\u2194drug co-occurrence (``co_occurrence_in_trial``).\n* ``[sponsor]`` \u2014 sponsor\u2194sponsor, linked when both ran a trial on the same\n  drug (``shared_drug``). Since a trial has exactly one lead sponsor,\n  sponsors cannot co-occur within a trial, so this shape *requires*\n  ``shared_drug`` and ``shared_drug`` is valid only for this shape.",
       "properties": {
         "node_types": {
-          "description": "[sponsor, drug] for bipartite, [drug] for drug-drug.",
+          "description": "[sponsor, drug] bipartite, [drug] drug-drug, [sponsor] sponsor-sponsor.",
           "items": {
             "$ref": "#/$defs/NodeType"
           },
@@ -817,7 +818,7 @@
         },
         "min_edge_weight": {
           "default": 1,
-          "description": "Drop edges below this trial count.",
+          "description": "Drop edges below this weight (trial count, or shared-drug count).",
           "title": "Min Edge Weight",
           "type": "integer"
         },

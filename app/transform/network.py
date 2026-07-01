@@ -1,12 +1,18 @@
 """Co-occurrence network construction with networkx (the rubric's differentiator).
 
-Two network shapes are supported, selected by ``plan.network.node_types``:
+Three network shapes are supported, selected by ``plan.network.node_types`` and
+``edge_semantics``:
 
 * **bipartite** ``[sponsor, drug]`` — a node per distinct lead sponsor and per
   distinct drug; an edge whenever a trial has both, weighted by the number of
   such trials.
 * **drug-drug** ``[drug]`` — a node per distinct drug; an edge between two drugs
   that co-occur in the same trial, weighted by the co-occurrence trial count.
+* **sponsor-sponsor** ``[sponsor]`` (``shared_drug``) — a node per distinct lead
+  sponsor; an edge between two sponsors that each ran a trial on the same drug,
+  weighted by the number of drugs they share. A trial has exactly one lead
+  sponsor, so sponsors never co-occur *within* a trial; the shared drug is what
+  connects them, and it is the edge's provenance.
 
 ``min_edge_weight`` prunes weak edges; the graph is then capped to the top
 ``max_nodes`` by node weight (the number of distinct trials a node participates
@@ -18,15 +24,18 @@ as provenance.
 from __future__ import annotations
 
 import re
+from collections.abc import Callable
 
 import networkx as nx  # type: ignore[import-untyped]
 
 from app.contracts import (
     AnalysisPlan,
+    Citation,
     GraphData,
     GraphEdge,
     GraphNode,
     InterventionType,
+    NetworkSpec,
     NodeType,
     StudyRecord,
 )
@@ -42,6 +51,10 @@ from app.transform.provenance import (
 _DRUG_TYPES = frozenset({InterventionType.DRUG, InterventionType.BIOLOGICAL})
 
 _LAYOUT_SEED = 42
+
+# Intermediate accumulators shared by every shape before assembly.
+_NodeTrials = dict[str, dict[str, StudyRecord]]
+_Edge = tuple[str, str]
 
 
 def _slugify(label: str) -> str:
@@ -74,23 +87,37 @@ def build_cooccurrence_network(studies: list[StudyRecord], plan: AnalysisPlan) -
 
     node_types = set(spec.node_types)
     bipartite = NodeType.sponsor in node_types and NodeType.drug in node_types
-    drug_drug = not bipartite and NodeType.drug in node_types
+    drug_drug = node_types == {NodeType.drug}
+    sponsor_sponsor = node_types == {NodeType.sponsor}
 
     if not studies:
         return GraphData(warnings=["no studies to aggregate; empty network"])
-    if not (bipartite or drug_drug):
+    if not (bipartite or drug_drug or sponsor_sponsor):
         return GraphData(
             warnings=[
                 "unsupported node_types "
-                f"{[t.value for t in spec.node_types]}; expected [sponsor, drug] or [drug]"
+                f"{[t.value for t in spec.node_types]}; expected [sponsor, drug], [drug], "
+                "or [sponsor]"
             ]
         )
 
-    # --- accumulate nodes, per-node trial participation, and per-edge trials ---
+    if sponsor_sponsor:
+        return _build_shared_drug_sponsor_network(studies, spec)
+    return _build_co_occurrence_network(studies, spec, bipartite=bipartite)
+
+
+# ---------------------------------------------------------------------------
+# co-occurrence-in-trial shapes (bipartite sponsor↔drug, or drug↔drug)
+# ---------------------------------------------------------------------------
+
+
+def _build_co_occurrence_network(
+    studies: list[StudyRecord], spec: NetworkSpec, *, bipartite: bool
+) -> GraphData:
     node_label: dict[str, str] = {}
     node_kind: dict[str, NodeType] = {}
-    node_trials: dict[str, dict[str, StudyRecord]] = {}
-    edge_trials: dict[tuple[str, str], dict[str, StudyRecord]] = {}
+    node_trials: _NodeTrials = {}
+    edge_trials: dict[_Edge, dict[str, StudyRecord]] = {}
 
     def reg_node(node_id: str, label: str, kind: NodeType, study: StudyRecord) -> None:
         node_label.setdefault(node_id, label)
@@ -120,38 +147,132 @@ def build_cooccurrence_network(studies: list[StudyRecord], plan: AnalysisPlan) -
                     if drugs[i][0] != drugs[j][0]:
                         reg_edge(drugs[i][0], drugs[j][0], study)
 
-    # --- prune by min_edge_weight, then cap to max_nodes by node weight ---
-    surviving_edges = {
-        key: trials
-        for key, trials in edge_trials.items()
-        if len(trials) >= spec.min_edge_weight
-    }
-    candidate_ids = {nid for key in surviving_edges for nid in key}
+    edge_weight = {key: len(trials) for key, trials in edge_trials.items()}
+
+    def edge_citation(key: _Edge) -> list[Citation]:
+        a, b = key
+        field = _edge_field((node_kind[a], node_kind[b]))
+        excerpt = f"{node_label[a]} + {node_label[b]}"
+        return [make_citation(s, excerpt=excerpt, field=field) for s in edge_trials[key].values()]
+
+    return _assemble_graph(
+        node_label=node_label,
+        node_kind=node_kind,
+        node_trials=node_trials,
+        edge_weight=edge_weight,
+        edge_citation=edge_citation,
+        spec=spec,
+    )
+
+
+# ---------------------------------------------------------------------------
+# sponsor↔sponsor shape (linked by a drug both sponsors studied)
+# ---------------------------------------------------------------------------
+
+
+def _build_shared_drug_sponsor_network(
+    studies: list[StudyRecord], spec: NetworkSpec
+) -> GraphData:
+    node_label: dict[str, str] = {}
+    node_kind: dict[str, NodeType] = {}
+    node_trials: _NodeTrials = {}
+    drug_label: dict[str, str] = {}
+    # drug_id -> sponsor_id -> {nct: study}: which sponsors ran each drug.
+    drug_sponsors: dict[str, dict[str, dict[str, StudyRecord]]] = {}
+
+    for study in studies:
+        sponsor_name = study.lead_sponsor_name
+        drugs = _drug_names(study)
+        if not sponsor_name or not drugs:
+            continue
+        sponsor_id = f"sponsor:{_slugify(sponsor_name)}"
+        node_label.setdefault(sponsor_id, sponsor_name)
+        node_kind.setdefault(sponsor_id, NodeType.sponsor)
+        node_trials.setdefault(sponsor_id, {})[study.nct_id] = study
+        for name in drugs:
+            drug_id = f"drug:{_slugify(name)}"
+            drug_label.setdefault(drug_id, name)
+            drug_sponsors.setdefault(drug_id, {}).setdefault(sponsor_id, {})[study.nct_id] = study
+
+    # An edge connects two sponsors per drug they share; the edge's supporting
+    # trials (per shared drug) are the union of each sponsor's trials on it.
+    edge_drugs: dict[_Edge, dict[str, dict[str, StudyRecord]]] = {}
+    for drug_id, sponsors in drug_sponsors.items():
+        sponsor_ids = sorted(sponsors)
+        for i in range(len(sponsor_ids)):
+            for j in range(i + 1, len(sponsor_ids)):
+                key = (sponsor_ids[i], sponsor_ids[j])
+                edge_drugs.setdefault(key, {})[drug_id] = {
+                    **sponsors[sponsor_ids[i]],
+                    **sponsors[sponsor_ids[j]],
+                }
+
+    if not edge_drugs:
+        return GraphData(warnings=["no sponsors shared a drug; empty network"])
+
+    edge_weight = {key: len(drugs) for key, drugs in edge_drugs.items()}
+
+    def edge_citation(key: _Edge) -> list[Citation]:
+        return [
+            make_citation(study, excerpt=drug_label[drug_id], field=FIELD_INTERVENTION_NAME)
+            for drug_id, trials in edge_drugs[key].items()
+            for study in trials.values()
+        ]
+
+    return _assemble_graph(
+        node_label=node_label,
+        node_kind=node_kind,
+        node_trials=node_trials,
+        edge_weight=edge_weight,
+        edge_citation=edge_citation,
+        spec=spec,
+    )
+
+
+# ---------------------------------------------------------------------------
+# shared assembly: prune -> cap -> layout -> emit
+# ---------------------------------------------------------------------------
+
+
+def _assemble_graph(
+    *,
+    node_label: dict[str, str],
+    node_kind: dict[str, NodeType],
+    node_trials: _NodeTrials,
+    edge_weight: dict[_Edge, int],
+    edge_citation: Callable[[_Edge], list[Citation]],
+    spec: NetworkSpec,
+) -> GraphData:
+    """Prune weak edges, cap to ``max_nodes``, lay out, and emit nodes/edges.
+
+    ``edge_citation`` is called only for surviving edges (cheap on large graphs).
+    Node/edge weight both encode "how much": trial participation for a node, and
+    the shape-specific edge weight (trial count, or shared-drug count) for edges.
+    """
+    surviving = {key: w for key, w in edge_weight.items() if w >= spec.min_edge_weight}
+    candidate_ids = {nid for key in surviving for nid in key}
     kept_ids = set(
         sorted(candidate_ids, key=lambda nid: (-len(node_trials[nid]), nid))[: spec.max_nodes]
     )
     kept_edges = {
-        key: trials
-        for key, trials in surviving_edges.items()
-        if key[0] in kept_ids and key[1] in kept_ids
+        key: w for key, w in surviving.items() if key[0] in kept_ids and key[1] in kept_ids
     }
     # A node kept only via an edge whose other endpoint was capped out can become
     # isolated; drop such isolated nodes so the rendered graph stays meaningful.
     connected_ids = {nid for key in kept_edges for nid in key}
 
-    warnings: list[str] = []
     if not connected_ids:
-        warnings.append(
-            f"no co-occurrences met min_edge_weight={spec.min_edge_weight}; empty network"
+        return GraphData(
+            warnings=[
+                f"no co-occurrences met min_edge_weight={spec.min_edge_weight}; empty network"
+            ]
         )
-        return GraphData(warnings=warnings)
 
-    # --- build the networkx graph (canonical structure + optional layout) ---
     graph = nx.Graph()
     for nid in connected_ids:
         graph.add_node(nid)
-    for key, trials in kept_edges.items():
-        graph.add_edge(key[0], key[1], weight=float(len(trials)))
+    for key, weight in kept_edges.items():
+        graph.add_edge(key[0], key[1], weight=float(weight))
 
     positions: dict[str, tuple[float, float]] = {}
     if spec.precompute_layout:
@@ -180,13 +301,14 @@ def build_cooccurrence_network(studies: list[StudyRecord], plan: AnalysisPlan) -
         )
 
     edges: list[GraphEdge] = []
-    for key, trials in sorted(kept_edges.items(), key=lambda kv: (-len(kv[1]), kv[0])):
-        a, b = key
-        field = _edge_field((node_kind[a], node_kind[b]))
-        excerpt = f"{node_label[a]} + {node_label[b]}"
-        citations = [make_citation(s, excerpt=excerpt, field=field) for s in trials.values()]
+    for key, weight in sorted(kept_edges.items(), key=lambda kv: (-kv[1], kv[0])):
         edges.append(
-            GraphEdge(source=a, target=b, weight=float(len(trials)), citations=citations)
+            GraphEdge(
+                source=key[0],
+                target=key[1],
+                weight=float(weight),
+                citations=edge_citation(key),
+            )
         )
 
-    return GraphData(nodes=nodes, edges=edges, warnings=warnings)
+    return GraphData(nodes=nodes, edges=edges, warnings=[])

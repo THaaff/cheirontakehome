@@ -70,19 +70,47 @@ class SeriesSpec(BaseModel):
 
 
 class NetworkSpec(BaseModel):
-    """The configuration for a ``cooccurrence_network`` operation."""
+    """The configuration for a ``cooccurrence_network`` operation.
+
+    Three shapes are valid, selected by ``node_types`` + ``edge_semantics``:
+
+    * ``[sponsor, drug]`` — bipartite sponsor↔drug (``co_occurrence_in_trial``).
+    * ``[drug]`` — drug↔drug co-occurrence (``co_occurrence_in_trial``).
+    * ``[sponsor]`` — sponsor↔sponsor, linked when both ran a trial on the same
+      drug (``shared_drug``). Since a trial has exactly one lead sponsor,
+      sponsors cannot co-occur within a trial, so this shape *requires*
+      ``shared_drug`` and ``shared_drug`` is valid only for this shape.
+    """
 
     model_config = ConfigDict(extra="forbid")
 
     node_types: list[NodeType] = Field(
-        description="[sponsor, drug] for bipartite, [drug] for drug-drug.",
+        description="[sponsor, drug] bipartite, [drug] drug-drug, [sponsor] sponsor-sponsor.",
     )
     edge_semantics: EdgeSemantics = EdgeSemantics.co_occurrence_in_trial
-    min_edge_weight: int = Field(default=1, description="Drop edges below this trial count.")
+    min_edge_weight: int = Field(
+        default=1,
+        description="Drop edges below this weight (trial count, or shared-drug count).",
+    )
     max_nodes: int = Field(default=50, ge=2, le=200, description="Readability / perf cap.")
     precompute_layout: bool = Field(
         default=True, description="Server-side spring_layout."
     )
+
+    @model_validator(mode="after")
+    def _check_shape(self) -> Self:
+        """Reject network shapes that cannot produce meaningful edges."""
+        if not self.node_types:
+            raise ValueError("network.node_types must not be empty")
+        sponsor_only = set(self.node_types) == {NodeType.sponsor}
+        if sponsor_only and self.edge_semantics is not EdgeSemantics.shared_drug:
+            raise ValueError(
+                "a sponsor-only network requires edge_semantics=shared_drug "
+                "(a trial has one lead sponsor, so sponsors never co-occur in a trial)"
+            )
+        if self.edge_semantics is EdgeSemantics.shared_drug and not sponsor_only:
+            raise ValueError("edge_semantics=shared_drug is only valid for node_types=[sponsor]")
+        return self
 
 
 class AnalysisPlan(BaseModel):

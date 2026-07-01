@@ -53,7 +53,10 @@ series (dimension = drug | condition | sponsor; values = the compared items, >= 
 group_by = country.
 - cooccurrence_network — relationships / co-occurrence / combinations / networks; \
 "network of X and Y", "drug-drug combinations", "which sponsors work with which drugs". \
-Set network (node_types = [sponsor, drug] for bipartite, [drug] for drug-drug).
+Set network. node_types = [sponsor, drug] for bipartite and [drug] for drug-drug (both \
+edge_semantics = co_occurrence_in_trial); node_types = [sponsor] with edge_semantics = \
+shared_drug for a sponsor-to-sponsor network ("which sponsors work on the same drugs", \
+"sponsors developing similar drugs") — sponsors link when they run a trial on a shared drug.
 - numeric_distribution — distribution of a SINGLE numeric field; "distribution of \
 enrollment sizes", "how large are the trials". Set numeric_x.
 - numeric_relationship — relationship between TWO numeric fields; "X vs Y", "enrollment \
@@ -155,6 +158,24 @@ FEW_SHOTS: list[tuple[str, PlannerOutput]] = [
             ),
             proposed_viz=VizType.network_graph,
             interpretation="Network of sponsors and drugs co-occurring in melanoma trials.",
+            assumptions=[],
+        ),
+    ),
+    (
+        "Which sponsors work on the same drugs in melanoma trials?",
+        PlannerOutput(
+            operation=Operation.cooccurrence_network,
+            entities=Entities(condition="melanoma"),
+            filters=Filters(),
+            network=PlannerNetwork(
+                node_types=[NodeType.sponsor],
+                edge_semantics=EdgeSemantics.shared_drug,
+                min_edge_weight=1,
+                max_nodes=50,
+                precompute_layout=True,
+            ),
+            proposed_viz=VizType.network_graph,
+            interpretation="Network of melanoma sponsors linked by drugs they both study.",
             assumptions=[],
         ),
     ),
