@@ -50,7 +50,7 @@ Example request (interactive docs at `http://localhost:8000/docs`):
 ```bash
 curl -s -X POST localhost:8000/visualize \
   -H 'content-type: application/json' \
-  -d '{"query": "What is the distribution of melanoma trials across phases?"}' | head -c 600
+  -d '{"query": "What is the distribution of melanoma trials across phases?"}' | python3 -m json.tool
 ```
 
 
