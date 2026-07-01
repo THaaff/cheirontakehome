@@ -11,6 +11,9 @@ dependencies = [
     "uvicorn>=0.30",
     "httpx>=0.27",
     "python-dateutil>=2.9.0.post0",
+    "networkx>=3.6.1",
+    "numpy>=2.5.0",
+    "openai>=2.44.0",
 ]
 
 [dependency-groups]

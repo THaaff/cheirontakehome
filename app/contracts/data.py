@@ -66,8 +66,10 @@ class TidyDataset(BaseModel):
     measure_name: str
     warnings: list[str] = Field(
         default_factory=list,
-        description="Aggregation-level notes, e.g. studies excluded for unparseable dates "
-        "or an empty input set.",
+        description=(
+            "Transform-stage warnings (e.g. excluded unparseable dates, empty input). "
+            "The orchestrator folds these into Meta.warnings; the viz layer ignores them."
+        ),
     )
 
 
@@ -118,8 +120,10 @@ class GraphData(BaseModel):
     edges: list[GraphEdge] = Field(default_factory=list)
     warnings: list[str] = Field(
         default_factory=list,
-        description="Aggregation-level notes (the network path's channel for the same "
-        "notes as TidyDataset.warnings).",
+        description=(
+            "Transform-stage warnings (e.g. empty input). The orchestrator folds these "
+            "into Meta.warnings; the viz layer ignores them."
+        ),
     )
 
 

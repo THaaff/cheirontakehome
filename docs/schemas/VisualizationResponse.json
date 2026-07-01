@@ -497,7 +497,7 @@
           "type": "array"
         },
         "warnings": {
-          "description": "Aggregation-level notes (the network path's channel for the same notes as TidyDataset.warnings).",
+          "description": "Transform-stage warnings (e.g. empty input). The orchestrator folds these into Meta.warnings; the viz layer ignores them.",
           "items": {
             "type": "string"
           },
