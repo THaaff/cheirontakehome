@@ -68,13 +68,12 @@ curl -s -X POST localhost:8000/visualize \
 `.env` holds `OPENAI_API_KEY` (live only), `CTGOV_BASE_URL`, `CACHE_DIR`, and `PLANNER_MODEL`
 (default `gpt-4.1`). `.env` **is gitignored; only** `.env.example` **is committed.**
 
-> **Honest caveat about server replay.** The planner in the running server *always* calls
-> the LLM — there is no planner-replay branch in `app/`, so `options.mode:"replay"` on a raw
+> **Caveat about server replay.** The planner in the running server *always* calls
+> the LLM, there is no planner-replay branch in `app/`, so `options.mode:"replay"` on a raw
 > `curl` still needs a key for the *planning* step (it only makes *retrieval* key/network-free).
 > Truly key-free reproduction is delivered by `scripts/capture_examples.py --mode replay`,
 > which injects the **recorded** plans (the same seam the integration tests use). See
-> [§6 Limitations](#6-limitations--what-id-improve-with-more-time). This is a deliberate,
-> documented tradeoff, not an oversight.
+> [§6 Limitations](#6-limitations--what-id-improve-with-more-time).
 
 
 
