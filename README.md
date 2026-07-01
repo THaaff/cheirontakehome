@@ -96,7 +96,7 @@ live as OpenAPI at `/docs`. Highlights:
   "query": "…",                       // required, natural language
   "drug_name": null, "condition": null, "sponsor": null,   // optional hints
   "phase": null, "country": null, "start_year": null, "end_year": null,
-  "options": { "mode": "live", "max_studies": 2000, "force_refresh": false, "debug": false }
+  "options": { "mode": "live", "max_studies": 25000, "force_refresh": false, "debug": false }
 }
 ```
 
@@ -223,9 +223,6 @@ real runs; see [`examples/`](examples/).
   result sets be analyzed within the `max_studies` budget.
 - **No `/stats` fast path.** Unfiltered global distributions could skip paging entirely via
   `/stats/field/values`; I always page `/studies` for consistency.
-- **No per-datum citation cap.** A large distribution attaches *every* contributing NCT id,
-  so a wide query's `response.json` can reach a few hundred KB. A top-N-plus-count cap would
-  bound the payload.
 - **Protocol-metadata only.** No results-section analytics (adverse events, outcome measures)
   — a separate, much larger initiative.
 - **Single-turn.** One request, one response; no follow-up refinement or session state.
@@ -254,7 +251,7 @@ multi-agent workspace), and I want to be specific about how.
 - **How I validated correctness (not vibes).**
   - **Planner eval** — 15 labeled queries scored for operation accuracy and entity extraction:
     **15/15 and 15/15** in replay (`uv run python -m app.planner.eval`).
-  - **Test suite** — **244 passing, 2 skipped** across 39 files (`uv run pytest`), all offline;
+  - **Test suite** — **247 passing, 2 skipped** across 39 files (`uv run pytest`), all offline;
     one end-to-end replay test drives the real `POST /visualize`.
   - **Live API spike** — real CT.gov v2 responses captured and inspected to confirm field
     paths and the stats-filter limitation (`fixtures/raw/notes.md`).
@@ -271,7 +268,7 @@ multi-agent workspace), and I want to be specific about how.
 ## 8. Testing & eval
 
 ```bash
-uv run pytest                          # 244 passed, 2 skipped — all offline, no key/network
+uv run pytest                          # 247 passed, 2 skipped — all offline, no key/network
 uv run pytest tests/integration        # end-to-end POST /visualize in replay
 uv run python -m app.planner.eval      # planner eval (replay): 15/15 operation & extraction
 uv run python -m app.planner.eval --live --record   # re-record plans (needs OPENAI_API_KEY)
@@ -294,7 +291,7 @@ docs/        system-design.md · prd-*.md · schemas/*.json (the authoritative c
 examples/    <name>/{request,response,plan}.json + note.md  ·  replay_cache/  (committed, offline-reproducible)
 demo/        index.html (optional bonus) + examples.json (generated bundle)
 scripts/     capture_examples.py · export_schemas.py · spike_api.py
-tests/       244 tests across the 6 stages + integration
+tests/       247 tests across the 6 stages + integration
 ```
 
 **Optional demo (bonus).** A single static `demo/index.html` (no build step) renders chart
